@@ -1,0 +1,101 @@
+{
+  "sync_time": "2026-04-11T17:03:10.560772",
+  "sync_mode": "full",
+  "projects": {
+    "total": 8,
+    "with_git": 4,
+    "with_status_md": 0,
+    "summary": [
+      {
+        "name": "01-Screen Automate",
+        "version": "0.0.0",
+        "has_git": true,
+        "tech_stack": [
+          "C# / .NET"
+        ]
+      },
+      {
+        "name": "React + TypeScript + Vite",
+        "version": "1.0.0",
+        "has_git": true,
+        "tech_stack": [
+          "Electron",
+          "Vite",
+          "Tailwind CSS",
+          "React",
+          "TypeScript"
+        ]
+      },
+      {
+        "name": "03-modules",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": [
+          "Python"
+        ]
+      },
+      {
+        "name": "04-webpage test",
+        "version": "0.1.0",
+        "has_git": true,
+        "tech_stack": [
+          "Next.js",
+          "Tailwind CSS",
+          "TypeScript",
+          "React"
+        ]
+      },
+      {
+        "name": "05-custom skills",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": []
+      },
+      {
+        "name": "06-全能生活網頁",
+        "version": "0.1.0",
+        "has_git": true,
+        "tech_stack": [
+          "Next.js",
+          "Tailwind CSS",
+          "TypeScript",
+          "React"
+        ]
+      },
+      {
+        "name": "07-全能生活網頁-活動行事曆",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": [
+          "Python"
+        ]
+      },
+      {
+        "name": "08-監控AI各專案進度之網站",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": []
+      }
+    ]
+  },
+  "skills": {
+    "total": 21,
+    "total_tags": 11,
+    "tags": [
+      "#AI工具",
+      "#前端設計",
+      "#專案管理",
+      "#心智圖",
+      "#技能開發",
+      "#文件處理",
+      "#測試除錯",
+      "#溝通協作",
+      "#系統整合",
+      "#視覺設計",
+      "#資料處理"
+    ]
+  },
+  "workflows": {
+    "total": 1
+  }
+}

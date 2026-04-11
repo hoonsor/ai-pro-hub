@@ -1,0 +1,638 @@
+{
+  "generated_at": "2026-04-11T17:03:10.558711",
+  "skills_dir": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills",
+  "workflows_dir": "C:\\Users\\hoonsor\\.gemini\\antigravity\\global_workflows",
+  "stats": {
+    "total_skills": 21,
+    "total_workflows": 1,
+    "total_tags": 11,
+    "tags_list": [
+      "#AI工具",
+      "#前端設計",
+      "#專案管理",
+      "#心智圖",
+      "#技能開發",
+      "#文件處理",
+      "#測試除錯",
+      "#溝通協作",
+      "#系統整合",
+      "#視覺設計",
+      "#資料處理"
+    ]
+  },
+  "skills": [
+    {
+      "name": "algorithmic-art",
+      "display_name": "Algorithmic Art",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+      "summary": "Algorithmic philosophies are computational aesthetic movements that are then expressed through code. Output .md files (philosophy), .html files (interactive viewer), and .js files (generative algorithms).",
+      "tags": [
+        "#視覺設計"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\algorithmic-art",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": true,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 4,
+        "total_size_kb": 58.4
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 405,
+      "last_modified": "2026-03-28T22:05:20.131571"
+    },
+    {
+      "name": "brand-guidelines",
+      "display_name": "Brand Guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+      "summary": "To access Anthropic's official brand identity and style resources, use this skill.",
+      "tags": [
+        "#視覺設計"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\brand-guidelines",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 2,
+        "total_size_kb": 13.3
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 74,
+      "last_modified": "2026-03-28T22:05:22.119188"
+    },
+    {
+      "name": "canvas-design",
+      "display_name": "Canvas Design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+      "summary": "These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.",
+      "tags": [
+        "#前端設計",
+        "#文件處理",
+        "#視覺設計"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\canvas-design",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 11,
+        "total_size_kb": 937.5
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 130,
+      "last_modified": "2026-03-28T22:05:23.119444"
+    },
+    {
+      "name": "claude-api",
+      "display_name": "Claude Api",
+      "description": "Build apps with the Claude API or Anthropic SDK. TRIGGER when: code imports `anthropic`/`@anthropic-ai/sdk`/`claude_agent_sdk`, or user asks to use Claude API, Anthropic SDKs, or Agent SDK. DO NOT TRIGGER when: code imports `openai`/other AI SDK, general programming, or ML/data-science tasks.",
+      "summary": "This skill helps you build LLM-powered applications with Claude. Choose the right surface based on your needs, detect the project language, then read the relevant language-specific documentation.",
+      "tags": [
+        "#AI工具"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\claude-api",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 2,
+        "total_size_kb": 31.2
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 263,
+      "last_modified": "2026-03-28T22:05:24.569143"
+    },
+    {
+      "name": "doc-coauthoring",
+      "display_name": "Doc Coauthoring",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+      "summary": "This skill provides a structured workflow for guiding users through collaborative document creation. Act as an active guide, walking users through three stages: Context Gathering, Refinement & Structure, and Reader Testing.",
+      "tags": [
+        "#溝通協作"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\doc-coauthoring",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 1,
+        "total_size_kb": 15.4
+      },
+      "frontmatter": {},
+      "skill_md_lines": 376,
+      "last_modified": "2026-03-28T22:05:25.653561"
+    },
+    {
+      "name": "docx",
+      "display_name": "Docx",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+      "summary": "A .docx file is a ZIP archive containing XML files.",
+      "tags": [
+        "#文件處理",
+        "#資料處理"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\docx",
+      "structure": {
+        "has_scripts": true,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 16,
+        "total_size_kb": 130.6
+      },
+      "frontmatter": {
+        "license": "Proprietary. LICENSE.txt has complete terms"
+      },
+      "skill_md_lines": 591,
+      "last_modified": "2026-03-28T22:06:22.850299"
+    },
+    {
+      "name": "frontend-design",
+      "display_name": "Frontend Design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+      "summary": "This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices.",
+      "tags": [
+        "#前端設計",
+        "#視覺設計"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\frontend-design",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 2,
+        "total_size_kb": 14.3
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 43,
+      "last_modified": "2026-03-28T22:06:24.837738"
+    },
+    {
+      "name": "internal-comms",
+      "display_name": "Internal Comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+      "summary": "To write internal communications, use this skill for: - 3P updates (Progress, Plans, Problems) - Company newsletters - FAQ responses - Status reports - Leadership updates - Project updates - Incident reports",
+      "tags": [
+        "#溝通協作"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\internal-comms",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": true,
+        "has_evals": false,
+        "total_files": 6,
+        "total_size_kb": 21.9
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 33,
+      "last_modified": "2026-03-28T22:06:25.839275"
+    },
+    {
+      "name": "mcp-builder",
+      "display_name": "Mcp Builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "summary": "Create MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. The quality of an MCP server is measured by how well it enables LLMs to accomplish real-world tasks.",
+      "tags": [
+        "#系統整合"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\mcp-builder",
+      "structure": {
+        "has_scripts": true,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 10,
+        "total_size_kb": 118.9
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 237,
+      "last_modified": "2026-03-28T20:31:01.604682"
+    },
+    {
+      "name": "notebooklm",
+      "display_name": "Notebooklm",
+      "description": "Interact with Google NotebookLM to query documentation with Gemini's source-grounded answers. Each question opens a fresh browser session, retrieves the answer exclusively from your uploaded documents, and closes.",
+      "summary": "",
+      "tags": [
+        "#AI工具"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\notebooklm",
+      "structure": {
+        "has_scripts": true,
+        "has_references": true,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 1314,
+        "total_size_kb": 159948.4
+      },
+      "frontmatter": {
+        "risk": "unknown",
+        "source": "community",
+        "date_added": "2026-02-27"
+      },
+      "skill_md_lines": 273,
+      "last_modified": "2026-04-03T09:31:50.358774"
+    },
+    {
+      "name": "pdf",
+      "display_name": "Pdf",
+      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+      "summary": "This guide covers essential PDF processing operations using Python libraries and command-line tools. For advanced features, JavaScript libraries, and detailed examples, see REFERENCE.md. If you need to fill out a PDF form, read FORMS.md and follow its instructions.",
+      "tags": [
+        "#文件處理"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\pdf",
+      "structure": {
+        "has_scripts": true,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 4,
+        "total_size_kb": 37.2
+      },
+      "frontmatter": {
+        "license": "Proprietary. LICENSE.txt has complete terms"
+      },
+      "skill_md_lines": 315,
+      "last_modified": "2026-03-28T22:06:27.026524"
+    },
+    {
+      "name": "pptx",
+      "display_name": "Pptx",
+      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
+      "summary": "| Task | Guide | |------|-------| | Read/analyze content | `python -m markitdown presentation.pptx` | | Edit or create from template | Read [editing.md](editing.md) | | Create from scratch | Read [pptxgenjs.md](pptxgenjs.md) |",
+      "tags": [
+        "#文件處理"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\pptx",
+      "structure": {
+        "has_scripts": true,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 16,
+        "total_size_kb": 124.8
+      },
+      "frontmatter": {
+        "license": "Proprietary. LICENSE.txt has complete terms"
+      },
+      "skill_md_lines": 233,
+      "last_modified": "2026-03-28T22:06:28.989495"
+    },
+    {
+      "name": "project-monitor",
+      "display_name": "Project Monitor",
+      "description": "Scan, generate, and sync project status files (PROJECT_STATUS.md) across all project directories. Produces unified JSON output for the monitoring website. Use when the user asks to scan projects, update project status, generate project overview, sync project data, monitor project progress, or when working with the 監控AI各專案進度之網站 project. Also triggers when user mentions PROJECT_STATUS, project scanning, or wants to see all project statuses at once.",
+      "summary": "此技能用於掃描並彙整「全能 AI 互動網站」所需的三大資料來源：",
+      "tags": [
+        "#專案管理"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\project-monitor",
+      "structure": {
+        "has_scripts": true,
+        "has_references": false,
+        "has_templates": true,
+        "has_resources": true,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 8,
+        "total_size_kb": 58.4
+      },
+      "frontmatter": {},
+      "skill_md_lines": 136,
+      "last_modified": "2026-04-11T16:59:24.006204"
+    },
+    {
+      "name": "shadcn",
+      "display_name": "Shadcn",
+      "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", or \"switch to --preset\".",
+      "summary": "A framework for building ui, components and design systems. Components are added as source code to the user's project via the CLI.",
+      "tags": [
+        "#前端設計"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\shadcn",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": true,
+        "total_files": 11,
+        "total_size_kb": 63.8
+      },
+      "frontmatter": {
+        "user-invocable": "false",
+        "allowed-tools": "Bash(npx shadcn@latest *), Bash(pnpm dlx shadcn@latest *), Bash(bunx --bun shadcn@latest *)"
+      },
+      "skill_md_lines": 243,
+      "last_modified": "2026-03-28T19:56:40.149704"
+    },
+    {
+      "name": "skill-creator",
+      "display_name": "Skill Creator",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "summary": "A skill for creating new skills and iteratively improving them.",
+      "tags": [
+        "#技能開發"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\skill-creator",
+      "structure": {
+        "has_scripts": true,
+        "has_references": true,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": true,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 9,
+        "total_size_kb": 119.9
+      },
+      "frontmatter": {},
+      "skill_md_lines": 486,
+      "last_modified": "2026-03-28T20:23:03.844776"
+    },
+    {
+      "name": "slack-gif-creator",
+      "display_name": "Slack Gif Creator",
+      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
+      "summary": "A toolkit providing utilities and knowledge for creating animated GIFs optimized for Slack.",
+      "tags": [
+        "#視覺設計"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\slack-gif-creator",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 7,
+        "total_size_kb": 42.7
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 255,
+      "last_modified": "2026-03-28T22:06:57.409154"
+    },
+    {
+      "name": "theme-factory",
+      "display_name": "Theme Factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+      "summary": "This skill provides a curated collection of professional font and color themes themes, each with carefully selected color palettes and font pairings. Once a theme is chosen, it can be applied to any artifact.",
+      "tags": [
+        "#前端設計",
+        "#視覺設計"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\theme-factory",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 13,
+        "total_size_kb": 140.7
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 60,
+      "last_modified": "2026-03-28T22:07:00.923503"
+    },
+    {
+      "name": "web-artifacts-builder",
+      "display_name": "Web Artifacts Builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "summary": "To build powerful frontend claude.ai artifacts, follow these steps: 1. Initialize the frontend repo using `scripts/init-artifact.sh` 2. Develop your artifact by editing the generated code 3. Bundle all code into a single HTML file using `scripts/bundle-artifact.sh` 4. Display artifact to user 5. ...",
+      "tags": [
+        "#前端設計"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\web-artifacts-builder",
+      "structure": {
+        "has_scripts": true,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 5,
+        "total_size_kb": 44.8
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 74,
+      "last_modified": "2026-03-28T22:07:02.568686"
+    },
+    {
+      "name": "webapp-testing",
+      "display_name": "Webapp Testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+      "summary": "To test local web applications, write native Python Playwright scripts.",
+      "tags": [
+        "#前端設計",
+        "#測試除錯"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\webapp-testing",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": true,
+        "has_evals": false,
+        "total_files": 5,
+        "total_size_kb": 18.3
+      },
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "skill_md_lines": 96,
+      "last_modified": "2026-03-28T22:07:05.049909"
+    },
+    {
+      "name": "xlsx",
+      "display_name": "Xlsx",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+      "summary": "- Use a consistent, professional font (e.g., Arial, Times New Roman) for all deliverables unless otherwise instructed by the user",
+      "tags": [
+        "#文件處理",
+        "#系統整合",
+        "#資料處理"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\xlsx",
+      "structure": {
+        "has_scripts": true,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 15,
+        "total_size_kb": 113.4
+      },
+      "frontmatter": {
+        "license": "Proprietary. LICENSE.txt has complete terms"
+      },
+      "skill_md_lines": 292,
+      "last_modified": "2026-03-28T22:07:06.141753"
+    },
+    {
+      "name": "xmind",
+      "display_name": "Xmind",
+      "description": "Create XMind mind map files (.xmind). Use this skill when the user asks to create a mind map, mindmap, XMind file, or brainstorming diagram. Produces native .xmind files that open directly in the XMind application.",
+      "summary": "Create `.xmind` files by building a JSON structure and piping it to the bundled script.",
+      "tags": [
+        "#心智圖"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\xmind",
+      "structure": {
+        "has_scripts": true,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 2,
+        "total_size_kb": 23.7
+      },
+      "frontmatter": {},
+      "skill_md_lines": 196,
+      "last_modified": "2026-03-31T20:54:18.911970"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "arrangefile",
+      "display_name": "Arrangefile",
+      "description": "資料夾及檔案整理為心智圖",
+      "content": "根據以下步驟執行\n\n#### 1.1.1. 步驟一：查看檔案內容並依照內容及時序命名檔案\n- 查看資料夾內所有檔案的類型，選擇要使用的技能：\n\t- 副檔名 docx、doc，使用「docx」skill，閱覽後定義檔名\n\t- 副檔名為 xls、xlsx，使用「xlsx」skill，閱覽後定義檔名\n- 依照邏輯或時序，將檔名（不變更副檔名）重新命名為「01- 檔名」、「02- 檔名」...\n\n#### 1.1.2. 步驟二：建立心智圖文字架構\n- 將資料夾及檔案之架構使用「xmind」技能建立為 Xmind 心智圖的文字格式，資料夾跟檔按都是node，其中檔案的node要加上link，link的格式使用「file://【檔案之路徑（包含副檔名）】」格式",
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\global_workflows\\arrangefile.md",
+      "filename": "arrangefile.md",
+      "last_modified": "2026-03-30T23:17:13.056809"
+    }
+  ],
+  "tag_index": {
+    "#視覺設計": [
+      "algorithmic-art",
+      "brand-guidelines",
+      "canvas-design",
+      "frontend-design",
+      "slack-gif-creator",
+      "theme-factory"
+    ],
+    "#前端設計": [
+      "canvas-design",
+      "frontend-design",
+      "shadcn",
+      "theme-factory",
+      "web-artifacts-builder",
+      "webapp-testing"
+    ],
+    "#文件處理": [
+      "canvas-design",
+      "docx",
+      "pdf",
+      "pptx",
+      "xlsx"
+    ],
+    "#AI工具": [
+      "claude-api",
+      "notebooklm"
+    ],
+    "#溝通協作": [
+      "doc-coauthoring",
+      "internal-comms"
+    ],
+    "#資料處理": [
+      "docx",
+      "xlsx"
+    ],
+    "#系統整合": [
+      "mcp-builder",
+      "xlsx"
+    ],
+    "#專案管理": [
+      "project-monitor"
+    ],
+    "#技能開發": [
+      "skill-creator"
+    ],
+    "#測試除錯": [
+      "webapp-testing"
+    ],
+    "#心智圖": [
+      "xmind"
+    ]
+  }
+}

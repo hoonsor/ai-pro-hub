@@ -1,0 +1,248 @@
+{
+  "generated_at": "2026-04-11T17:03:10.343209",
+  "base_dir": "D:\\01-Project",
+  "project_count": 8,
+  "projects": [
+    {
+      "id": "01-screen-automate",
+      "folder_name": "01-Screen Automate",
+      "name": "01-Screen Automate",
+      "version": "0.0.0",
+      "github_url": "https://github.com/hoonsor/Screen_Automate.git",
+      "has_git": true,
+      "tech_stack": [
+        "C# / .NET"
+      ],
+      "description": "First, run the development server:",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "c3fdaffc373bac2ee0f0bd0c6be419121c380947",
+          "date": "2026-03-16 23:03:35 +0800",
+          "message": "feat(ocr): remove spaces between Chinese characters for better matching accuracy"
+        },
+        {
+          "hash": "fcd72d8f626b672380b6a469a7e2446cffcd3354",
+          "date": "2026-03-15 23:06:16 +0800",
+          "message": "Docs: Add session memory for March 15 and initialize Issues Log with RCA."
+        },
+        {
+          "hash": "d8188c47e8777294f5f9c321e003660989ccc136",
+          "date": "2026-03-15 23:04:13 +0800",
+          "message": "Major Refactor: Replace Tesseract with Windows.Media.Ocr & UI Enhancements suite. Fixed UI deadlock, added variable/history panels, and upgraded project target frameworks."
+        },
+        {
+          "hash": "e7db81f9647eb6e175a0a41b49894b155febf4fd",
+          "date": "2026-03-14 23:01:30 +0800",
+          "message": "Enhance Export: Single-file EXE support, embedded AWS package, fixed image path resolution, added Runner log export, and fixed magnifier crosshair offset"
+        },
+        {
+          "hash": "a34bcba6aec308f13a5f41fbf2dd61a5a9ee1dfa",
+          "date": "2026-03-13 21:58:02 +0800",
+          "message": "feat: implement multi-condition IfAction with boolean expression support"
+        },
+        {
+          "hash": "5f1f14005a71f22678069abf4d071f8f0830da4e",
+          "date": "2026-03-10 22:15:36 +0800",
+          "message": "chore: remove legacy Next.js/React and Tauri frontend files"
+        },
+        {
+          "hash": "a82329fbfb86d16bb67a9dcbe6fba068cb9f6133",
+          "date": "2026-01-31 21:56:55 +0800",
+          "message": "Initial commit from Create Next App"
+        }
+      ],
+      "last_commit": "2026-03-16T23:03:35+08:00",
+      "last_scanned": "2026-04-11T17:03:09.920416"
+    },
+    {
+      "id": "02-openclaw_manage_tools",
+      "folder_name": "02-openclaw_manage_tools",
+      "name": "React + TypeScript + Vite",
+      "version": "1.0.0",
+      "github_url": "https://github.com/hoonsor/openclaw_manage_tools.git",
+      "has_git": true,
+      "tech_stack": [
+        "Electron",
+        "Vite",
+        "Tailwind CSS",
+        "React",
+        "TypeScript"
+      ],
+      "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "5661344d4bc84cb7d1133776e039cf4e8a25de5d",
+          "date": "2026-02-28 09:09:06 +0800",
+          "message": "initial commit: OpenClaw Manage Tools"
+        }
+      ],
+      "last_commit": "2026-02-28T09:09:06+08:00",
+      "last_scanned": "2026-04-11T17:03:10.067302"
+    },
+    {
+      "id": "03-modules",
+      "folder_name": "03-modules",
+      "name": "03-modules",
+      "version": "0.0.0",
+      "github_url": null,
+      "has_git": false,
+      "tech_stack": [
+        "Python"
+      ],
+      "description": "尚無描述",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [],
+      "last_commit": null,
+      "last_scanned": "2026-04-11T17:03:10.068307"
+    },
+    {
+      "id": "04-webpage-test",
+      "folder_name": "04-webpage test",
+      "name": "04-webpage test",
+      "version": "0.1.0",
+      "github_url": null,
+      "has_git": true,
+      "tech_stack": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "React"
+      ],
+      "description": "First, run the development server:",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "79225772366600b3b2b53c8b3246c0003ee61506",
+          "date": "2026-03-28 20:08:30 +0800",
+          "message": "feat: initial commit"
+        }
+      ],
+      "last_commit": "2026-03-28T20:08:30+08:00",
+      "last_scanned": "2026-04-11T17:03:10.203159"
+    },
+    {
+      "id": "05-custom-skills",
+      "folder_name": "05-custom skills",
+      "name": "05-custom skills",
+      "version": "0.0.0",
+      "github_url": null,
+      "has_git": false,
+      "tech_stack": [],
+      "description": "尚無描述",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [],
+      "last_commit": null,
+      "last_scanned": "2026-04-11T17:03:10.205188"
+    },
+    {
+      "id": "06-全能生活網頁",
+      "folder_name": "06-全能生活網頁",
+      "name": "06-全能生活網頁",
+      "version": "0.1.0",
+      "github_url": null,
+      "has_git": true,
+      "tech_stack": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "React"
+      ],
+      "description": "First, run the development server:",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "d6f73ca0564e9db0e971d37aae904ab91f5b0fbe",
+          "date": "2026-03-28 22:39:13 +0800",
+          "message": "feat: initial commit"
+        },
+        {
+          "hash": "0e5106d3f64b60b770bd25212288757dd68d897b",
+          "date": "2026-03-28 22:36:32 +0800",
+          "message": "Initial commit from Create Next App"
+        }
+      ],
+      "last_commit": "2026-03-28T22:39:13+08:00",
+      "last_scanned": "2026-04-11T17:03:10.341132"
+    },
+    {
+      "id": "07-全能生活網頁-活動行事曆",
+      "folder_name": "07-全能生活網頁-活動行事曆",
+      "name": "07-全能生活網頁-活動行事曆",
+      "version": "0.0.0",
+      "github_url": null,
+      "has_git": false,
+      "tech_stack": [
+        "Python"
+      ],
+      "description": "尚無描述",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [],
+      "last_commit": null,
+      "last_scanned": "2026-04-11T17:03:10.342165"
+    },
+    {
+      "id": "08-監控ai各專案進度之網站",
+      "folder_name": "08-監控AI各專案進度之網站",
+      "name": "08-監控AI各專案進度之網站",
+      "version": "0.0.0",
+      "github_url": null,
+      "has_git": false,
+      "tech_stack": [],
+      "description": "尚無描述",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [],
+      "last_commit": null,
+      "last_scanned": "2026-04-11T17:03:10.343209"
+    }
+  ]
+}
