@@ -1,10 +1,10 @@
 {
-  "sync_time": "2026-04-11T17:03:10.560772",
+  "sync_time": "2026-04-11T21:20:41.199214",
   "sync_mode": "full",
   "projects": {
     "total": 8,
-    "with_git": 4,
-    "with_status_md": 0,
+    "with_git": 5,
+    "with_status_md": 1,
     "summary": [
       {
         "name": "01-Screen Automate",
@@ -15,15 +15,15 @@
         ]
       },
       {
-        "name": "React + TypeScript + Vite",
+        "name": "02-openclaw_manage_tools",
         "version": "1.0.0",
         "has_git": true,
         "tech_stack": [
-          "Electron",
-          "Vite",
-          "Tailwind CSS",
+          "TypeScript",
           "React",
-          "TypeScript"
+          "Tailwind CSS",
+          "Electron",
+          "Vite"
         ]
       },
       {
@@ -39,9 +39,9 @@
         "version": "0.1.0",
         "has_git": true,
         "tech_stack": [
+          "TypeScript",
           "Next.js",
           "Tailwind CSS",
-          "TypeScript",
           "React"
         ]
       },
@@ -56,9 +56,9 @@
         "version": "0.1.0",
         "has_git": true,
         "tech_stack": [
+          "TypeScript",
           "Next.js",
           "Tailwind CSS",
-          "TypeScript",
           "React"
         ]
       },
@@ -71,20 +71,24 @@
         ]
       },
       {
-        "name": "08-監控AI各專案進度之網站",
-        "version": "0.0.0",
-        "has_git": false,
-        "tech_stack": []
+        "name": "React + TypeScript + Vite",
+        "version": "0.0.1",
+        "has_git": true,
+        "tech_stack": [
+          "Tailwind CSS",
+          "Vite",
+          "React",
+          "TypeScript"
+        ]
       }
     ]
   },
   "skills": {
     "total": 21,
-    "total_tags": 11,
+    "total_tags": 10,
     "tags": [
       "#AI工具",
       "#前端設計",
-      "#專案管理",
       "#心智圖",
       "#技能開發",
       "#文件處理",

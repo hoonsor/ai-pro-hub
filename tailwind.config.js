@@ -30,7 +30,7 @@ export default {
         ring: "hsl(var(--ring))",
       },
       fontFamily: {
-        sans: ["Outfit", "Inter", "sans-serif"],
+        sans: ["Microsoft JhengHei", "微軟正黑體", "Outfit", "Inter", "sans-serif"],
       },
     },
   },

@@ -17,16 +17,13 @@ export function SkillsMatrix({ tagIndex }: SkillsMatrixProps) {
   const maxCount = sortedTags.length > 0 ? sortedTags[0][1].length : 1
 
   return (
-    <div className="glass-panel p-6 rounded-2xl h-full flex flex-col relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute right-0 top-0 w-64 h-64 bg-primary/5 blur-[80px] rounded-full pointer-events-none -mt-32 -mr-32" />
-
-      <h2 className="text-xl font-bold tracking-wider mb-2 flex items-center gap-2 relative z-10 text-foreground">
-        <Cpu className="text-primary size-5" />
-        SKILLS MATRIX
+    <div className="glass-panel p-6 rounded-2xl h-full flex flex-col">
+      <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-6 flex items-center gap-2">
+        <Cpu className="text-primary size-4" />
+        全域技能分析矩陣
       </h2>
       <p className="text-xs text-muted-foreground uppercase tracking-widest mb-6 relative z-10">
-        Antigravity Global Modules
+        Antigravity 全域模組
       </p>
 
       <div className="flex flex-col gap-4 flex-1 justify-center relative z-10">

@@ -60,14 +60,14 @@ export function SkillsView({ skills }: SkillsViewProps) {
         <div>
           <h2 className="text-xl font-bold tracking-wider mb-2 flex items-center gap-2">
             <Cpu className="text-primary size-6" />
-            GLOBAL SKILLS CATALOG
+            全域技能目錄
           </h2>
-          <p className="text-xs text-muted-foreground">Manage and integrate your workflow modules</p>
+          <p className="text-xs text-muted-foreground">管理並整合您的工作流模組</p>
         </div>
         
         <input 
           type="text" 
-          placeholder="Search skills..." 
+          placeholder="搜尋技能名稱或說明..." 
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="glass-panel px-4 py-2 w-full md:w-64 focus:outline-none focus:ring-1 focus:ring-primary rounded-xl text-sm"
@@ -111,7 +111,7 @@ export function SkillsView({ skills }: SkillsViewProps) {
             </div>
             
             <p className="text-sm text-foreground/70 mb-4 flex-1">
-              {skill.description || "No description provided."}
+              {skill.description || "無提供說明。"}
             </p>
 
             <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
@@ -125,7 +125,7 @@ export function SkillsView({ skills }: SkillsViewProps) {
         ))}
         {filteredSkills.length === 0 && (
           <div className="col-span-full py-12 text-center text-muted-foreground">
-            No matching skills found.
+            找不到符合條件的技能。
           </div>
         )}
       </div>

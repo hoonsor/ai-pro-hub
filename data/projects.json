@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T17:03:10.343209",
+  "generated_at": "2026-04-11T21:19:27.110794",
   "base_dir": "D:\\01-Project",
   "project_count": 8,
   "projects": [
@@ -59,21 +59,21 @@
         }
       ],
       "last_commit": "2026-03-16T23:03:35+08:00",
-      "last_scanned": "2026-04-11T17:03:09.920416"
+      "last_scanned": "2026-04-11T21:19:26.554343"
     },
     {
       "id": "02-openclaw_manage_tools",
       "folder_name": "02-openclaw_manage_tools",
-      "name": "React + TypeScript + Vite",
+      "name": "02-openclaw_manage_tools",
       "version": "1.0.0",
       "github_url": "https://github.com/hoonsor/openclaw_manage_tools.git",
       "has_git": true,
       "tech_stack": [
-        "Electron",
-        "Vite",
-        "Tailwind CSS",
+        "TypeScript",
         "React",
-        "TypeScript"
+        "Tailwind CSS",
+        "Electron",
+        "Vite"
       ],
       "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
       "changelog": [],
@@ -91,7 +91,7 @@
         }
       ],
       "last_commit": "2026-02-28T09:09:06+08:00",
-      "last_scanned": "2026-04-11T17:03:10.067302"
+      "last_scanned": "2026-04-11T21:19:26.689649"
     },
     {
       "id": "03-modules",
@@ -113,7 +113,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-04-11T17:03:10.068307"
+      "last_scanned": "2026-04-11T21:19:26.690656"
     },
     {
       "id": "04-webpage-test",
@@ -123,9 +123,9 @@
       "github_url": null,
       "has_git": true,
       "tech_stack": [
+        "TypeScript",
         "Next.js",
         "Tailwind CSS",
-        "TypeScript",
         "React"
       ],
       "description": "First, run the development server:",
@@ -144,7 +144,7 @@
         }
       ],
       "last_commit": "2026-03-28T20:08:30+08:00",
-      "last_scanned": "2026-04-11T17:03:10.203159"
+      "last_scanned": "2026-04-11T21:19:26.826606"
     },
     {
       "id": "05-custom-skills",
@@ -164,7 +164,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-04-11T17:03:10.205188"
+      "last_scanned": "2026-04-11T21:19:26.827630"
     },
     {
       "id": "06-全能生活網頁",
@@ -174,9 +174,9 @@
       "github_url": null,
       "has_git": true,
       "tech_stack": [
+        "TypeScript",
         "Next.js",
         "Tailwind CSS",
-        "TypeScript",
         "React"
       ],
       "description": "First, run the development server:",
@@ -200,7 +200,7 @@
         }
       ],
       "last_commit": "2026-03-28T22:39:13+08:00",
-      "last_scanned": "2026-04-11T17:03:10.341132"
+      "last_scanned": "2026-04-11T21:19:26.966339"
     },
     {
       "id": "07-全能生活網頁-活動行事曆",
@@ -222,27 +222,72 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-04-11T17:03:10.342165"
+      "last_scanned": "2026-04-11T21:19:26.967886"
     },
     {
       "id": "08-監控ai各專案進度之網站",
       "folder_name": "08-監控AI各專案進度之網站",
-      "name": "08-監控AI各專案進度之網站",
-      "version": "0.0.0",
+      "name": "React + TypeScript + Vite",
+      "version": "0.0.1",
       "github_url": null,
-      "has_git": false,
-      "tech_stack": [],
-      "description": "尚無描述",
-      "changelog": [],
+      "has_git": true,
+      "tech_stack": [
+        "Tailwind CSS",
+        "Vite",
+        "React",
+        "TypeScript"
+      ],
+      "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+      "changelog": [
+        {
+          "version": "0.0.0",
+          "date": "2026-04-11",
+          "type": "feat",
+          "description": "implement HUD dashboard UI with glassmorphism and data integration"
+        }
+      ],
       "tasks": {
-        "main": [],
-        "sub": [],
-        "deprecated": []
+        "main": [
+          {
+            "title": "待定義主要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "sub": [
+          {
+            "title": "待定義次要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "deprecated": [
+          {
+            "title": "原先計畫的方向或任務描述",
+            "deprecated": true
+          }
+        ]
       },
       "revision_history": [],
-      "recent_commits": [],
-      "last_commit": null,
-      "last_scanned": "2026-04-11T17:03:10.343209"
+      "recent_commits": [
+        {
+          "hash": "f760ca188cc256be49dbe13c93740deafbb0d927",
+          "date": "2026-04-11 20:42:05 +0800",
+          "message": "feat: implement mind map requirements including full routing, projects detail view, tags filter, and copy to clipboard features"
+        },
+        {
+          "hash": "51960d191bc3a97b68bfa5d6f9d3096b9bfb467c",
+          "date": "2026-04-11 20:16:55 +0800",
+          "message": "docs: auto-generate project status"
+        },
+        {
+          "hash": "355af274f5d5b48351159ecf1b5eaa85aa7108b1",
+          "date": "2026-04-11 20:16:10 +0800",
+          "message": "feat: implement HUD dashboard UI with glassmorphism and data integration"
+        }
+      ],
+      "last_commit": "2026-04-11T20:42:05+08:00",
+      "last_scanned": "2026-04-11T21:19:27.110794"
     }
   ]
 }

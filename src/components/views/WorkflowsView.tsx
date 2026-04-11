@@ -36,9 +36,9 @@ export function WorkflowsView({ workflows }: WorkflowsViewProps) {
       <div>
         <h2 className="text-xl font-bold tracking-wider mb-2 flex items-center gap-2">
           <GitMerge className="text-primary size-6" />
-          GLOBAL WORKFLOWS
+          全域工作流目錄
         </h2>
-        <p className="text-xs text-muted-foreground">Automation definitions and schemas</p>
+        <p className="text-xs text-muted-foreground">自動化定義與 Schema</p>
       </div>
 
       <div className="flex flex-col gap-8">
@@ -53,9 +53,9 @@ export function WorkflowsView({ workflows }: WorkflowsViewProps) {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-4">
               <h3 className="text-xl font-bold text-foreground flex items-center gap-3">
                 {wf.name}
-                <CopyButton text={wf.name} label="Name" />
+                <CopyButton text={wf.name} label="名稱" />
               </h3>
-              <CopyButton text={wf.content} label="Copy Schema" />
+              <CopyButton text={wf.content} label="複製 Schema" />
             </div>
             
             <div className="relative rounded-xl overflow-hidden bg-[#0d1117] border border-white/10">
@@ -70,7 +70,7 @@ export function WorkflowsView({ workflows }: WorkflowsViewProps) {
         ))}
         {workflows.length === 0 && (
           <div className="glass-panel py-12 text-center text-muted-foreground">
-            No workflows found in system.
+            系統中尚未掃描到任何工作流。
           </div>
         )}
       </div>

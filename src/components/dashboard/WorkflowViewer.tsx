@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import type { WorkflowData } from "../../hooks/useDashboardData"
-import { GitMerge, Database, PlayCircle, Settings2 } from "lucide-react"
+import { GitMerge, Database, PlayCircle, ArrowRight } from "lucide-react"
 
 interface WorkflowViewerProps {
   workflows: WorkflowData[]
@@ -8,20 +8,20 @@ interface WorkflowViewerProps {
 
 const NodeBox = ({ title, status, desc, icon: Icon, delay }: any) => (
   <motion.div
-    initial={{ opacity: 0, scale: 0.9 }}
-    animate={{ opacity: 1, scale: 1 }}
+    initial={{ opacity: 0, x: -20 }}
+    animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.5, delay }}
-    className="relative z-10 glass-panel border border-white/10 p-3 rounded-lg min-w-[140px] flex flex-col gap-2 bg-background/50 hover:bg-background/80 transition-colors"
+    className="relative z-10 glass-panel border border-white/10 p-4 rounded-xl min-w-[160px] flex-1 flex flex-col gap-2 bg-background/50 hover:bg-background/80 transition-colors"
   >
-    <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-white">
-      <Icon className="size-3 text-primary" />
+    <div className="flex items-center gap-2 text-sm font-semibold text-white">
+      <Icon className="size-4 text-primary" />
       {title}
     </div>
-    <div className="text-[10px] text-muted-foreground leading-tight">
+    <div className="text-xs text-muted-foreground leading-relaxed line-clamp-2" title={desc}>
       {desc}
     </div>
-    <div className="mt-2 flex gap-2">
-      <span className="flex items-center gap-1 text-[9px] uppercase px-1.5 py-0.5 rounded-sm bg-primary/20 text-primary border border-primary/30">
+    <div className="mt-auto pt-2 flex gap-2">
+      <span className="flex items-center gap-1.5 text-[10px] uppercase px-2 py-0.5 rounded-md bg-primary/20 text-primary border border-primary/30">
         <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
         {status}
       </span>
@@ -30,78 +30,65 @@ const NodeBox = ({ title, status, desc, icon: Icon, delay }: any) => (
 )
 
 export function WorkflowViewer({ workflows }: WorkflowViewerProps) {
-  // 顯示第一個掃描到的工作流 (或模擬流程)
-  const workflow = workflows[0]
+  // 自動取第一個來代表流程範例，或者 fallback
+  const workflow = workflows && workflows.length > 0 ? workflows[0] : null
+  const wfTitle = workflow?.name || "全局自動化腳本"
+  const wfDesc = (workflow as any)?.description || "負責將掃描的 JSON 結構合併至前端渲染"
 
   return (
-    <div className="glass-panel p-6 rounded-2xl h-full flex flex-col relative overflow-hidden">
-      <h2 className="text-xl font-bold tracking-wider mb-2 flex items-center gap-2 relative z-10 text-foreground">
-        <GitMerge className="text-primary size-5" />
-        WORKFLOW VIEWER
+    <div className="glass-panel p-6 rounded-2xl h-full flex flex-col relative overflow-hidden group">
+      <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-1 flex items-center gap-2 relative z-10">
+        <GitMerge className="text-primary size-4" />
+        工作流檢視器
       </h2>
-      <p className="text-xs text-muted-foreground uppercase tracking-widest mb-6 relative z-10 truncate">
-        {workflow?.name || "Global Automation Flow"}
+      <p className="text-lg font-bold text-foreground relative z-10 truncate mb-6">
+        {wfTitle}
       </p>
 
-      <div className="flex-1 flex items-center justify-center relative p-8">
+      <div className="flex-1 flex flex-col sm:flex-row items-center justify-between gap-4 relative py-4 z-10">
         
-        {/* 背景網格線條 */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none" />
+        <NodeBox 
+          title="資料搜集" 
+          status="運行中" 
+          desc="解析本地資料夾的所有狀態與日誌" 
+          icon={Database} 
+          delay={0.2} 
+        />
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="hidden sm:flex text-muted-foreground/50"
+        >
+          <ArrowRight className="size-6" />
+        </motion.div>
         
-        <div className="relative w-full max-w-[400px] aspect-[4/3] flex items-center justify-center perspective-1000">
-          {/* Node 連接線 (SVG) */}
-          <svg className="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-visible">
-            <motion.path
-              d="M100,50 C150,50 150,150 200,150"
-              fill="none"
-              stroke="hsl(var(--primary))"
-              strokeWidth="2"
-              strokeDasharray="4 4"
-              className="opacity-50"
-              initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: 1.5, ease: "linear" }}
-            />
-            <motion.path
-              d="M100,200 C150,200 150,150 200,150"
-              fill="none"
-              stroke="hsl(var(--primary))"
-              strokeWidth="2"
-              strokeDasharray="4 4"
-              className="opacity-50"
-              initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: 1.5, ease: "linear", delay: 0.5 }}
-            />
-            <motion.path
-              d="M280,150 L350,150"
-              fill="none"
-              stroke="hsl(var(--accent))"
-              strokeWidth="2"
-              className="opacity-70"
-              initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: 1, ease: "linear", delay: 1 }}
-            />
-          </svg>
+        <NodeBox 
+          title="腳本執行" 
+          status="處理中" 
+          desc={wfDesc} 
+          icon={PlayCircle} 
+          delay={0.6} 
+        />
 
-          {/* Nodes */}
-          <div className="absolute top-[20px] left-0 transform -translate-y-1/2">
-             <NodeBox title="Scrape Data" status="active" desc="Parse project structures" icon={Database} delay={0.2} />
-          </div>
-          <div className="absolute top-[280px] left-0 transform -translate-y-1/2">
-             <NodeBox title="Parse markdown" status="pending" desc="Regex metadata extraction" icon={Settings2} delay={0.4} />
-          </div>
-          
-          <div className="absolute top-[150px] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
-             <NodeBox title="Processing" status="running" desc="Generate JSON payloads" icon={PlayCircle} delay={0.8} />
-          </div>
-          
-          <div className="absolute top-[150px] right-0 transform -translate-y-1/2">
-             <NodeBox title="Output" status="publish" desc="Sync to dashboard data" icon={GitMerge} delay={1.4} />
-          </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          className="hidden sm:flex text-muted-foreground/50"
+        >
+          <ArrowRight className="size-6" />
+        </motion.div>
+        
+        <NodeBox 
+          title="狀態更新" 
+          status="已完成" 
+          desc="輸出並同步 JSON 至儀表板" 
+          icon={GitMerge} 
+          delay={1.0} 
+        />
 
-        </div>
       </div>
     </div>
   )

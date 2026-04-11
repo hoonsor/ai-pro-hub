@@ -1,15 +1,14 @@
 {
-  "generated_at": "2026-04-11T17:03:10.558711",
+  "generated_at": "2026-04-11T21:20:41.197207",
   "skills_dir": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills",
   "workflows_dir": "C:\\Users\\hoonsor\\.gemini\\antigravity\\global_workflows",
   "stats": {
     "total_skills": 21,
     "total_workflows": 1,
-    "total_tags": 11,
+    "total_tags": 10,
     "tags_list": [
       "#AI工具",
       "#前端設計",
-      "#專案管理",
       "#心智圖",
       "#技能開發",
       "#文件處理",
@@ -24,11 +23,9 @@
     {
       "name": "algorithmic-art",
       "display_name": "Algorithmic Art",
-      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
-      "summary": "Algorithmic philosophies are computational aesthetic movements that are then expressed through code. Output .md files (philosophy), .html files (interactive viewer), and .js files (generative algorithms).",
-      "tags": [
-        "#視覺設計"
-      ],
+      "description": "使用具有種子隨機性和互動參數探索的 p5.js 創建演算法藝術。當使用者要求使用程式碼、生成藝術、演算法藝術、流場或粒子系統創建藝術時，請使用此選項。創建原創的演算法藝術而不是複製現有藝術家的作品，以避免侵犯版權。",
+      "summary": "算法哲學是透過代碼表達的計算美學運動。輸出 .md 檔案（哲學）、.html 檔案（互動式檢視器）和 .js 檔案（生成演算法）。",
+      "tags": [],
       "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\algorithmic-art",
       "structure": {
         "has_scripts": false,
@@ -50,11 +47,9 @@
     {
       "name": "brand-guidelines",
       "display_name": "Brand Guidelines",
-      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
-      "summary": "To access Anthropic's official brand identity and style resources, use this skill.",
-      "tags": [
-        "#視覺設計"
-      ],
+      "description": "將 Anthropic 的官方品牌顏色和版式應用於任何可能受益於 Anthropic 外觀和感覺的人工製品。當品牌顏色或風格指南、視覺格式或公司設計標準適用時使用它。",
+      "summary": "要存取 Anthropic 的官方品牌標誌和風格資源，請使用此技能。",
+      "tags": [],
       "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\brand-guidelines",
       "structure": {
         "has_scripts": false,
@@ -76,10 +71,9 @@
     {
       "name": "canvas-design",
       "display_name": "Canvas Design",
-      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
-      "summary": "These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.",
+      "description": "使用設計理念在 .png 和 .pdf 文件中創建美麗的視覺藝術。當使用者要求創建海報、藝術品、設計或其他靜態作品時，您應該使用此技能。創造原創視覺設計，切勿複製現有藝術家的作品，以避免侵犯版權。",
+      "summary": "這些是創建設計理念的說明 - 然後以視覺方式表達的美學運動。僅輸出 .md 檔案、.pdf 檔案和 .png 檔案。",
       "tags": [
-        "#前端設計",
         "#文件處理",
         "#視覺設計"
       ],
@@ -104,8 +98,8 @@
     {
       "name": "claude-api",
       "display_name": "Claude Api",
-      "description": "Build apps with the Claude API or Anthropic SDK. TRIGGER when: code imports `anthropic`/`@anthropic-ai/sdk`/`claude_agent_sdk`, or user asks to use Claude API, Anthropic SDKs, or Agent SDK. DO NOT TRIGGER when: code imports `openai`/other AI SDK, general programming, or ML/data-science tasks.",
-      "summary": "This skill helps you build LLM-powered applications with Claude. Choose the right surface based on your needs, detect the project language, then read the relevant language-specific documentation.",
+      "description": "使用 Claude API 或 Anthropic SDK 建立應用程式。在下列情況下觸發：程式碼匯入 `anthropic`/`@anthropic-ai/sdk`/`claude_agent_sdk`，或使用者要求使用 Claude API、Anthropic SDK 或 Agent SDK。不要在以下情況下觸發：程式碼匯入「openai」/其他 AI SDK、一般程式設計或 ML/資料科學任務。",
+      "summary": "這項技能可以幫助您與 Claude 一起建立 LLM 支援的應用程式。根據您的需求選擇正確的介面，檢測項目語言，然後閱讀相關的特定語言文件。",
       "tags": [
         "#AI工具"
       ],
@@ -130,8 +124,8 @@
     {
       "name": "doc-coauthoring",
       "display_name": "Doc Coauthoring",
-      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
-      "summary": "This skill provides a structured workflow for guiding users through collaborative document creation. Act as an active guide, walking users through three stages: Context Gathering, Refinement & Structure, and Reader Testing.",
+      "description": "指導使用者完成共同創作文件的結構化工作流程。當使用者想要撰寫文件、提案、技術規格、決策文件或類似的結構化內容時使用。此工作流程可協助使用者有效率地傳輸上下文、透過迭代細化內容並驗證文件是否適合讀者。當使用者提到編寫文件、建立提案、起草規格或類似的文件任務時觸發。",
+      "summary": "此技能提供了一個結構化的工作流程，用於指導使用者完成協作文件創建。作為一個積極的指南，引導用戶經歷三個階段：情境收集、細化和結構以及讀者測試。",
       "tags": [
         "#溝通協作"
       ],
@@ -154,11 +148,10 @@
     {
       "name": "docx",
       "display_name": "Docx",
-      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+      "description": "每當使用者想要建立、閱讀、編輯或操作 Word 文件（.docx 檔案）時，請使用此技能。觸發因素包括：提及“Word doc”、“word 文件”、“.docx”，或要求產生具有目錄、標題、頁碼或信箋等格式的專業文件。也可以在從 .docx 文件中提取或重新組織內容、在文件中插入或替換圖像、在 Word 文件中執行查找和替換、處理跟踪的更改或註釋或將內容轉換為精美的 Word 文件時使用。如果使用者要求「報告」、「備忘錄」、「信件」、「範本」或類似的 Word 或 .docx 檔案形式的可交付成果，請使用此技能。請勿用於 PDF、電子表格、Google 文件或與文件產生無關的一般編碼任務。",
       "summary": "A .docx file is a ZIP archive containing XML files.",
       "tags": [
-        "#文件處理",
-        "#資料處理"
+        "#文件處理"
       ],
       "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\docx",
       "structure": {
@@ -181,11 +174,10 @@
     {
       "name": "frontend-design",
       "display_name": "Frontend Design",
-      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
-      "summary": "This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices.",
+      "description": "創建具有高設計品質的獨特的生產級前端介面。當使用者要求建立 Web 元件、頁面、工件、海報或應用程式（例如網站、登陸頁面、儀表板、React 元件、HTML/CSS 佈局或設計/美化任何 Web UI 時）時，請使用此技能。產生創意、精美的程式碼和 UI 設計，避免通用的 AI 美學。",
+      "summary": "這項技能指導創造獨特的、生產級的前端介面，避免通用的「AI slop」美學。實作真正的工作程式碼，特別注重美學細節和創意選擇。",
       "tags": [
-        "#前端設計",
-        "#視覺設計"
+        "#前端設計"
       ],
       "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\frontend-design",
       "structure": {
@@ -208,8 +200,8 @@
     {
       "name": "internal-comms",
       "display_name": "Internal Comms",
-      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
-      "summary": "To write internal communications, use this skill for: - 3P updates (Progress, Plans, Problems) - Company newsletters - FAQ responses - Status reports - Leadership updates - Project updates - Incident reports",
+      "description": "一組資源可幫助我使用我公司喜歡使用的格式編寫各種內部通訊。每當被要求撰寫某種內部通訊（狀態報告、領導力更新、3P 更新、公司新聞通訊、常見問題、事件報告、專案更新等）時，Claude 都應該使用此技能。",
+      "summary": "要撰寫內部通信，請將此技能用於： - 3P 更新（進度、計劃、問題） - 公司通訊 - 常見問題 - 狀態報告 - 領導力更新 - 專案更新 - 事件報告",
       "tags": [
         "#溝通協作"
       ],
@@ -234,8 +226,8 @@
     {
       "name": "mcp-builder",
       "display_name": "Mcp Builder",
-      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
-      "summary": "Create MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. The quality of an MCP server is measured by how well it enables LLMs to accomplish real-world tasks.",
+      "description": "創建高品質 MCP（模型上下文協定）伺服器的指南，使 LLM 能夠透過精心設計的工具與外部服務互動。在建立 MCP 伺服器以整合外部 API 或服務時使用，無論是使用 Python (FastMCP) 或 Node/TypeScript (MCP SDK)。",
+      "summary": "建立 MCP（模型上下文協定）伺服器，使 LLM 能夠透過精心設計的工具與外部服務互動。 MCP 伺服器的品質是透過它使 LLM 完成實際任務的能力來衡量的。",
       "tags": [
         "#系統整合"
       ],
@@ -260,7 +252,7 @@
     {
       "name": "notebooklm",
       "display_name": "Notebooklm",
-      "description": "Interact with Google NotebookLM to query documentation with Gemini's source-grounded answers. Each question opens a fresh browser session, retrieves the answer exclusively from your uploaded documents, and closes.",
+      "description": "與 Google NotebookLM 交互，透過 Gemini 的基於原始碼的答案來查詢文件。每個問題都會開啟一個新的瀏覽器會話，專門從您上傳的文件中檢索答案，然後關閉。",
       "summary": "",
       "tags": [
         "#AI工具"
@@ -288,8 +280,8 @@
     {
       "name": "pdf",
       "display_name": "Pdf",
-      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
-      "summary": "This guide covers essential PDF processing operations using Python libraries and command-line tools. For advanced features, JavaScript libraries, and detailed examples, see REFERENCE.md. If you need to fill out a PDF form, read FORMS.md and follow its instructions.",
+      "description": "當使用者想要對 PDF 檔案執行任何操作時，請使用此技能。這包括從 PDF 讀取或提取文字/表格、將多個 PDF 組合或合併為一個、分割 PDF、旋轉頁面、添加浮水印、建立新 PDF、填寫 PDF 表單、加密/解密 PDF、提取圖像以及對掃描的 PDF 進行 OCR 使其可搜尋。如果使用者提到 .pdf 檔案或要求產生一個，請使用此技能。",
+      "summary": "本指南涵蓋使用 Python 程式庫和命令列工具的基本 PDF 處理操作。有關進階功能、JavaScript 庫和詳細範例，請參閱 REFERENCE.md。如果您需要填寫 PDF 表單，請閱讀 FORMS.md 並按照其說明進行操作。",
       "tags": [
         "#文件處理"
       ],
@@ -314,8 +306,8 @@
     {
       "name": "pptx",
       "display_name": "Pptx",
-      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
-      "summary": "| Task | Guide | |------|-------| | Read/analyze content | `python -m markitdown presentation.pptx` | | Edit or create from template | Read [editing.md](editing.md) | | Create from scratch | Read [pptxgenjs.md](pptxgenjs.md) |",
+      "description": "每當以任何方式涉及 .pptx 檔案時（作為輸入、輸出或兩者），都可以使用此技能。這包括：建立投影片、宣傳資料或簡報；從任何 .pptx 檔案中讀取、解析或擷取文字（即使擷取的內容將在其他地方使用，例如在電子郵件或摘要中）；編輯、修改或更新現有簡報；合併或分割投影片檔案；使用範本、佈局、演講者註釋或評論。每當用戶提到「甲板」、「幻燈片」、「簡報」或引用 .pptx 檔案名稱時觸發，無論他們隨後計劃如何處理內容。如果需要開啟、建立或觸碰 .pptx 文件，請使用此技能。",
+      "summary": "|任務|指南| |------|--------| |閱讀/分析內容 | `python -m markitdown 簡報.pptx` | |編輯或從模板創建 |閱讀[編輯.md](編輯.md) | |從頭開始創建 |閱讀 [pptxgenjs.md](pptxgenjs.md) |",
       "tags": [
         "#文件處理"
       ],
@@ -340,11 +332,9 @@
     {
       "name": "project-monitor",
       "display_name": "Project Monitor",
-      "description": "Scan, generate, and sync project status files (PROJECT_STATUS.md) across all project directories. Produces unified JSON output for the monitoring website. Use when the user asks to scan projects, update project status, generate project overview, sync project data, monitor project progress, or when working with the 監控AI各專案進度之網站 project. Also triggers when user mentions PROJECT_STATUS, project scanning, or wants to see all project statuses at once.",
+      "description": "跨所有專案目錄掃描、產生和同步專案狀態檔案 (PROJECT_STATUS.md)。為監控網站產生統一的 JSON 輸出。當使用者要求掃描專案、更新專案狀態、產生專案概述、同步專案資料、監控專案進度或使用監控AI各專案文件之網站專案時使用。當使用者提及 PROJECT_STATUS、專案掃描或想要立即查看所有專案狀態時也會觸發。",
       "summary": "此技能用於掃描並彙整「全能 AI 互動網站」所需的三大資料來源：",
-      "tags": [
-        "#專案管理"
-      ],
+      "tags": [],
       "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\project-monitor",
       "structure": {
         "has_scripts": true,
@@ -355,7 +345,7 @@
         "has_examples": false,
         "has_evals": false,
         "total_files": 8,
-        "total_size_kb": 58.4
+        "total_size_kb": 59.8
       },
       "frontmatter": {},
       "skill_md_lines": 136,
@@ -364,8 +354,8 @@
     {
       "name": "shadcn",
       "display_name": "Shadcn",
-      "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", or \"switch to --preset\".",
-      "summary": "A framework for building ui, components and design systems. Components are added as source code to the user's project via the CLI.",
+      "description": "管理 shadcn 元件和項目 - 新增、搜尋、修復、調試、樣式設定和編寫 UI。提供專案上下文、元件文件和使用範例。適用於使用 shadcn/ui、元件註冊表、預設、--preset 程式碼或任何具有 Components.json 檔案的項目。也會觸發「shadcn init」、「使用 --preset 建立應用程式」或「切換到 --preset」。",
+      "summary": "用於建立使用者介面、組件和設計系統的框架。元件透過 CLI 作為原始碼添加到使用者的專案中。",
       "tags": [
         "#前端設計"
       ],
@@ -391,8 +381,8 @@
     {
       "name": "skill-creator",
       "display_name": "Skill Creator",
-      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
-      "summary": "A skill for creating new skills and iteratively improving them.",
+      "description": "創建新技能、修改和改進現有技能以及衡量技能績效。當使用者想要從頭開始創建技能、編輯或優化現有技能、運行評估來測試技能、透過方差分析對技能性能進行基準測試或優化技能描述以獲得更好的觸發準確性時使用。",
+      "summary": "創造新技能並迭代改進它們的技能。",
       "tags": [
         "#技能開發"
       ],
@@ -415,8 +405,8 @@
     {
       "name": "slack-gif-creator",
       "display_name": "Slack Gif Creator",
-      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
-      "summary": "A toolkit providing utilities and knowledge for creating animated GIFs optimized for Slack.",
+      "description": "建立針對 Slack 最佳化的動畫 GIF 的知識和實用程式。提供約束、驗證工具和動畫概念。當使用者要求 Slack 的動畫 GIF 時使用，例如「為我製作一張 X 為 Slack 做 Y 的 GIF」。",
+      "summary": "一個工具包，提供用於創建針對 Slack 最佳化的動畫 GIF 的實用程式和知識。",
       "tags": [
         "#視覺設計"
       ],
@@ -441,10 +431,9 @@
     {
       "name": "theme-factory",
       "display_name": "Theme Factory",
-      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
-      "summary": "This skill provides a curated collection of professional font and color themes themes, each with carefully selected color palettes and font pairings. Once a theme is chosen, it can be applied to any artifact.",
+      "description": "用於為具有主題的工件設計樣式的工具包。這些工件可以是投影片、文件、報表、HTML 登入頁面等。有 10 個帶有顏色/字體的預設主題，您可以將它們應用於已建立的任何工件，或者可以即時產生新主題。",
+      "summary": "這項技能提供了專業字體和顏色主題的精選集合，每個主題都有精心挑選的調色板和字體配對。一旦選擇了主題，它就可以應用於任何工件。",
       "tags": [
-        "#前端設計",
         "#視覺設計"
       ],
       "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\theme-factory",
@@ -468,8 +457,8 @@
     {
       "name": "web-artifacts-builder",
       "display_name": "Web Artifacts Builder",
-      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
-      "summary": "To build powerful frontend claude.ai artifacts, follow these steps: 1. Initialize the frontend repo using `scripts/init-artifact.sh` 2. Develop your artifact by editing the generated code 3. Bundle all code into a single HTML file using `scripts/bundle-artifact.sh` 4. Display artifact to user 5. ...",
+      "description": "使用現代前端 Web 技術（React、Tailwind CSS、shadcn/ui）創建精緻的多組件 claude.ai HTML 工件的工具套件。用於需要狀態管理、路由或 shadcn/ui 元件的複雜工件 - 不適用於簡單的單一檔案 HTML/JSX 工件。",
+      "summary": "要建立強大的前端 claude.ai 工件，請按照以下步驟操作： 1. 使用 `scripts/init-artifact.sh` 初始化前端儲存庫 2. 透過編輯產生的程式碼來開發您的工件 3. 使用 `scripts/bundle-artifact.sh` 將所有程式碼捆綁到單一 HTML 檔案中 5. 向使用者 5 程式碼。 …",
       "tags": [
         "#前端設計"
       ],
@@ -494,10 +483,9 @@
     {
       "name": "webapp-testing",
       "display_name": "Webapp Testing",
-      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
-      "summary": "To test local web applications, write native Python Playwright scripts.",
+      "description": "使用 Playwright 與本機 Web 應用程式互動並測試本機 Web 應用程式的工具包。支援驗證前端功能、調試 UI 行為、捕獲瀏覽器螢幕截圖以及查看瀏覽器日誌。",
+      "summary": "要測試本機 Web 應用程序，請編寫本機 Python Playwright 腳本。",
       "tags": [
-        "#前端設計",
         "#測試除錯"
       ],
       "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\webapp-testing",
@@ -521,11 +509,10 @@
     {
       "name": "xlsx",
       "display_name": "Xlsx",
-      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
-      "summary": "- Use a consistent, professional font (e.g., Arial, Times New Roman) for all deliverables unless otherwise instructed by the user",
+      "description": "當電子表格檔案是主要輸入或輸出時，請使用此技能。這表示使用者想要執行的任何任務： 開啟、讀取、編輯或修復現有 .xlsx、.xlsm、.csv 或 .tsv 檔案（例如，新增列、計算公式、格式化、圖表、清理混亂資料）；從頭開始或從其他資料來源建立新的電子表格；或在表格檔案格式之間進行轉換。特別是當使用者透過名稱或路徑引用電子表格檔案時（甚至是隨意引用（例如「我下載的 xlsx」））並希望對其執行某些操作或從中產生某些內容時，尤其會觸發。還可以觸發清理或重組混亂的表格資料檔案（格式錯誤的行、錯誤的標題、垃圾資料）到正確的電子表格中。可交付成果必須是電子表格檔案。當主要交付成果是 Word 文件、HTML 報告、獨立 Python 腳本、資料庫管道或 Google Sheets API 整合時，即使涉及表格數據，也不要觸發。",
+      "summary": "- 除非使用者另有指示，否則所有交付成果均使用一致的專業字體（例如 Arial、Times New Roman）",
       "tags": [
         "#文件處理",
-        "#系統整合",
         "#資料處理"
       ],
       "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\xlsx",
@@ -549,8 +536,8 @@
     {
       "name": "xmind",
       "display_name": "Xmind",
-      "description": "Create XMind mind map files (.xmind). Use this skill when the user asks to create a mind map, mindmap, XMind file, or brainstorming diagram. Produces native .xmind files that open directly in the XMind application.",
-      "summary": "Create `.xmind` files by building a JSON structure and piping it to the bundled script.",
+      "description": "建立 XMind 心智圖檔 (.xmind)。當使用者要求建立心智圖、心智圖、XMind 檔案或腦力激盪圖時，請使用此技能。產生直接在 XMind 應用程式中開啟的本機 .xmind 檔案。",
+      "summary": "透過建立 JSON 結構並將其透過管道傳輸到捆綁腳本來建立「.xmind」檔案。",
       "tags": [
         "#心智圖"
       ],
@@ -583,28 +570,22 @@
     }
   ],
   "tag_index": {
-    "#視覺設計": [
-      "algorithmic-art",
-      "brand-guidelines",
-      "canvas-design",
-      "frontend-design",
-      "slack-gif-creator",
-      "theme-factory"
-    ],
-    "#前端設計": [
-      "canvas-design",
-      "frontend-design",
-      "shadcn",
-      "theme-factory",
-      "web-artifacts-builder",
-      "webapp-testing"
-    ],
     "#文件處理": [
       "canvas-design",
       "docx",
       "pdf",
       "pptx",
       "xlsx"
+    ],
+    "#視覺設計": [
+      "canvas-design",
+      "slack-gif-creator",
+      "theme-factory"
+    ],
+    "#前端設計": [
+      "frontend-design",
+      "shadcn",
+      "web-artifacts-builder"
     ],
     "#AI工具": [
       "claude-api",
@@ -614,22 +595,17 @@
       "doc-coauthoring",
       "internal-comms"
     ],
-    "#資料處理": [
-      "docx",
-      "xlsx"
-    ],
     "#系統整合": [
-      "mcp-builder",
-      "xlsx"
-    ],
-    "#專案管理": [
-      "project-monitor"
+      "mcp-builder"
     ],
     "#技能開發": [
       "skill-creator"
     ],
     "#測試除錯": [
       "webapp-testing"
+    ],
+    "#資料處理": [
+      "xlsx"
     ],
     "#心智圖": [
       "xmind"
