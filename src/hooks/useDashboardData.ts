@@ -1,13 +1,39 @@
 import { useState, useEffect } from "react"
 
+export interface TaskItem {
+  title: string
+  completed: boolean
+}
+
+export interface CommitItem {
+  hash: string
+  date: string
+  message: string
+}
+
+export interface ChangelogItem {
+  version: string
+  date: string
+  type: string
+  description: string
+}
+
 export interface ProjectData {
+  id?: string
   name: string
   version: string
+  github_url?: string
   has_git: boolean
   tech_stack: string[]
-  tasks: {
-    main: { title: string; completed: boolean }[]
-    sub: { title: string; completed: boolean }[]
+  description?: string
+  changelog?: ChangelogItem[]
+  recent_commits?: CommitItem[]
+  revision_history?: any[]
+  last_scanned?: string
+  tasks?: {
+    main: TaskItem[]
+    sub: TaskItem[]
+    deprecated?: any[]
   }
 }
 
@@ -68,7 +94,6 @@ export function useDashboardData(): DashboardData {
           error: null,
         })
       } catch (err: any) {
-        // Fallback for demonstration if data folder isn't served properly
         console.warn("Failed to fetch dynamically, ensure /data exists:", err)
         setData((prev) => ({ ...prev, loading: false, error: err.message }))
       }
