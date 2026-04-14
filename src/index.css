@@ -11,13 +11,13 @@
     --card-foreground: 40 30% 96%;
     --popover: 240 14% 14%;
     --popover-foreground: 40 30% 96%;
-    --primary: 28 90% 58%;        /* 溫暖琥珀橘 */
+    --primary: 28 90% 58%;
     --primary-foreground: 240 15% 8%;
     --secondary: 250 12% 18%;
     --secondary-foreground: 40 30% 96%;
     --muted: 250 12% 18%;
     --muted-foreground: 30 10% 60%;
-    --accent: 340 72% 58%;        /* 珊瑚玫瑰紅 */
+    --accent: 340 72% 58%;
     --accent-foreground: 40 30% 96%;
     --destructive: 0 62% 30%;
     --destructive-foreground: 40 30% 96%;
@@ -25,25 +25,24 @@
     --input: 250 12% 18%;
     --ring: 28 90% 58%;
     --radius: 0.75rem;
-    --gradient-from: 28 90% 58%;  /* 漸層起始 — 琥珀 */
-    --gradient-to: 340 72% 58%;   /* 漸層終點 — 玫瑰 */
+    --gradient-from: 28 90% 58%;
+    --gradient-to: 340 72% 58%;
   }
 
   .theme-ocean-breeze {
-    /* 海洋微風 — 清爽藍綠雙色 */
     --background: 210 30% 7%;
     --foreground: 190 30% 97%;
     --card: 210 25% 11%;
     --card-foreground: 190 30% 97%;
     --popover: 210 28% 13%;
     --popover-foreground: 190 30% 97%;
-    --primary: 185 75% 48%;       /* 碧海青綠 */
+    --primary: 185 75% 48%;
     --primary-foreground: 210 30% 7%;
     --secondary: 210 20% 16%;
     --secondary-foreground: 190 30% 97%;
     --muted: 210 20% 16%;
     --muted-foreground: 200 15% 58%;
-    --accent: 230 70% 62%;        /* 天際靛藍 */
+    --accent: 230 70% 62%;
     --accent-foreground: 190 30% 97%;
     --border: 210 20% 20%;
     --input: 210 20% 16%;
@@ -53,20 +52,19 @@
   }
 
   .theme-sakura-garden {
-    /* 櫻花庭園 — 溫柔粉紫 */
     --background: 290 20% 7%;
     --foreground: 320 20% 97%;
     --card: 290 18% 11%;
     --card-foreground: 320 20% 97%;
     --popover: 290 20% 13%;
     --popover-foreground: 320 20% 97%;
-    --primary: 330 65% 62%;       /* 櫻花粉 */
+    --primary: 330 65% 62%;
     --primary-foreground: 290 20% 7%;
     --secondary: 290 15% 16%;
     --secondary-foreground: 320 20% 97%;
     --muted: 290 15% 16%;
     --muted-foreground: 300 12% 58%;
-    --accent: 270 60% 68%;        /* 紫藤紫 */
+    --accent: 270 60% 68%;
     --accent-foreground: 320 20% 97%;
     --border: 290 15% 20%;
     --input: 290 15% 16%;
@@ -76,26 +74,127 @@
   }
 
   .theme-golden-hour {
-    /* 黃金時刻 — 暖黃奶油 */
     --background: 35 18% 7%;
     --foreground: 45 40% 96%;
     --card: 35 15% 11%;
     --card-foreground: 45 40% 96%;
     --popover: 35 16% 13%;
     --popover-foreground: 45 40% 96%;
-    --primary: 42 90% 55%;        /* 暖金黃 */
+    --primary: 42 90% 55%;
     --primary-foreground: 35 18% 7%;
     --secondary: 35 12% 16%;
     --secondary-foreground: 45 40% 96%;
     --muted: 35 12% 16%;
     --muted-foreground: 40 10% 55%;
-    --accent: 15 80% 58%;         /* 夕陽柿橘 */
+    --accent: 15 80% 58%;
     --accent-foreground: 45 40% 96%;
     --border: 35 12% 20%;
     --input: 35 12% 16%;
     --ring: 42 90% 55%;
     --gradient-from: 42 90% 55%;
     --gradient-to: 15 80% 58%;
+  }
+
+  /* ═══════ 馬卡龍淺色系主題 ═══════ */
+
+  .theme-macaron-peach {
+    /* 馬卡龍蜜桃 — 奶油粉橘 × 淡珊瑚 */
+    --background: 25 50% 95%;
+    --foreground: 20 30% 15%;
+    --card: 25 45% 98%;
+    --card-foreground: 20 30% 15%;
+    --popover: 25 50% 97%;
+    --popover-foreground: 20 30% 15%;
+    --primary: 15 85% 62%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 30% 90%;
+    --secondary-foreground: 20 30% 20%;
+    --muted: 25 25% 92%;
+    --muted-foreground: 20 15% 45%;
+    --accent: 350 65% 68%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 25 25% 85%;
+    --input: 25 30% 90%;
+    --ring: 15 85% 62%;
+    --gradient-from: 15 85% 62%;
+    --gradient-to: 350 65% 68%;
+  }
+
+  .theme-macaron-mint {
+    /* 馬卡龍薄荷 — 清涼薄荷綠 × 天藍 */
+    --background: 160 30% 95%;
+    --foreground: 170 30% 12%;
+    --card: 160 28% 98%;
+    --card-foreground: 170 30% 12%;
+    --popover: 160 30% 97%;
+    --popover-foreground: 170 30% 12%;
+    --primary: 168 60% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 160 22% 90%;
+    --secondary-foreground: 170 30% 18%;
+    --muted: 160 18% 92%;
+    --muted-foreground: 170 12% 42%;
+    --accent: 200 65% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 160 18% 85%;
+    --input: 160 22% 90%;
+    --ring: 168 60% 48%;
+    --gradient-from: 168 60% 48%;
+    --gradient-to: 200 65% 55%;
+  }
+
+  .theme-macaron-lavender {
+    /* 馬卡龍薰衣草 — 夢幻淡紫 × 粉藍 */
+    --background: 260 35% 95%;
+    --foreground: 260 25% 15%;
+    --card: 260 30% 98%;
+    --card-foreground: 260 25% 15%;
+    --popover: 260 35% 97%;
+    --popover-foreground: 260 25% 15%;
+    --primary: 265 55% 62%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 260 20% 90%;
+    --secondary-foreground: 260 25% 20%;
+    --muted: 260 16% 92%;
+    --muted-foreground: 260 12% 45%;
+    --accent: 220 55% 62%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 260 18% 85%;
+    --input: 260 20% 90%;
+    --ring: 265 55% 62%;
+    --gradient-from: 265 55% 62%;
+    --gradient-to: 220 55% 62%;
+  }
+
+  .theme-macaron-lemon {
+    /* 馬卡龍檸檬 — 奶黃 × 嫩綠 */
+    --background: 50 50% 95%;
+    --foreground: 45 30% 12%;
+    --card: 50 45% 98%;
+    --card-foreground: 45 30% 12%;
+    --popover: 50 50% 97%;
+    --popover-foreground: 45 30% 12%;
+    --primary: 48 85% 52%;
+    --primary-foreground: 45 30% 10%;
+    --secondary: 50 28% 90%;
+    --secondary-foreground: 45 30% 18%;
+    --muted: 50 22% 92%;
+    --muted-foreground: 45 14% 42%;
+    --accent: 100 50% 48%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 50 22% 84%;
+    --input: 50 28% 90%;
+    --ring: 48 85% 52%;
+    --gradient-from: 48 85% 52%;
+    --gradient-to: 100 50% 48%;
   }
 }
 
@@ -112,17 +211,68 @@
   .glass-panel {
     @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)];
   }
+  /* 淺色主題覆蓋 glass-panel */
+  .theme-macaron-peach .glass-panel,
+  .theme-macaron-mint .glass-panel,
+  .theme-macaron-lavender .glass-panel,
+  .theme-macaron-lemon .glass-panel {
+    background: hsl(var(--card));
+    border-color: hsl(var(--border));
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    backdrop-filter: none;
+  }
   .glass-panel-hover {
     @apply hover:bg-white/10 hover:border-white/20 transition-all duration-300;
+  }
+  .theme-macaron-peach .glass-panel-hover:hover,
+  .theme-macaron-mint .glass-panel-hover:hover,
+  .theme-macaron-lavender .glass-panel-hover:hover,
+  .theme-macaron-lemon .glass-panel-hover:hover {
+    background: hsl(var(--secondary));
+    border-color: hsl(var(--border));
   }
   .bg-radial-gradient {
     background-image: radial-gradient(circle at top left, hsl(var(--gradient-from) / 0.18), transparent 50%),
                       radial-gradient(circle at bottom right, hsl(var(--gradient-to) / 0.10), transparent 50%);
+  }
+  /* 淺色主題的 radial-gradient 用較低不透明度 */
+  .theme-macaron-peach .bg-radial-gradient,
+  .theme-macaron-mint .bg-radial-gradient,
+  .theme-macaron-lavender .bg-radial-gradient,
+  .theme-macaron-lemon .bg-radial-gradient {
+    background-image: radial-gradient(circle at top left, hsl(var(--gradient-from) / 0.08), transparent 50%),
+                      radial-gradient(circle at bottom right, hsl(var(--gradient-to) / 0.06), transparent 50%);
   }
   .text-gradient {
     background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  /* 淺色主題中，原本用 bg-white/5 的區域改用 card 底色 */
+  .theme-macaron-peach .bg-white\/5,
+  .theme-macaron-mint .bg-white\/5,
+  .theme-macaron-lavender .bg-white\/5,
+  .theme-macaron-lemon .bg-white\/5 {
+    background: hsl(var(--secondary));
+  }
+  .theme-macaron-peach .bg-black\/20,
+  .theme-macaron-mint .bg-black\/20,
+  .theme-macaron-lavender .bg-black\/20,
+  .theme-macaron-lemon .bg-black\/20 {
+    background: hsl(var(--muted));
+  }
+  .theme-macaron-peach .border-white\/10,
+  .theme-macaron-mint .border-white\/10,
+  .theme-macaron-lavender .border-white\/10,
+  .theme-macaron-lemon .border-white\/10 {
+    border-color: hsl(var(--border));
+  }
+  .theme-macaron-peach .text-white\/10,
+  .theme-macaron-mint .text-white\/10,
+  .theme-macaron-lavender .text-white\/10,
+  .theme-macaron-lemon .text-white\/10 {
+    color: hsl(var(--border));
   }
 }

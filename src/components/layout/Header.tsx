@@ -15,12 +15,28 @@ const TABS: { id: TabType; label: string }[] = [
   { id: "WORKFLOW", label: "工作流" }
 ]
 
-const THEMES = [
-  { id: "aurora-dusk", name: "極光暮色", emoji: "🌅" },
-  { id: "ocean-breeze", name: "海洋微風", emoji: "🌊" },
-  { id: "sakura-garden", name: "櫻花庭園", emoji: "🌸" },
-  { id: "golden-hour", name: "黃金時刻", emoji: "🌤️" }
+const THEME_GROUPS = [
+  {
+    label: "深色系",
+    themes: [
+      { id: "aurora-dusk", name: "極光暮色", emoji: "🌅" },
+      { id: "ocean-breeze", name: "海洋微風", emoji: "🌊" },
+      { id: "sakura-garden", name: "櫻花庭園", emoji: "🌸" },
+      { id: "golden-hour", name: "黃金時刻", emoji: "🌤️" },
+    ]
+  },
+  {
+    label: "馬卡龍淺色系",
+    themes: [
+      { id: "macaron-peach", name: "蜜桃奶霜", emoji: "🍑" },
+      { id: "macaron-mint", name: "薄荷清風", emoji: "🍃" },
+      { id: "macaron-lavender", name: "薰衣草夢", emoji: "💜" },
+      { id: "macaron-lemon", name: "檸檬奶油", emoji: "🍋" },
+    ]
+  }
 ]
+
+const ALL_THEMES = THEME_GROUPS.flatMap(g => g.themes)
 
 export function Header({ activeTab, setActiveTab }: HeaderProps) {
   const { theme, setTheme } = useTheme()
@@ -41,7 +57,7 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
             </h1>
           </div>
 
-          <nav className="hidden md:flex gap-1 bg-black/20 p-1 rounded-xl border border-white/5 mx-4">
+          <nav className="hidden md:flex gap-1 bg-secondary/60 p-1 rounded-xl border border-border mx-4">
             {TABS.map((item) => (
               <button
                 key={item.id}
@@ -49,7 +65,7 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
                 className={`px-4 py-1.5 rounded-lg text-sm font-semibold transition-all ${
                   activeTab === item.id
                     ? "bg-primary/20 text-primary shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] border border-primary/30"
-                    : "text-muted-foreground hover:text-foreground hover:bg-white/5"
+                    : "text-muted-foreground hover:text-foreground hover:bg-primary/5"
                 }`}
               >
                 {item.label}
@@ -64,34 +80,42 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
           <div className="relative">
             <button
               onClick={() => setThemeDropdownOpen(!themeDropdownOpen)}
-              className="px-3 py-1.5 rounded-lg glass-panel-hover text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 text-sm border border-white/5"
+              className="px-3 py-1.5 rounded-lg text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 text-sm border border-border bg-secondary/40 hover:bg-secondary/80"
             >
               <Palette className="size-4" />
               <span className="hidden sm:inline-block">
-                {THEMES.find(t => t.id === theme)?.name || "佈景主題"}
+                {ALL_THEMES.find(t => t.id === theme)?.name || "佈景主題"}
               </span>
               <ChevronDown className={`size-3 transition-transform ${themeDropdownOpen ? "rotate-180" : ""}`} />
             </button>
 
             {themeDropdownOpen && (
-              <div className="absolute right-0 top-full mt-2 w-48 rounded-xl overflow-hidden shadow-2xl flex flex-col z-50 border border-white/15 bg-[hsl(var(--popover))] backdrop-blur-2xl">
-                {THEMES.map(t => (
-                  <button
-                    key={t.id}
-                    onClick={() => {
-                      setTheme(t.id as any)
-                      setThemeDropdownOpen(false)
-                    }}
-                    className={`flex items-center justify-between px-4 py-3 text-sm transition-colors ${
-                      theme === t.id ? "bg-primary/20 text-primary" : "text-foreground hover:bg-white/10"
-                    }`}
-                  >
-                    <span className="flex items-center gap-2">
-                      <span>{t.emoji}</span>
-                      {t.name}
-                    </span>
-                    {theme === t.id && <Check className="size-3" />}
-                  </button>
+              <div className="absolute right-0 top-full mt-2 w-52 rounded-xl overflow-hidden shadow-2xl flex flex-col z-50 border border-border bg-[hsl(var(--popover))]">
+                {THEME_GROUPS.map((group, gi) => (
+                  <div key={group.label}>
+                    {gi > 0 && <div className="border-t border-border" />}
+                    <div className="px-3 py-1.5 text-[10px] font-bold text-muted-foreground uppercase tracking-widest">
+                      {group.label}
+                    </div>
+                    {group.themes.map(t => (
+                      <button
+                        key={t.id}
+                        onClick={() => {
+                          setTheme(t.id as any)
+                          setThemeDropdownOpen(false)
+                        }}
+                        className={`flex items-center justify-between px-4 py-2.5 text-sm transition-colors ${
+                          theme === t.id ? "bg-primary/20 text-primary" : "text-foreground hover:bg-primary/5"
+                        }`}
+                      >
+                        <span className="flex items-center gap-2">
+                          <span>{t.emoji}</span>
+                          {t.name}
+                        </span>
+                        {theme === t.id && <Check className="size-3" />}
+                      </button>
+                    ))}
+                  </div>
                 ))}
               </div>
             )}
@@ -105,7 +129,7 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
             )}
           </div>
 
-          <div className="h-9 w-9 bg-primary/10 rounded-full flex items-center justify-center border border-primary/30 shrink-0 shadow-[0_0_8px_var(--primary)]">
+          <div className="h-9 w-9 bg-primary/10 rounded-full flex items-center justify-center border border-primary/30 shrink-0 shadow-[0_0_8px_hsl(var(--primary)/0.3)]">
             <User className="size-4 text-primary" />
           </div>
 
@@ -120,7 +144,7 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <nav className="md:hidden mt-4 pt-4 border-t border-white/10 flex flex-col gap-2">
+        <nav className="md:hidden mt-4 pt-4 border-t border-border flex flex-col gap-2">
           {TABS.map((item) => (
             <button
               key={item.id}
@@ -131,7 +155,7 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
               className={`px-4 py-2 text-left rounded-xl text-sm font-semibold transition-all ${
                 activeTab === item.id
                   ? "bg-primary/20 text-primary border border-primary/30"
-                  : "text-muted-foreground hover:text-foreground bg-white/5"
+                  : "text-muted-foreground hover:text-foreground bg-secondary/40"
               }`}
             >
               {item.label}

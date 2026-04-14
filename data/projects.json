@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T21:08:14.720144",
+  "generated_at": "2026-04-14T21:30:36.068823",
   "base_dir": "D:\\01-Project",
   "project_count": 8,
   "projects": [
@@ -13,7 +13,7 @@
       "tech_stack": [
         "C# / .NET"
       ],
-      "description": "yarn dev\n# or\npnpm dev\n# or\nbun dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.\n\nYou can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.\n\nThis project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.",
+      "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
       "changelog": [],
       "tasks": {
         "main": [],
@@ -59,7 +59,7 @@
         }
       ],
       "last_commit": "2026-03-16T23:03:35+08:00",
-      "last_scanned": "2026-04-14T21:08:13.784791"
+      "last_scanned": "2026-04-14T21:30:28.372445"
     },
     {
       "id": "02-openclaw_manage_tools",
@@ -70,12 +70,12 @@
       "has_git": true,
       "tech_stack": [
         "React",
-        "Tailwind CSS",
+        "Electron",
         "TypeScript",
         "Vite",
-        "Electron"
+        "Tailwind CSS"
       ],
-      "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.\n\nCurrently, two official plugins are available:\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh",
+      "description": "该模板提供了一个最小的设置，可以让 React 在 Vite 中与 HMR 和一些 ESLint 规则一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/) （或 [oxc](https://oxc.rs) 在 [httpsdownvite）\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 進行快速刷新",
       "changelog": [],
       "tasks": {
         "main": [],
@@ -91,7 +91,7 @@
         }
       ],
       "last_commit": "2026-02-28T09:09:06+08:00",
-      "last_scanned": "2026-04-14T21:08:14.059110"
+      "last_scanned": "2026-04-14T21:30:31.835273"
     },
     {
       "id": "03-modules",
@@ -113,7 +113,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-04-14T21:08:14.060083"
+      "last_scanned": "2026-04-14T21:30:31.836279"
     },
     {
       "id": "04-webpage-test",
@@ -123,12 +123,12 @@
       "github_url": null,
       "has_git": true,
       "tech_stack": [
+        "Next.js",
         "TypeScript",
         "Tailwind CSS",
-        "React",
-        "Next.js"
+        "React"
       ],
-      "description": "yarn dev\n# or\npnpm dev\n# or\nbun dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.\n\nYou can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.\n\nThis project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.",
+      "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
       "changelog": [],
       "tasks": {
         "main": [],
@@ -144,7 +144,7 @@
         }
       ],
       "last_commit": "2026-03-28T20:08:30+08:00",
-      "last_scanned": "2026-04-14T21:08:14.277259"
+      "last_scanned": "2026-04-14T21:30:32.388276"
     },
     {
       "id": "05-custom-skills",
@@ -164,20 +164,20 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-04-14T21:08:14.278365"
+      "last_scanned": "2026-04-14T21:30:32.389281"
     },
     {
       "id": "06-全能生活網頁",
       "folder_name": "06-全能生活網頁",
-      "name": "omni-nexus",
+      "name": "06-全能生活網頁",
       "version": "0.1.1",
       "github_url": "https://github.com/hoonsor/life-style",
       "has_git": true,
       "tech_stack": [
+        "Next.js",
         "TypeScript",
         "Tailwind CSS",
-        "React",
-        "Next.js"
+        "React"
       ],
       "description": "Omni Nexus (全能生活網頁) 是一個為了解決現代人面臨「資訊過載與破碎化」痛點而誕生的聚合型入口網站。有別於傳統條列式平庸的內容農場，它採用了**動態空間網格 (Dynamic Spatial Bento Grid)** 架構，將搶票倒數、展覽文化、旅遊規劃、特價折扣等龐雜的資訊維度進行高度視覺收斂。\n\n本專案的核心價值在於提供極致的「資訊層次感」與「流暢的操作手感」。設計上採用暗黑破壞主義（Brutalism）搭配高對比度的酸性螢光綠色，創造強烈的視覺焦點；技術層面則強制導入 React Server Components (RSC) 搭配 Edge Functions，輔以 GSAP、Lenis 與 Framer Motion，確保即使在高併發流量或展示巨量即時資料的情境下，依然能享有低延遲、無卡頓的頂尖網頁體驗。",
       "changelog": [
@@ -185,13 +185,13 @@
           "version": "0.1.0",
           "date": "2026-03-28",
           "type": "feat",
-          "description": "initial commit"
+          "description": "初始提交"
         },
         {
           "version": "0.1.0",
           "date": "2026-03-28",
           "type": "chore",
-          "description": "Initial commit from Create Next App"
+          "description": "創建下一個應用程式的初始提交"
         },
         {
           "version": "0.1.1",
@@ -241,7 +241,7 @@
         }
       ],
       "last_commit": "2026-04-14T20:58:18+08:00",
-      "last_scanned": "2026-04-14T21:08:14.427183"
+      "last_scanned": "2026-04-14T21:30:34.151111"
     },
     {
       "id": "07-全能生活網頁-活動行事曆",
@@ -293,20 +293,20 @@
         }
       ],
       "last_commit": "2026-04-14T21:00:54+08:00",
-      "last_scanned": "2026-04-14T21:08:14.568769"
+      "last_scanned": "2026-04-14T21:30:34.293991"
     },
     {
       "id": "08-監控ai各專案進度之網站",
       "folder_name": "08-監控AI各專案進度之網站",
-      "name": "AI PRO HUB (監控AI各專案進度之網站)",
-      "version": "0.0.3",
+      "name": "08-監控AI各專案進度之網站",
+      "version": "0.1.0",
       "github_url": "https://github.com/hoonsor/ai-pro-hub.git",
       "has_git": true,
       "tech_stack": [
         "TypeScript",
+        "Vite",
         "Tailwind CSS",
-        "React",
-        "Vite"
+        "React"
       ],
       "description": "AI PRO HUB 專為擁有多個並行開發的 AI 專案管理者所設計，解決了難以統一監測分散專案狀態、追蹤每個專案版本與更新歷史的痛點。核心價值在於透過「單一真實資訊來源」（Single Source of Truth），結合微型圖表與互動式卡片，將隱藏在各處的 `PROJECT_STATUS.md` 等資料統整成直觀的網頁視圖。\n\n在架構設計上，本專案採用 React 19 函數式元件搭配 Hooks 進行狀態管理，並結合 Vite 提供極速的開發體驗。介面設計遵循「玻璃擬態 (Glassmorphism)」美學，打造出清晰、舒適且具備現代感的深色風格。所有的 UI 更融入了高質感的微動畫與微互動，讓整體操作體驗更加沉浸與專業。",
       "changelog": [
@@ -314,7 +314,7 @@
           "version": "0.0.0",
           "date": "2026-04-11",
           "type": "feat",
-          "description": "implement HUD dashboard UI with glassmorphism and data integration"
+          "description": "透過 glassmorphism 和資料整合實現 HUD 儀表板 UI"
         },
         {
           "version": "0.0.2",
@@ -327,6 +327,12 @@
           "date": "2026-04-14",
           "type": "feat",
           "description": "新增專案進度管理及數據綁定更新，優化視覺佈局，生成專案 README"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-04-14",
+          "type": "feat",
+          "description": "全新暖色雙色漸層主題系統（極光暮色、海洋微風、櫻花庭園、黃金時刻）、下拉選單底色修正、專案卡片改為雙擊展開收合"
         }
       ],
       "tasks": {
@@ -354,6 +360,11 @@
       "revision_history": [],
       "recent_commits": [
         {
+          "hash": "8f10f6ae78d8d8d706465dfbba6bf042880801b3",
+          "date": "2026-04-14 21:15:15 +0800",
+          "message": "feat: warm dual-tone themes, opaque dropdown bg, double-click card toggle v0.1.0"
+        },
+        {
           "hash": "619830d149055c4d8737d360b8b1819f18a64399",
           "date": "2026-04-14 20:53:26 +0800",
           "message": "docs: update README with comprehensive template for v0.0.3"
@@ -379,8 +390,8 @@
           "message": "feat: implement HUD dashboard UI with glassmorphism and data integration"
         }
       ],
-      "last_commit": "2026-04-14T20:53:26+08:00",
-      "last_scanned": "2026-04-14T21:08:14.720144"
+      "last_commit": "2026-04-14T21:15:15+08:00",
+      "last_scanned": "2026-04-14T21:30:36.068823"
     }
   ]
 }

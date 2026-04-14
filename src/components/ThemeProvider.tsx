@@ -1,6 +1,21 @@
 import React, { createContext, useContext, useEffect, useState } from "react"
 
-type Theme = "aurora-dusk" | "ocean-breeze" | "sakura-garden" | "golden-hour"
+type Theme = 
+  | "aurora-dusk" 
+  | "ocean-breeze" 
+  | "sakura-garden" 
+  | "golden-hour"
+  | "macaron-peach"
+  | "macaron-mint"
+  | "macaron-lavender"
+  | "macaron-lemon"
+
+const VALID_THEMES: Theme[] = [
+  "aurora-dusk", "ocean-breeze", "sakura-garden", "golden-hour",
+  "macaron-peach", "macaron-mint", "macaron-lavender", "macaron-lemon"
+]
+
+const ALL_THEME_CLASSES = VALID_THEMES.filter(t => t !== "aurora-dusk").map(t => `theme-${t}`)
 
 interface ThemeProviderProps {
   children: React.ReactNode
@@ -21,9 +36,7 @@ export function ThemeProvider({
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
     const savedTheme = localStorage.getItem("ui-theme") as Theme
-    // If the saved theme is from the old set, reset to default
-    const validThemes: Theme[] = ["aurora-dusk", "ocean-breeze", "sakura-garden", "golden-hour"]
-    if (savedTheme && validThemes.includes(savedTheme)) return savedTheme
+    if (savedTheme && VALID_THEMES.includes(savedTheme)) return savedTheme
     return defaultTheme
   })
 
@@ -31,11 +44,7 @@ export function ThemeProvider({
     const root = window.document.documentElement
     
     // Remove all theme classes first
-    root.classList.remove(
-      "theme-ocean-breeze", 
-      "theme-sakura-garden", 
-      "theme-golden-hour"
-    )
+    root.classList.remove(...ALL_THEME_CLASSES)
 
     // Add selected theme class (if not default)
     if (theme !== "aurora-dusk") {
