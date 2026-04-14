@@ -23,7 +23,7 @@ export function SkillsMatrix({ tagIndex }: SkillsMatrixProps) {
         全域技能分析矩陣
       </h2>
       <p className="text-xs text-muted-foreground uppercase tracking-widest mb-6 relative z-10">
-        Antigravity 全域模組
+        Antigravity 全域技能
       </p>
 
       <div className="flex flex-col gap-4 flex-1 justify-center relative z-10">
@@ -37,7 +37,7 @@ export function SkillsMatrix({ tagIndex }: SkillsMatrixProps) {
                   {tag.replace("#", "")}
                 </span>
                 <span className="text-[10px] text-muted-foreground group-hover:text-primary transition-colors">
-                  {items.length} MODULES
+                  {items.length} SKILLS
                 </span>
               </div>
               <div className="h-2 w-full bg-black/50 rounded-full border border-white/5 overflow-hidden shadow-inner flex relative">

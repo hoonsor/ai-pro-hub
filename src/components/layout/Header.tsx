@@ -80,9 +80,11 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
           <div className="relative">
             <button
               onClick={() => setThemeDropdownOpen(!themeDropdownOpen)}
-              className="px-3 py-1.5 rounded-lg text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 text-sm border border-border bg-secondary/40 hover:bg-secondary/80"
+              className="px-3 py-1.5 rounded-lg text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2 text-sm border border-border bg-secondary/40 hover:bg-secondary/80"
             >
-              <Palette className="size-4" />
+              <span className="text-base leading-none flex items-center">
+                {ALL_THEMES.find(t => t.id === theme)?.emoji || <Palette className="size-4" />}
+              </span>
               <span className="hidden sm:inline-block">
                 {ALL_THEMES.find(t => t.id === theme)?.name || "佈景主題"}
               </span>

@@ -15,7 +15,10 @@ const VALID_THEMES: Theme[] = [
   "macaron-peach", "macaron-mint", "macaron-lavender", "macaron-lemon"
 ]
 
-const ALL_THEME_CLASSES = VALID_THEMES.filter(t => t !== "aurora-dusk").map(t => `theme-${t}`)
+const ALL_THEME_CLASSES = [
+  "theme-ocean-breeze", "theme-sakura-garden", "theme-golden-hour",
+  "theme-macaron-peach", "theme-macaron-mint", "theme-macaron-lavender", "theme-macaron-lemon"
+]
 
 interface ThemeProviderProps {
   children: React.ReactNode
