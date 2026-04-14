@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-12T21:35:50.510543",
+  "generated_at": "2026-04-14T21:08:14.720144",
   "base_dir": "D:\\01-Project",
   "project_count": 8,
   "projects": [
@@ -59,7 +59,7 @@
         }
       ],
       "last_commit": "2026-03-16T23:03:35+08:00",
-      "last_scanned": "2026-04-12T21:35:49.576005"
+      "last_scanned": "2026-04-14T21:08:13.784791"
     },
     {
       "id": "02-openclaw_manage_tools",
@@ -69,11 +69,11 @@
       "github_url": "https://github.com/hoonsor/openclaw_manage_tools.git",
       "has_git": true,
       "tech_stack": [
-        "TypeScript",
         "React",
-        "Electron",
+        "Tailwind CSS",
+        "TypeScript",
         "Vite",
-        "Tailwind CSS"
+        "Electron"
       ],
       "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.\n\nCurrently, two official plugins are available:\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh",
       "changelog": [],
@@ -91,7 +91,7 @@
         }
       ],
       "last_commit": "2026-02-28T09:09:06+08:00",
-      "last_scanned": "2026-04-12T21:35:49.848535"
+      "last_scanned": "2026-04-14T21:08:14.059110"
     },
     {
       "id": "03-modules",
@@ -113,7 +113,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-04-12T21:35:49.860983"
+      "last_scanned": "2026-04-14T21:08:14.060083"
     },
     {
       "id": "04-webpage-test",
@@ -123,10 +123,10 @@
       "github_url": null,
       "has_git": true,
       "tech_stack": [
-        "Next.js",
-        "React",
         "TypeScript",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "React",
+        "Next.js"
       ],
       "description": "yarn dev\n# or\npnpm dev\n# or\nbun dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.\n\nYou can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.\n\nThis project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.",
       "changelog": [],
@@ -144,7 +144,7 @@
         }
       ],
       "last_commit": "2026-03-28T20:08:30+08:00",
-      "last_scanned": "2026-04-12T21:35:50.100206"
+      "last_scanned": "2026-04-14T21:08:14.277259"
     },
     {
       "id": "05-custom-skills",
@@ -164,86 +164,40 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-04-12T21:35:50.101234"
+      "last_scanned": "2026-04-14T21:08:14.278365"
     },
     {
       "id": "06-全能生活網頁",
       "folder_name": "06-全能生活網頁",
-      "name": "06-全能生活網頁",
-      "version": "0.1.0",
-      "github_url": null,
+      "name": "omni-nexus",
+      "version": "0.1.1",
+      "github_url": "https://github.com/hoonsor/life-style",
       "has_git": true,
       "tech_stack": [
-        "Next.js",
-        "React",
         "TypeScript",
-        "Tailwind CSS"
-      ],
-      "description": "yarn dev\n# or\npnpm dev\n# or\nbun dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.\n\nYou can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.\n\nThis project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.",
-      "changelog": [],
-      "tasks": {
-        "main": [],
-        "sub": [],
-        "deprecated": []
-      },
-      "revision_history": [],
-      "recent_commits": [
-        {
-          "hash": "d6f73ca0564e9db0e971d37aae904ab91f5b0fbe",
-          "date": "2026-03-28 22:39:13 +0800",
-          "message": "feat: initial commit"
-        },
-        {
-          "hash": "0e5106d3f64b60b770bd25212288757dd68d897b",
-          "date": "2026-03-28 22:36:32 +0800",
-          "message": "Initial commit from Create Next App"
-        }
-      ],
-      "last_commit": "2026-03-28T22:39:13+08:00",
-      "last_scanned": "2026-04-12T21:35:50.345594"
-    },
-    {
-      "id": "07-全能生活網頁-活動行事曆",
-      "folder_name": "07-全能生活網頁-活動行事曆",
-      "name": "07-全能生活網頁-活動行事曆",
-      "version": "0.0.0",
-      "github_url": null,
-      "has_git": false,
-      "tech_stack": [
-        "Python"
-      ],
-      "description": "尚無描述",
-      "changelog": [],
-      "tasks": {
-        "main": [],
-        "sub": [],
-        "deprecated": []
-      },
-      "revision_history": [],
-      "recent_commits": [],
-      "last_commit": null,
-      "last_scanned": "2026-04-12T21:35:50.346763"
-    },
-    {
-      "id": "08-監控ai各專案進度之網站",
-      "folder_name": "08-監控AI各專案進度之網站",
-      "name": "React + TypeScript + Vite",
-      "version": "0.0.2",
-      "github_url": "https://github.com/hoonsor/ai-pro-hub.git",
-      "has_git": true,
-      "tech_stack": [
         "Tailwind CSS",
         "React",
-        "TypeScript",
-        "Vite"
+        "Next.js"
       ],
-      "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.\n\nCurrently, two official plugins are available:\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)",
+      "description": "Omni Nexus (全能生活網頁) 是一個為了解決現代人面臨「資訊過載與破碎化」痛點而誕生的聚合型入口網站。有別於傳統條列式平庸的內容農場，它採用了**動態空間網格 (Dynamic Spatial Bento Grid)** 架構，將搶票倒數、展覽文化、旅遊規劃、特價折扣等龐雜的資訊維度進行高度視覺收斂。\n\n本專案的核心價值在於提供極致的「資訊層次感」與「流暢的操作手感」。設計上採用暗黑破壞主義（Brutalism）搭配高對比度的酸性螢光綠色，創造強烈的視覺焦點；技術層面則強制導入 React Server Components (RSC) 搭配 Edge Functions，輔以 GSAP、Lenis 與 Framer Motion，確保即使在高併發流量或展示巨量即時資料的情境下，依然能享有低延遲、無卡頓的頂尖網頁體驗。",
       "changelog": [
         {
-          "version": "0.0.0",
-          "date": "2026-04-11",
+          "version": "0.1.0",
+          "date": "2026-03-28",
           "type": "feat",
-          "description": "implement HUD dashboard UI with glassmorphism and data integration"
+          "description": "initial commit"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-03-28",
+          "type": "chore",
+          "description": "Initial commit from Create Next App"
+        },
+        {
+          "version": "0.1.1",
+          "date": "2026-04-14",
+          "type": "feat",
+          "description": "實作動態便當盒網格 (Bento Grid) 結構、空間化介面與 GSAP 進場動畫"
         }
       ],
       "tasks": {
@@ -271,6 +225,140 @@
       "revision_history": [],
       "recent_commits": [
         {
+          "hash": "77a0e366b592ab551b62fcd413ff18c5eac3e44c",
+          "date": "2026-04-14 20:58:18 +0800",
+          "message": "feat: implement dynamic bento grid and spatial UI (v0.1.1)"
+        },
+        {
+          "hash": "d6f73ca0564e9db0e971d37aae904ab91f5b0fbe",
+          "date": "2026-03-28 22:39:13 +0800",
+          "message": "feat: initial commit"
+        },
+        {
+          "hash": "0e5106d3f64b60b770bd25212288757dd68d897b",
+          "date": "2026-03-28 22:36:32 +0800",
+          "message": "Initial commit from Create Next App"
+        }
+      ],
+      "last_commit": "2026-04-14T20:58:18+08:00",
+      "last_scanned": "2026-04-14T21:08:14.427183"
+    },
+    {
+      "id": "07-全能生活網頁-活動行事曆",
+      "folder_name": "07-全能生活網頁-活動行事曆",
+      "name": "07-全能生活網頁-活動行事曆",
+      "version": "0.0.0",
+      "github_url": "https://github.com/hoonsor/life-style-calendar",
+      "has_git": true,
+      "tech_stack": [
+        "Python"
+      ],
+      "description": "「全能生活網頁 - 活動行事曆」致力於解決使用者在多個活動場館、展覽與電影檔期間難以統一管理與查看時間衝突的痛點。透過自動化的 Python 網路爬蟲，系統能每日定時從各大場館與票務網站獲取最新的活動資訊。\n\n在前端介面，專案採用了先進的 React 19 與 Tailwind CSS 架構，並設計了防止重疊的甘特圖 (Gantt Chart) 演算法。這讓繁雜的活動時間表能以極致直觀、響應式的時間軸呈現。無論是動漫展、美食節、還是電影時刻，都可以一目了然地確認活動的開始與結束時間，為使用者的生活排程提供強大的決策輔助。",
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-04-14",
+          "type": "feat",
+          "description": "初始版本建立"
+        }
+      ],
+      "tasks": {
+        "main": [
+          {
+            "title": "待定義主要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "sub": [
+          {
+            "title": "待定義次要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "deprecated": [
+          {
+            "title": "原先計畫的方向或任務描述",
+            "deprecated": true
+          }
+        ]
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "fad5f91b5cbe24800a86d8e714496be9cd90530f",
+          "date": "2026-04-14 21:00:54 +0800",
+          "message": "docs: update README with comprehensive template for v0.1.0"
+        }
+      ],
+      "last_commit": "2026-04-14T21:00:54+08:00",
+      "last_scanned": "2026-04-14T21:08:14.568769"
+    },
+    {
+      "id": "08-監控ai各專案進度之網站",
+      "folder_name": "08-監控AI各專案進度之網站",
+      "name": "AI PRO HUB (監控AI各專案進度之網站)",
+      "version": "0.0.3",
+      "github_url": "https://github.com/hoonsor/ai-pro-hub.git",
+      "has_git": true,
+      "tech_stack": [
+        "TypeScript",
+        "Tailwind CSS",
+        "React",
+        "Vite"
+      ],
+      "description": "AI PRO HUB 專為擁有多個並行開發的 AI 專案管理者所設計，解決了難以統一監測分散專案狀態、追蹤每個專案版本與更新歷史的痛點。核心價值在於透過「單一真實資訊來源」（Single Source of Truth），結合微型圖表與互動式卡片，將隱藏在各處的 `PROJECT_STATUS.md` 等資料統整成直觀的網頁視圖。\n\n在架構設計上，本專案採用 React 19 函數式元件搭配 Hooks 進行狀態管理，並結合 Vite 提供極速的開發體驗。介面設計遵循「玻璃擬態 (Glassmorphism)」美學，打造出清晰、舒適且具備現代感的深色風格。所有的 UI 更融入了高質感的微動畫與微互動，讓整體操作體驗更加沉浸與專業。",
+      "changelog": [
+        {
+          "version": "0.0.0",
+          "date": "2026-04-11",
+          "type": "feat",
+          "description": "implement HUD dashboard UI with glassmorphism and data integration"
+        },
+        {
+          "version": "0.0.2",
+          "date": "2026-04-11",
+          "type": "refactor",
+          "description": "Localizing And Optimizing AI Dashboard - 介面中文化與卡片排版最佳化"
+        },
+        {
+          "version": "0.0.3",
+          "date": "2026-04-14",
+          "type": "feat",
+          "description": "新增專案進度管理及數據綁定更新，優化視覺佈局，生成專案 README"
+        }
+      ],
+      "tasks": {
+        "main": [
+          {
+            "title": "待定義主要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "sub": [
+          {
+            "title": "待定義次要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "deprecated": [
+          {
+            "title": "原先計畫的方向或任務描述",
+            "deprecated": true
+          }
+        ]
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "619830d149055c4d8737d360b8b1819f18a64399",
+          "date": "2026-04-14 20:53:26 +0800",
+          "message": "docs: update README with comprehensive template for v0.0.3"
+        },
+        {
           "hash": "ec1b63cebca296d12f5f5ed69c79718a06e391f9",
           "date": "2026-04-11 21:22:40 +0800",
           "message": "feat: complete UI localization, update dashboard layout and add native translate API hook"
@@ -291,8 +379,8 @@
           "message": "feat: implement HUD dashboard UI with glassmorphism and data integration"
         }
       ],
-      "last_commit": "2026-04-11T21:22:40+08:00",
-      "last_scanned": "2026-04-12T21:35:50.510543"
+      "last_commit": "2026-04-14T20:53:26+08:00",
+      "last_scanned": "2026-04-14T21:08:14.720144"
     }
   ]
 }

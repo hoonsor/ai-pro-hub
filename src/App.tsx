@@ -34,7 +34,7 @@ function MainLayout() {
   }
 
   return (
-    <div className="min-h-screen pb-12 pt-6 selection:bg-primary/30">
+    <div className="min-h-screen pb-12 pt-6 selection:bg-primary/30 bg-radial-gradient">
       <Header activeTab={activeTab} setActiveTab={setActiveTab} />
       
       {activeTab === "DASHBOARD" && <DashboardOverview projects={projects} tagIndex={tagIndex} workflows={workflows} setActiveTab={setActiveTab} />}
@@ -47,7 +47,7 @@ function MainLayout() {
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="deep-space">
+    <ThemeProvider defaultTheme="aurora-dusk">
       <MainLayout />
     </ThemeProvider>
   )

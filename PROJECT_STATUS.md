@@ -1,6 +1,6 @@
 # AI PRO HUB (監控AI各專案進度之網站)
 
-> **版本號：** `v0.0.3`
+> **版本號：** `v0.1.0`
 > **最後更新：** 2026-04-14
 > **GitHub：** [https://github.com/hoonsor/ai-pro-hub](https://github.com/hoonsor/ai-pro-hub) (假設，可替換為實際或留尚未設定)
 
@@ -19,6 +19,7 @@ AI PRO HUB 是一個提供 AI 專案監控與管理的單頁式應用程式 (SPA
 | v0.0.0 | 2026-04-11 | feat | implement HUD dashboard UI with glassmorphism and data integration |
 | v0.0.2 | 2026-04-11 | refactor | Localizing And Optimizing AI Dashboard - 介面中文化與卡片排版最佳化 |
 | v0.0.3 | 2026-04-14 | feat | 新增專案進度管理及數據綁定更新，優化視覺佈局，生成專案 README |
+| v0.1.0 | 2026-04-14 | feat | 全新暖色雙色漸層主題系統（極光暮色、海洋微風、櫻花庭園、黃金時刻）、下拉選單底色修正、專案卡片改為雙擊展開收合 |
 
 ---
 

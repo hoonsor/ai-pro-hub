@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-11T21:20:41.197207",
+  "generated_at": "2026-04-14T21:08:58.309090",
   "skills_dir": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills",
   "workflows_dir": "C:\\Users\\hoonsor\\.gemini\\antigravity\\global_workflows",
   "stats": {
-    "total_skills": 21,
+    "total_skills": 22,
     "total_workflows": 1,
     "total_tags": 10,
     "tags_list": [
@@ -149,7 +149,7 @@
       "name": "docx",
       "display_name": "Docx",
       "description": "每當使用者想要建立、閱讀、編輯或操作 Word 文件（.docx 檔案）時，請使用此技能。觸發因素包括：提及“Word doc”、“word 文件”、“.docx”，或要求產生具有目錄、標題、頁碼或信箋等格式的專業文件。也可以在從 .docx 文件中提取或重新組織內容、在文件中插入或替換圖像、在 Word 文件中執行查找和替換、處理跟踪的更改或註釋或將內容轉換為精美的 Word 文件時使用。如果使用者要求「報告」、「備忘錄」、「信件」、「範本」或類似的 Word 或 .docx 檔案形式的可交付成果，請使用此技能。請勿用於 PDF、電子表格、Google 文件或與文件產生無關的一般編碼任務。",
-      "summary": "A .docx file is a ZIP archive containing XML files.",
+      "summary": ".docx 檔案是包含 XML 檔案的 ZIP 檔案。",
       "tags": [
         "#文件處理"
       ],
@@ -196,6 +196,28 @@
       },
       "skill_md_lines": 43,
       "last_modified": "2026-03-28T22:06:24.837738"
+    },
+    {
+      "name": "git-push-assistant",
+      "display_name": "Git Push Assistant",
+      "description": "在將程式碼推送到 GitHub 之前，使用全面的大型專案範本自動編寫或更新專案的 README.md。每當用戶確認他們想要推送到遠端時觸發此操作。",
+      "summary": "當使用者在完成某個功能的程式碼修改並要求 `git push` 至遠端倉庫（例如 GitHub）時，你必須**自動觸發此技能**。這不僅僅是推送程式碼，更是確保專案的文件 (README) 永遠保持在最詳盡、專業且最新的狀態。",
+      "tags": [],
+      "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\git-push-assistant",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 1,
+        "total_size_kb": 4.0
+      },
+      "frontmatter": {},
+      "skill_md_lines": 113,
+      "last_modified": "2026-04-12T21:34:25.123437"
     },
     {
       "name": "internal-comms",
@@ -306,7 +328,7 @@
     {
       "name": "pptx",
       "display_name": "Pptx",
-      "description": "每當以任何方式涉及 .pptx 檔案時（作為輸入、輸出或兩者），都可以使用此技能。這包括：建立投影片、宣傳資料或簡報；從任何 .pptx 檔案中讀取、解析或擷取文字（即使擷取的內容將在其他地方使用，例如在電子郵件或摘要中）；編輯、修改或更新現有簡報；合併或分割投影片檔案；使用範本、佈局、演講者註釋或評論。每當用戶提到「甲板」、「幻燈片」、「簡報」或引用 .pptx 檔案名稱時觸發，無論他們隨後計劃如何處理內容。如果需要開啟、建立或觸碰 .pptx 文件，請使用此技能。",
+      "description": "每當以任何方式涉及 .pptx 檔案時（作為輸入、輸出或兩者），都可以使用此技能。這包括：建立投影片、宣傳資料或簡報；從任何 .pptx 檔案中讀取、解析或擷取文字（即使擷取的內容將在其他地方使用，例如在電子郵件或摘要中）；編輯、修改或更新現有簡報；合併或分割投影片檔案；使用範本、佈局、演講者註釋或評論。每當使用者提及「甲板」、「幻燈片」、「簡報」或引用 .pptx 檔案名稱時觸發，無論他們隨後計劃如何處理內容。如果需要開啟、建立或觸碰 .pptx 文件，請使用此技能。",
       "summary": "|任務|指南| |------|--------| |閱讀/分析內容 | `python -m markitdown 簡報.pptx` | |編輯或從模板創建 |閱讀[編輯.md](編輯.md) | |從頭開始創建 |閱讀 [pptxgenjs.md](pptxgenjs.md) |",
       "tags": [
         "#文件處理"
@@ -345,11 +367,11 @@
         "has_examples": false,
         "has_evals": false,
         "total_files": 8,
-        "total_size_kb": 59.8
+        "total_size_kb": 61.1
       },
       "frontmatter": {},
       "skill_md_lines": 136,
-      "last_modified": "2026-04-11T16:59:24.006204"
+      "last_modified": "2026-04-12T21:34:41.683222"
     },
     {
       "name": "shadcn",
@@ -509,10 +531,11 @@
     {
       "name": "xlsx",
       "display_name": "Xlsx",
-      "description": "當電子表格檔案是主要輸入或輸出時，請使用此技能。這表示使用者想要執行的任何任務： 開啟、讀取、編輯或修復現有 .xlsx、.xlsm、.csv 或 .tsv 檔案（例如，新增列、計算公式、格式化、圖表、清理混亂資料）；從頭開始或從其他資料來源建立新的電子表格；或在表格檔案格式之間進行轉換。特別是當使用者透過名稱或路徑引用電子表格檔案時（甚至是隨意引用（例如「我下載的 xlsx」））並希望對其執行某些操作或從中產生某些內容時，尤其會觸發。還可以觸發清理或重組混亂的表格資料檔案（格式錯誤的行、錯誤的標題、垃圾資料）到正確的電子表格中。可交付成果必須是電子表格檔案。當主要交付成果是 Word 文件、HTML 報告、獨立 Python 腳本、資料庫管道或 Google Sheets API 整合時，即使涉及表格數據，也不要觸發。",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
       "summary": "- 除非使用者另有指示，否則所有交付成果均使用一致的專業字體（例如 Arial、Times New Roman）",
       "tags": [
         "#文件處理",
+        "#系統整合",
         "#資料處理"
       ],
       "path": "C:\\Users\\hoonsor\\.gemini\\antigravity\\skills\\xlsx",
@@ -596,7 +619,8 @@
       "internal-comms"
     ],
     "#系統整合": [
-      "mcp-builder"
+      "mcp-builder",
+      "xlsx"
     ],
     "#技能開發": [
       "skill-creator"

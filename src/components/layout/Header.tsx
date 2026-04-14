@@ -16,10 +16,10 @@ const TABS: { id: TabType; label: string }[] = [
 ]
 
 const THEMES = [
-  { id: "deep-space", name: "深空湛藍" },
-  { id: "neon-purple", name: "賽博霓虹" },
-  { id: "emerald-matrix", name: "駭客翠綠" },
-  { id: "crimson-forge", name: "深紅熔爐" }
+  { id: "aurora-dusk", name: "極光暮色", emoji: "🌅" },
+  { id: "ocean-breeze", name: "海洋微風", emoji: "🌊" },
+  { id: "sakura-garden", name: "櫻花庭園", emoji: "🌸" },
+  { id: "golden-hour", name: "黃金時刻", emoji: "🌤️" }
 ]
 
 export function Header({ activeTab, setActiveTab }: HeaderProps) {
@@ -36,7 +36,7 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
             onClick={() => setActiveTab("DASHBOARD")}
           >
             <Hexagon className="text-primary size-7 fill-primary/20 animate-[spin_10s_linear_infinite]" />
-            <h1 className="text-2xl font-bold tracking-wider bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hidden sm:block">
+            <h1 className="text-2xl font-bold tracking-wider text-gradient hidden sm:block">
               AI PRO HUB
             </h1>
           </div>
@@ -74,7 +74,7 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
             </button>
 
             {themeDropdownOpen && (
-              <div className="absolute right-0 top-full mt-2 w-40 glass-panel border border-white/10 rounded-xl overflow-hidden shadow-2xl flex flex-col z-50">
+              <div className="absolute right-0 top-full mt-2 w-48 rounded-xl overflow-hidden shadow-2xl flex flex-col z-50 border border-white/15 bg-[hsl(var(--popover))] backdrop-blur-2xl">
                 {THEMES.map(t => (
                   <button
                     key={t.id}
@@ -82,11 +82,14 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
                       setTheme(t.id as any)
                       setThemeDropdownOpen(false)
                     }}
-                    className={`flex items-center justify-between px-4 py-2.5 text-sm transition-colors ${
+                    className={`flex items-center justify-between px-4 py-3 text-sm transition-colors ${
                       theme === t.id ? "bg-primary/20 text-primary" : "text-foreground hover:bg-white/10"
                     }`}
                   >
-                    {t.name}
+                    <span className="flex items-center gap-2">
+                      <span>{t.emoji}</span>
+                      {t.name}
+                    </span>
                     {theme === t.id && <Check className="size-3" />}
                   </button>
                 ))}

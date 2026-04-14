@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react"
 
-type Theme = "deep-space" | "neon-purple" | "emerald-matrix" | "crimson-forge"
+type Theme = "aurora-dusk" | "ocean-breeze" | "sakura-garden" | "golden-hour"
 
 interface ThemeProviderProps {
   children: React.ReactNode
@@ -16,12 +16,15 @@ const ThemeContext = createContext<ThemeProviderState | undefined>(undefined)
 
 export function ThemeProvider({
   children,
-  defaultTheme = "deep-space",
+  defaultTheme = "aurora-dusk",
   ...props
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
     const savedTheme = localStorage.getItem("ui-theme") as Theme
-    return savedTheme || defaultTheme
+    // If the saved theme is from the old set, reset to default
+    const validThemes: Theme[] = ["aurora-dusk", "ocean-breeze", "sakura-garden", "golden-hour"]
+    if (savedTheme && validThemes.includes(savedTheme)) return savedTheme
+    return defaultTheme
   })
 
   useEffect(() => {
@@ -29,13 +32,13 @@ export function ThemeProvider({
     
     // Remove all theme classes first
     root.classList.remove(
-      "theme-neon-purple", 
-      "theme-emerald-matrix", 
-      "theme-crimson-forge"
+      "theme-ocean-breeze", 
+      "theme-sakura-garden", 
+      "theme-golden-hour"
     )
 
     // Add selected theme class (if not default)
-    if (theme !== "deep-space") {
+    if (theme !== "aurora-dusk") {
       root.classList.add(`theme-${theme}`)
     }
     

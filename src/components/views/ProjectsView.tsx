@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import type { ProjectData } from "../../hooks/useDashboardData"
-import { GitBranch, GitCommit, CheckSquare, Square, Package, ServerCrash, Clock, ChevronDown } from "lucide-react"
+import { GitBranch, GitCommit, CheckSquare, Square, Package, ServerCrash, Clock } from "lucide-react"
 
 interface ProjectsViewProps {
   projects: ProjectData[]
@@ -35,8 +35,7 @@ const renderCallout = (historyItems: any[]) => {
 export function ProjectsView({ projects }: ProjectsViewProps) {
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set())
 
-  const toggleExpand = (id: string, e: React.MouseEvent) => {
-    e.stopPropagation()
+  const toggleExpand = (id: string) => {
     const newSet = new Set(expandedIds)
     if (newSet.has(id)) {
       newSet.delete(id)
@@ -72,8 +71,8 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: idx * 0.1 }}
-            className={`glass-panel rounded-2xl flex flex-col transition-all duration-300 ${isExpanded ? 'border-primary/30' : 'hover:bg-white/5 border-transparent cursor-pointer'}`}
-            onClick={(e) => !isExpanded && toggleExpand(proj.name, e)}
+            className={`glass-panel rounded-2xl flex flex-col transition-all duration-300 select-none ${isExpanded ? 'border-primary/30' : 'hover:bg-white/5 border-transparent'} cursor-pointer`}
+            onDoubleClick={() => toggleExpand(proj.name)}
           >
             {/* Header / Condensed View */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-6">
@@ -127,12 +126,7 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
                     <span className="hidden sm:inline">GitHub</span>
                   </a>
                 )}
-                <button
-                  onClick={(e) => toggleExpand(proj.name, e)}
-                  className="p-2 bg-white/5 hover:bg-white/10 rounded-lg text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  <ChevronDown className={`size-5 transition-transform ${isExpanded ? "rotate-180" : ""}`} />
-                </button>
+                <span className="text-xs text-muted-foreground italic hidden sm:block">雙擊展開</span>
               </div>
             </div>
 
