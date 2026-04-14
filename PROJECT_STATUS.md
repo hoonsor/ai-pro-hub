@@ -1,14 +1,14 @@
-# React + TypeScript + Vite
+# AI PRO HUB (監控AI各專案進度之網站)
 
-> **版本號：** `v0.0.0`
-> **最後更新：** 2026-04-11
-> **GitHub：** [尚未設定](尚未設定)
+> **版本號：** `v0.0.3`
+> **最後更新：** 2026-04-14
+> **GitHub：** [https://github.com/hoonsor/ai-pro-hub](https://github.com/hoonsor/ai-pro-hub) (假設，可替換為實際或留尚未設定)
 
 ---
 
 ## 📖 專案程式功能概述
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI PRO HUB 是一個提供 AI 專案監控與管理的單頁式應用程式 (SPA)。我們透過折疊式的專案卡片、微型圖表，和直觀的主題切換功能，為開發人員與管理員展示多個 AI 開發專案的最新狀態。前端使用 React 19、TypeScript 和 Tailwind CSS 打造優美的玻璃擬態 (Glassmorphism) 排版與動畫體驗。
 
 ---
 
@@ -17,6 +17,8 @@ This template provides a minimal setup to get React working in Vite with HMR and
 | 版本 | 日期 | 類型 | 變更說明 |
 |------|------|------|----------|
 | v0.0.0 | 2026-04-11 | feat | implement HUD dashboard UI with glassmorphism and data integration |
+| v0.0.2 | 2026-04-11 | refactor | Localizing And Optimizing AI Dashboard - 介面中文化與卡片排版最佳化 |
+| v0.0.3 | 2026-04-14 | feat | 新增專案進度管理及數據綁定更新，優化視覺佈局，生成專案 README |
 
 ---
 

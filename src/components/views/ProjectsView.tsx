@@ -154,7 +154,7 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
                         <h4 className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">
                           專案功能概述
                         </h4>
-                        <p className="text-sm text-foreground/80 leading-relaxed bg-black/20 p-4 rounded-xl border border-white/5">
+                        <p className="text-sm text-foreground/80 leading-relaxed bg-black/20 p-4 rounded-xl border border-white/5 whitespace-pre-wrap max-h-[250px] overflow-y-auto">
                           {proj.description || "無提供說明。"}
                         </p>
                       </div>
