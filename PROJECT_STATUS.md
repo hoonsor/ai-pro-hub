@@ -2,27 +2,27 @@
 
 > **版本號：** `v0.3.0`
 > **最後更新：** 2026-04-16
-> **GitHub：** [https://github.com/hoonsor/ai-pro-hub](https://github.com/hoonsor/ai-pro-hub) (假設，可替換為實際或留尚未設定)
+> **當前專案版本：** v0.4.0
+> **系統狀態：** `Next.js 15 App Router` | `Prisma ORM` | `Vercel Postgres (dev: SQLite)`
+
+## 🌐 專案資訊
+- **GitHub 倉庫網址：** https://github.com/hoonsor/ai-pro-hub.git
+- **專案程式功能概述：** 提供基於玻璃擬態與響應式介面的專案管理儀表板，支援 Markdown 計畫檔案的雙向雲端同步 (CLI <-> Web DB) 與即時編修。
 
 ---
 
-## 📖 專案程式功能概述
+## 📅 版本歷程及功能改變紀錄
 
-AI PRO HUB 是一個提供 AI 專案監控與管理的單頁式應用程式 (SPA)。我們透過折疊式的專案卡片、微型圖表，和直觀的主題切換功能，為開發人員與管理員展示多個 AI 開發專案的最新狀態。前端使用 React 19、TypeScript 和 Tailwind CSS 打造優美的玻璃擬態 (Glassmorphism) 排版與動畫體驗。
-
----
-
-## 📋 版本歷程及功能改變紀錄
-
-| 版本 | 日期 | 類型 | 變更說明 |
-|------|------|------|----------|
+| 版本號 | 日期       | 變更類型    | 描述說明 |
+| ------ | ---------- | ----------- | -------- |
+| v0.4.0 | 2026-04-16 | feat | 實作 Web UI Markdown 編輯器 (`CommandEditorModal`) 與下載最新計畫之 CLI 指令 (`pull-plan`) |
+| v0.3.0 | 2026-04-16 | refactor    | 系統架構遷移至 Next.js 15，導入 Prisma (SQLite) 與 Clerk，實作 `sync-plan` CLI 同步工具 |
 | v0.0.0 | 2026-04-11 | feat | implement HUD dashboard UI with glassmorphism and data integration |
 | v0.0.2 | 2026-04-11 | refactor | Localizing And Optimizing AI Dashboard - 介面中文化與卡片排版最佳化 |
 | v0.0.3 | 2026-04-14 | feat | 新增專案進度管理及數據綁定更新，優化視覺佈局，生成專案 README |
 | v0.1.0 | 2026-04-14 | feat | 全新暖色雙色漸層主題系統（極光暮色、海洋微風、櫻花庭園、黃金時刻）、下拉選單底色修正、專案卡片改為雙擊展開收合 |
 | v0.2.0 | 2026-04-14 | feat | 新增 4 組馬卡龍淺色主題（蜜桃奶霜、薄荷清風、薰衣草夢、檸檬奶油）、修正專案名稱改用資料夾名、掃描器加入中文翻譯、更新 git-push-assistant 模板 |
 | v0.2.1 | 2026-04-14 | fix | 修正馬卡龍主題被 Tailwind Purge 導致無法顯示顏色的問題、修復主題選擇圖示未同步顯示 Emoji 的問題、更新儀表板字眼為全域技能 |
-| v0.3.0 | 2026-04-16 | feat | 系統架構升級為 Next.js 15 (App Router)，整合 Vercel Postgres/Prisma 資料庫與 Clerk 身份驗證，並實作 CLI 計畫同步腳本 (`sync-plan.js`) 以達成互動式專案計畫管理目標 |
 
 ---
 

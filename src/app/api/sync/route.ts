@@ -39,3 +39,42 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
   }
 }
+
+export async function GET(request: Request) {
+  const authHeader = request.headers.get('authorization')
+  
+  if (!process.env.SYNC_API_KEY || authHeader !== `Bearer ${process.env.SYNC_API_KEY}`) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+
+  const { searchParams } = new URL(request.url)
+  const project = searchParams.get('project')
+
+  if (!project) {
+    return NextResponse.json({ error: 'Project name is required' }, { status: 400 })
+  }
+
+  try {
+    const proj = await prisma.project.findUnique({
+      where: { name: project }
+    })
+
+    if (!proj) {
+      return NextResponse.json({ error: 'Project not found' }, { status: 404 })
+    }
+
+    const latestRevision = await prisma.planRevision.findFirst({
+      where: { projectId: proj.id },
+      orderBy: { createdAt: 'desc' }
+    })
+
+    if (!latestRevision) {
+      return NextResponse.json({ error: 'No revisions found for this project' }, { status: 404 })
+    }
+
+    return NextResponse.json({ success: true, version: latestRevision.version, content: latestRevision.content })
+  } catch (error) {
+    console.error("Sync API GET Error:", error)
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
+  }
+}

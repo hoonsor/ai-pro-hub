@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import type { ProjectData } from "../../hooks/useDashboardData"
-import { GitBranch, GitCommit, CheckSquare, Square, Package, ServerCrash, Clock } from "lucide-react"
+import { GitBranch, GitCommit, CheckSquare, Square, Package, ServerCrash, Clock, Edit } from "lucide-react"
+import { CommandEditorModal } from "../CommandEditorModal"
 
 interface ProjectsViewProps {
   projects: ProjectData[]
@@ -34,6 +35,7 @@ const renderCallout = (historyItems: any[]) => {
 
 export function ProjectsView({ projects }: ProjectsViewProps) {
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set())
+  const [editingProject, setEditingProject] = useState<string | null>(null)
 
   const toggleExpand = (id: string) => {
     const newSet = new Set(expandedIds)
@@ -126,7 +128,17 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
                     <span className="hidden sm:inline">GitHub</span>
                   </a>
                 )}
-                <span className="text-xs text-muted-foreground italic hidden sm:block">雙擊展開</span>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setEditingProject(proj.name);
+                  }}
+                  className="flex items-center gap-2 px-4 py-2 bg-primary/20 hover:bg-primary/40 border border-primary/30 rounded-lg text-sm text-primary font-bold transition-all h-fit w-fit group"
+                >
+                  <Edit className="size-4 group-hover:scale-110 transition-transform" />
+                  <span className="hidden sm:inline">編輯計畫</span>
+                </button>
+                <span className="text-xs text-muted-foreground italic hidden lg:block">雙擊展開</span>
               </div>
             </div>
 
@@ -259,6 +271,13 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
           </motion.div>
         )
       })}
+
+      {editingProject && (
+        <CommandEditorModal 
+          projectName={editingProject} 
+          onClose={() => setEditingProject(null)} 
+        />
+      )}
     </main>
   )
 }
