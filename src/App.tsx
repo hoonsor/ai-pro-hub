@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react"
 import { ThemeProvider } from "./components/ThemeProvider"
 import { Header } from "./components/layout/Header"

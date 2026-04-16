@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T21:30:36.068823",
+  "generated_at": "2026-04-14T21:59:03.915494",
   "base_dir": "D:\\01-Project",
   "project_count": 8,
   "projects": [
@@ -13,15 +13,68 @@
       "tech_stack": [
         "C# / .NET"
       ],
-      "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
-      "changelog": [],
+      "description": "AutoWizard Desktop 是一款專為 Windows 打造的次世代視覺化自動化工具。結合了複雜的「視覺化巢狀邏輯」與先進的「AI 視覺辨識（包含 OCR 文字辨識與 OpenCV 電腦視覺圖像比對）」，完美解決傳統自動化工具門檻過高、腳本難以維護，或是錄製後在不同螢幕解析度下失效的痛點。\n\n這個程式透過直觀的拖放式介面，讓使用者可以輕鬆建立條件判斷 (If-Else)、迴圈 (Loop)、防錯處理 (Try-Catch) 等複雜邏輯。更重要的是，它具備智慧預處理引擎，在畫面複雜或是 DPI 縮放變更的環境下，仍能穩定的辨識視窗畫面並精確執行模擬點擊、文字輸入等操作，最後能將所有流程與資源檔封裝至單一 `.aws` 檔案中，達成極致的攜帶與分享便利性。\n\n目標使用者涵蓋需要處理大量 Excel 和 ERP 系統表單的行政/財務人員、開發自動化流程的工程師，甚至是希望防偵測掛機的重度遊戲玩家。透過 AutoWizard，任何看似繁雜、重複性高且容易出錯的電腦操作，都可以交由系統穩定代勞。",
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-03-16",
+          "type": "feat",
+          "description": "去除漢字之間的空格以提高匹配精度"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-03-15",
+          "type": "chore",
+          "description": "文件：新增 3 月 15 日的會話記憶體並使用 RCA 初始化問題日誌。"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-03-15",
+          "type": "chore",
+          "description": "主要重構：以 Windows.Media.Ocr 和 UI 增強套件取代 Tesseract。修復了 UI 死鎖，添加了變數/歷史面板，並升級了專案目標框架。"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-03-14",
+          "type": "chore",
+          "description": "增強匯出：單檔案 EXE 支援、嵌入式 AWS 套件、固定影像路徑解析度、新增跑步者日誌匯出和固定放大鏡十字準線偏移"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-03-13",
+          "type": "feat",
+          "description": "實作具有布林表達式支援的多條件 IfAction"
+        }
+      ],
       "tasks": {
-        "main": [],
-        "sub": [],
-        "deprecated": []
+        "main": [
+          {
+            "title": "待定義主要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "sub": [
+          {
+            "title": "待定義次要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "deprecated": [
+          {
+            "title": "原先計畫的方向或任務描述",
+            "deprecated": true
+          }
+        ]
       },
       "revision_history": [],
       "recent_commits": [
+        {
+          "hash": "5e286be6e4b4de9200e4e00d6343b59e30a28572",
+          "date": "2026-04-14 21:53:10 +0800",
+          "message": "docs: update README with comprehensive template and initialize PROJECT_STATUS for v0.1.0"
+        },
         {
           "hash": "c3fdaffc373bac2ee0f0bd0c6be419121c380947",
           "date": "2026-03-16 23:03:35 +0800",
@@ -58,8 +111,8 @@
           "message": "Initial commit from Create Next App"
         }
       ],
-      "last_commit": "2026-03-16T23:03:35+08:00",
-      "last_scanned": "2026-04-14T21:30:28.372445"
+      "last_commit": "2026-04-14T21:53:10+08:00",
+      "last_scanned": "2026-04-14T21:58:59.788284"
     },
     {
       "id": "02-openclaw_manage_tools",
@@ -69,13 +122,13 @@
       "github_url": "https://github.com/hoonsor/openclaw_manage_tools.git",
       "has_git": true,
       "tech_stack": [
-        "React",
-        "Electron",
-        "TypeScript",
         "Vite",
+        "TypeScript",
+        "Electron",
+        "React",
         "Tailwind CSS"
       ],
-      "description": "该模板提供了一个最小的设置，可以让 React 在 Vite 中与 HMR 和一些 ESLint 规则一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/) （或 [oxc](https://oxc.rs) 在 [httpsdownvite）\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 進行快速刷新",
+      "description": "這個模板提供了一個最小的設置，可以讓 React 在 Vite 中與 HMR 和一些 ESLint 規則一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/) （或 [oxc](https://oxc.rs) 在 [httpsdownvite）\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 進行快速刷新",
       "changelog": [],
       "tasks": {
         "main": [],
@@ -91,7 +144,7 @@
         }
       ],
       "last_commit": "2026-02-28T09:09:06+08:00",
-      "last_scanned": "2026-04-14T21:30:31.835273"
+      "last_scanned": "2026-04-14T21:59:00.687418"
     },
     {
       "id": "03-modules",
@@ -113,7 +166,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-04-14T21:30:31.836279"
+      "last_scanned": "2026-04-14T21:59:00.687923"
     },
     {
       "id": "04-webpage-test",
@@ -123,10 +176,10 @@
       "github_url": null,
       "has_git": true,
       "tech_stack": [
-        "Next.js",
         "TypeScript",
-        "Tailwind CSS",
-        "React"
+        "Next.js",
+        "React",
+        "Tailwind CSS"
       ],
       "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
       "changelog": [],
@@ -144,7 +197,7 @@
         }
       ],
       "last_commit": "2026-03-28T20:08:30+08:00",
-      "last_scanned": "2026-04-14T21:30:32.388276"
+      "last_scanned": "2026-04-14T21:59:01.355803"
     },
     {
       "id": "05-custom-skills",
@@ -164,7 +217,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-04-14T21:30:32.389281"
+      "last_scanned": "2026-04-14T21:59:01.356807"
     },
     {
       "id": "06-全能生活網頁",
@@ -174,10 +227,10 @@
       "github_url": "https://github.com/hoonsor/life-style",
       "has_git": true,
       "tech_stack": [
-        "Next.js",
         "TypeScript",
-        "Tailwind CSS",
-        "React"
+        "Next.js",
+        "React",
+        "Tailwind CSS"
       ],
       "description": "Omni Nexus (全能生活網頁) 是一個為了解決現代人面臨「資訊過載與破碎化」痛點而誕生的聚合型入口網站。有別於傳統條列式平庸的內容農場，它採用了**動態空間網格 (Dynamic Spatial Bento Grid)** 架構，將搶票倒數、展覽文化、旅遊規劃、特價折扣等龐雜的資訊維度進行高度視覺收斂。\n\n本專案的核心價值在於提供極致的「資訊層次感」與「流暢的操作手感」。設計上採用暗黑破壞主義（Brutalism）搭配高對比度的酸性螢光綠色，創造強烈的視覺焦點；技術層面則強制導入 React Server Components (RSC) 搭配 Edge Functions，輔以 GSAP、Lenis 與 Framer Motion，確保即使在高併發流量或展示巨量即時資料的情境下，依然能享有低延遲、無卡頓的頂尖網頁體驗。",
       "changelog": [
@@ -241,7 +294,7 @@
         }
       ],
       "last_commit": "2026-04-14T20:58:18+08:00",
-      "last_scanned": "2026-04-14T21:30:34.151111"
+      "last_scanned": "2026-04-14T21:59:02.631655"
     },
     {
       "id": "07-全能生活網頁-活動行事曆",
@@ -293,20 +346,20 @@
         }
       ],
       "last_commit": "2026-04-14T21:00:54+08:00",
-      "last_scanned": "2026-04-14T21:30:34.293991"
+      "last_scanned": "2026-04-14T21:59:02.822458"
     },
     {
       "id": "08-監控ai各專案進度之網站",
       "folder_name": "08-監控AI各專案進度之網站",
       "name": "08-監控AI各專案進度之網站",
-      "version": "0.1.0",
+      "version": "0.2.1",
       "github_url": "https://github.com/hoonsor/ai-pro-hub.git",
       "has_git": true,
       "tech_stack": [
         "TypeScript",
         "Vite",
-        "Tailwind CSS",
-        "React"
+        "React",
+        "Tailwind CSS"
       ],
       "description": "AI PRO HUB 專為擁有多個並行開發的 AI 專案管理者所設計，解決了難以統一監測分散專案狀態、追蹤每個專案版本與更新歷史的痛點。核心價值在於透過「單一真實資訊來源」（Single Source of Truth），結合微型圖表與互動式卡片，將隱藏在各處的 `PROJECT_STATUS.md` 等資料統整成直觀的網頁視圖。\n\n在架構設計上，本專案採用 React 19 函數式元件搭配 Hooks 進行狀態管理，並結合 Vite 提供極速的開發體驗。介面設計遵循「玻璃擬態 (Glassmorphism)」美學，打造出清晰、舒適且具備現代感的深色風格。所有的 UI 更融入了高質感的微動畫與微互動，讓整體操作體驗更加沉浸與專業。",
       "changelog": [
@@ -333,6 +386,18 @@
           "date": "2026-04-14",
           "type": "feat",
           "description": "全新暖色雙色漸層主題系統（極光暮色、海洋微風、櫻花庭園、黃金時刻）、下拉選單底色修正、專案卡片改為雙擊展開收合"
+        },
+        {
+          "version": "0.2.0",
+          "date": "2026-04-14",
+          "type": "feat",
+          "description": "新增 4 組馬卡龍淺色主題（蜜桃奶霜、薄荷清風、薰衣草夢、檸檬奶油）、修正專案名稱改用資料夾名、掃描器加入中文翻譯、更新 git-push-assistant 模板"
+        },
+        {
+          "version": "0.2.1",
+          "date": "2026-04-14",
+          "type": "fix",
+          "description": "修正馬卡龍主題被 Tailwind Purge 導致無法顯示顏色的問題、修復主題選擇圖示未同步顯示 Emoji 的問題、更新儀表板字眼為全域技能"
         }
       ],
       "tasks": {
@@ -359,6 +424,16 @@
       },
       "revision_history": [],
       "recent_commits": [
+        {
+          "hash": "ab0b02f044ed8ed50768d34744e198eb622774ca",
+          "date": "2026-04-14 21:49:08 +0800",
+          "message": "fix: SkillsMatrix wording, Tailwind purge of macaron themes, header emoji v0.2.1"
+        },
+        {
+          "hash": "91d3b01bb238fab9bb5c7ecf180ec6b24a5269e9",
+          "date": "2026-04-14 21:38:11 +0800",
+          "message": "feat: macaron light themes, project name fix, Chinese translation in scanner v0.2.0"
+        },
         {
           "hash": "8f10f6ae78d8d8d706465dfbba6bf042880801b3",
           "date": "2026-04-14 21:15:15 +0800",
@@ -390,8 +465,8 @@
           "message": "feat: implement HUD dashboard UI with glassmorphism and data integration"
         }
       ],
-      "last_commit": "2026-04-14T21:15:15+08:00",
-      "last_scanned": "2026-04-14T21:30:36.068823"
+      "last_commit": "2026-04-14T21:49:08+08:00",
+      "last_scanned": "2026-04-14T21:59:03.915494"
     }
   ]
 }
