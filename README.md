@@ -1,68 +1,69 @@
-# AI PRO HUB (監控 AI 各專案進度之網站)
+# AI PRO HUB (專案進度監控網站)
 
-> 這是一個基於 React 19 的高效能 AI 專案監控儀表板系統，為管理者與開發者提供即時的專案狀態綜覽。
+> 提供基於玻璃擬態與響應式介面的專案管理儀表板，支援 Markdown 計畫檔案的雙向雲端同步 (CLI ↔ Web DB) 與即時編修。
 
 ## 📖 專案簡介 (Overview)
+AI PRO HUB 是一個專為開發團隊量身打造的專案進度與文件監控平台。我們深知在快速迭代的 AI 與軟體專案中，開發者常需要於終端機、本機編輯器與網頁端之間切換，導致計畫與進度難以同步。
 
-AI PRO HUB 專為擁有多個並行開發的 AI 專案管理者所設計，解決了難以統一監測分散專案狀態、追蹤每個專案版本與更新歷史的痛點。核心價值在於透過「單一真實資訊來源」（Single Source of Truth），結合微型圖表與互動式卡片，將隱藏在各處的 `PROJECT_STATUS.md` 等資料統整成直觀的網頁視圖。
-
-在架構設計上，本專案現已全面升級採用 **Next.js 15 (App Router)** 進行全端整合，搭配 Server Actions 與 API Routes 處理底層邏輯。介面設計遵循「玻璃擬態 (Glassmorphism)」美學，打造出清晰、舒適且具備現代感的深色風格。所有的 UI 更融入了高質感的微動畫與微互動，讓整體操作體驗更加沉浸與專業。
+為了徹底解決這個痛點，本專案實作了完整的閉環交付機制 (Closed-loop Delivery)。除了透過極具設計感的折疊式卡片、微型圖表來展現多種專案的最新進度與子任務，我們更在系統底層整合了 Next.js Server Actions、Prisma 與遠端資料庫機制。不僅如此，透過開發出專屬的 CLI 工具 (`npm run pull-plan` / `npm run sync-plan`) 與前端內建的高階 Markdown 編輯器，開發者無論在哪都可以即時更新或同步專案狀態。這樣獨特且雙向的溝通體驗，使得跨裝置或跨環境的進度追蹤變得輕而易舉且同時確保最高層級的資料安全。
 
 ## ✨ 核心功能 (Key Features)
-
-- **綜合概覽面板 (Dashboard Overview)**：首頁包含高階統計數據卡片、最近活動動態牆，以及各專案健康度的雷達或趨勢分析圖表，協助管理層迅速掌握大局。
-- **動態專案卡片管理**：每一個專案以精美的卡片形式呈現，支援縮展功能顯示詳細的任務進度清單 (Sub-tasks)，並以進度列與圓餅圖呈現完成比例。
-- **沉浸式主題切換**：透過全局環境設定 (Theme Context/Preferences)，管理員可隨時切換視覺主題風格，並在玻璃擬態介面上保持一致性與高辨識度。
-- **自動化數據同步**：支援從本地開發環境讀取專案中繼資料 (如 package.json、PROJECT_STATUS.md)，自動化建構專案展示目錄。
+- **視覺化儀表板**：包含玻璃擬態設計、多重美觀主題（暗黑與馬卡龍淺色系），以及環狀進度指示器。
+- **即時計畫編修器**：內建基於 `@uiw/react-md-editor` 的所見即所得 Markdown 編輯介面，能夠即時編輯各專案狀態。
+- **CLI 雙向同步機制**：提供終端機指令 `sync-plan`（推送本地變更）及 `pull-plan`（拉取遠端最新版），實現毫秒級無縫部署。
+- **歷史與版本控管追蹤**：記錄各專案的任務演進歷程與「已棄用方向」，防止知識開發斷層。
+- **高度安全防護**：整合 Clerk 身份驗證與全域 API 授權金鑰防護，拒絕未授權的修改與 API 連線。
 
 ## 🛠 技術棧 (Tech Stack)
-
-- **前端 / UI**：Next.js 15, React 19, Tailwind CSS 4, Framer Motion, Lucide React
-- **後端與資料庫**：Vercel Postgres, Prisma ORM
-- **身分驗證**：Clerk Auth
-- **建置 / 語言工具**：TypeScript, ESLint
+- **前端 / UI**：Next.js 15 (App Router), React 19, Tailwind CSS, Framer Motion, Lucide React
+- **後端 / API**：Next.js API Routes, Server Actions
+- **資料庫與 ORM**：SQLite (Local dev) / Vercel Postgres, Prisma v6
+- **權限與安全**：Clerk Auth
+- **自動化與工具**：Node.js Scripts (Dotenv)
 
 ## 🚀 快速開始 (Quick Start)
 
 ### 環境要求
-- Node.js >= 18 
+- Node.js >= 18
+- 配置 `.env.local` 檔案以輸入對應的 Clerk 與 DB 金鑰 (包含 `SYNC_API_KEY`)
 
 ### 安裝與運行
 ```bash
 # 1. 複製專案
-git clone <repository-url>
+git clone https://github.com/hoonsor/ai-pro-hub.git
 
-# 2. 安裝依賴
+# 2. 進入資料夾並安裝依賴
+cd ai-pro-hub
 npm install
 
-# 3. 建立並配置環境變數 (.env.local)
-# NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=...
-# CLERK_SECRET_KEY=...
-# SYNC_API_KEY=...
+# 3. 準備資料庫
+npx prisma db push
+npx prisma generate
 
 # 4. 啟動開發伺服器
 npm run dev
 ```
 
+### 命令列同步工具 (CLI) 指令
+- **推播計畫至雲端**：`npm run sync-plan`
+- **拉取計畫至本機**：`npm run pull-plan`
+
 ## 📁 專案結構 (Project Structure)
 ```text
 src/
- ├── components/    
- │    ├── build/       # 用於構建頁面的輔助元件
- │    ├── common/      # 共通 UI 元件 (如按鈕、卡片背景)
- │    ├── layout/      # 整體佈局 (Sidebar, Topbar)
- │    └── views/       # 獨立的畫面或區塊 (DashboardOverview, ProjectsView 等)
- ├── data/             # 本地 mock 資料夾 (projects.json 等)
- ├── hooks/            # 狀態邏輯鉤子
- ├── lib/              # 工具函式 (如 cn 通用合併樣式)
- └── App.tsx           # 主程式進入點
+ ├── actions/       # Server Actions (如 plan 操作)
+ ├── app/           # Next.js App 路由系統與 API endpoints
+ ├── components/    # 共用 UI，包含 Editor Modal 等
+ ├── hooks/         # 自定義狀態邏輯
+ ├── styles/        # 全域與 Tailwind 配置
+ └── ...
+scripts/            # CLI 同步指令執行環境
+prisma/             # 資料庫 Schema Models 與本地資料
 ```
 
 ## 🔄 最新更新 (Recent Updates)
-
-- **v0.3.0 (2026-04-16)**: 系統架構升級為 Next.js 15，整合 Vercel Postgres/Prisma 資料庫與 Clerk 身份驗證，實作 CLI 同步腳本
-- **v0.0.3 (2026-04-14)**: 新增專案進度管理及數據綁定更新，優化視覺佈局，生成專案 README
-- **v0.0.0 (2026-04-11)**: implement HUD dashboard UI with glassmorphism and data integration
+- **v0.4.0**: 實作 Web UI Markdown 編輯器 (`CommandEditorModal`) 與下載最新計畫之 CLI 指令 (`pull-plan`)。
+- **v0.3.0**: 系統架構遷移至 Next.js 15，導入 Prisma (SQLite) 與 Clerk，實作 `sync-plan` CLI 同步工具。
 
 ---
 *Generated and maintained by Google Antigravity Architect*
