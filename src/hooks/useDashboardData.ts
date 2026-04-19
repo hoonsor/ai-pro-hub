@@ -75,7 +75,7 @@ export function useDashboardData(): DashboardData {
       try {
         const [projectsRes, skillsRes] = await Promise.all([
           fetch("/data/projects.json"),
-          fetch("/data/skills.json"),
+          fetch("/data/skills_slim.json"),
         ])
 
         if (!projectsRes.ok || !skillsRes.ok) {
