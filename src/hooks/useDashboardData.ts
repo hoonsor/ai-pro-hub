@@ -51,6 +51,49 @@ export interface WorkflowData {
   content: string
 }
 
+// ─── Projects-only hook (loads immediately, very fast 18KB) ──────────────────
+export function useProjectsData() {
+  const [projects, setProjects] = useState<ProjectData[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    fetch("/data/projects.json")
+      .then(r => { if (!r.ok) throw new Error("Failed to load projects"); return r.json() })
+      .then(json => { setProjects(json.projects || []); setLoading(false) })
+      .catch(err => { setError(err.message); setLoading(false) })
+  }, [])
+
+  return { projects, loading, error }
+}
+
+// ─── Skills lazy hook (only fetches when enabled=true) ───────────────────────
+export function useSkillsData(enabled: boolean) {
+  const [skills, setSkills] = useState<SkillData[]>([])
+  const [tagIndex, setTagIndex] = useState<Record<string, string[]>>({})
+  const [workflows, setWorkflows] = useState<WorkflowData[]>([])
+  const [loading, setLoading] = useState(false)
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    if (!enabled || loaded) return
+    setLoading(true)
+    fetch("/data/skills_slim.json")
+      .then(r => { if (!r.ok) throw new Error("Failed to load skills"); return r.json() })
+      .then(json => {
+        setSkills(json.skills || [])
+        setTagIndex(json.tag_index || {})
+        setWorkflows(json.workflows || [])
+        setLoading(false)
+        setLoaded(true)
+      })
+      .catch(() => { setLoading(false); setLoaded(true) })
+  }, [enabled, loaded])
+
+  return { skills, tagIndex, workflows, loading }
+}
+
+// ─── Combined hook (backward compat, used by DashboardOverview) ──────────────
 export interface DashboardData {
   projects: ProjectData[]
   skills: SkillData[]
@@ -94,7 +137,7 @@ export function useDashboardData(): DashboardData {
           error: null,
         })
       } catch (err: any) {
-        console.warn("Failed to fetch dynamically, ensure /data exists:", err)
+        console.warn("Failed to fetch dynamically:", err)
         setData((prev) => ({ ...prev, loading: false, error: err.message }))
       }
     }
