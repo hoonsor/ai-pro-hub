@@ -8,6 +8,117 @@ interface ProjectsViewProps {
   projects: ProjectData[]
 }
 
+// ── Gem Progress Component ─────────────────────────────────────────────
+// Stages: raw stone → rough cut → early gem → polished → refined → perfect diamond
+function GemProgress({ count }: { count: number }) {
+  const stage = count === 0 ? 0 : count <= 3 ? 1 : count <= 8 ? 2 : count <= 15 ? 3 : count <= 25 ? 4 : 5
+
+  const stages = [
+    { label: '原石', p: '#9ca3af', s: '#4b5563', opacity: 0.6 },
+    { label: '粗坯', p: '#cbd5e1', s: '#64748b', opacity: 0.8 },
+    { label: '初切', p: '#93c5fd', s: '#2563eb', opacity: 1.0 },
+    { label: '拋光', p: '#38bdf8', s: '#0369a1', opacity: 1.0 },
+    { label: '精緻', p: '#c084fc', s: '#7e22ce', opacity: 1.0 },
+    { label: '完美', p: '#e0f2fe', s: '#a5f3fc', opacity: 1.0 },
+  ]
+  const { label, p, s, opacity } = stages[stage]
+  const glowRadius = [0, 0, 4, 6, 10, 16][stage]
+  const glowColor = [null, null, '#60a5fa', '#38bdf8', '#a855f7', '#e0f2fe'][stage]
+  const gradId = `gem-grad-${stage}`
+  const glowId = `gem-glow-${stage}`
+
+  // Diamond polygon: top, topRight, right, bottomRight, bottom, bottomLeft, left, topLeft
+  const outer = "M24,2 L38,10 L46,24 L38,38 L24,46 L10,38 L2,24 L10,10 Z"
+  // Table (inner top facet – appears from stage 2+)
+  const table = "M18,8 L30,8 L36,18 L30,28 L18,28 L12,18 Z"
+  // Culet (bottom point line – stage 3+)
+  const culet = "M18,28 L24,46 M30,28 L24,46"
+  // Girdle horizontal line (stage 1+)
+  const girdle = "M2,24 L46,24"
+
+  return (
+    <div
+      className="relative w-14 h-14 flex items-center justify-center shrink-0 cursor-help"
+      title={`${label}（共 ${count} 次推送）`}
+    >
+      <svg viewBox="0 0 48 48" className="w-14 h-14" style={{ overflow: 'visible' }}>
+        <defs>
+          <linearGradient id={gradId} x1="20%" y1="0%" x2="80%" y2="100%">
+            <stop offset="0%" stopColor={p} stopOpacity={opacity} />
+            <stop offset="50%" stopColor={s} stopOpacity={opacity * 0.9} />
+            <stop offset="100%" stopColor={p} stopOpacity={opacity * 0.6} />
+          </linearGradient>
+          {glowColor && (
+            <filter id={glowId}>
+              <feGaussianBlur stdDeviation={glowRadius * 0.4} result="blur" />
+              <feFlood floodColor={glowColor} floodOpacity="0.8" result="color" />
+              <feComposite in="color" in2="blur" operator="in" result="glow" />
+              <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+          )}
+        </defs>
+
+        {/* Stage 0: rough rock shape */}
+        {stage === 0 && (
+          <path d="M18,4 L38,10 L44,28 L32,44 L12,42 L4,26 L10,8 Z"
+            fill="#374151" stroke="#6b7280" strokeWidth="1.5" opacity="0.7" />
+        )}
+
+        {/* Stage 1+: clean diamond */}
+        {stage >= 1 && (
+          <path d={outer}
+            fill={stage >= 2 ? `url(#${gradId})` : 'none'}
+            stroke={p} strokeWidth={stage === 1 ? 2 : 1.5}
+            opacity={opacity}
+            filter={glowColor ? `url(#${glowId})` : undefined}
+          />
+        )}
+
+        {/* Girdle line (stage 1+) */}
+        {stage >= 1 && (
+          <path d={girdle} fill="none" stroke={p} strokeWidth="0.8" opacity="0.4"
+            clipPath={`url(#${gradId})`} />
+        )}
+
+        {/* Table facet (stage 2+) */}
+        {stage >= 2 && (
+          <path d={table} fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)" strokeWidth="0.8" />
+        )}
+
+        {/* Culet bottom lines (stage 3+) */}
+        {stage >= 3 && (
+          <path d={culet} fill="none" stroke="rgba(255,255,255,0.25)" strokeWidth="0.8" />
+        )}
+
+        {/* Upper highlight (stage 3+) */}
+        {stage >= 3 && (
+          <path d="M18,8 L30,8 L24,18 Z" fill="rgba(255,255,255,0.18)" />
+        )}
+
+        {/* Stage 5: sparkle crosses */}
+        {stage === 5 && (
+          <>
+            <line x1="4" y1="4" x2="4" y2="8" stroke={p} strokeWidth="1.5" opacity="0.9" />
+            <line x1="2" y1="6" x2="6" y2="6" stroke={p} strokeWidth="1.5" opacity="0.9" />
+            <line x1="40" y1="2" x2="40" y2="5" stroke={p} strokeWidth="1.2" opacity="0.7" />
+            <line x1="38.5" y1="3.5" x2="41.5" y2="3.5" stroke={p} strokeWidth="1.2" opacity="0.7" />
+            <line x1="44" y1="40" x2="44" y2="44" stroke={p} strokeWidth="1.2" opacity="0.7" />
+            <line x1="42" y1="42" x2="46" y2="42" stroke={p} strokeWidth="1.2" opacity="0.7" />
+          </>
+        )}
+      </svg>
+
+      {/* Stage label badge below */}
+      <span
+        className="absolute -bottom-4 left-1/2 -translate-x-1/2 text-[9px] font-bold tracking-wide whitespace-nowrap"
+        style={{ color: p }}
+      >
+        {label}
+      </span>
+    </div>
+  )
+}
+
 const renderCallout = (historyItems: any[]) => {
   if (!historyItems || historyItems.length === 0) return null
 
@@ -63,9 +174,7 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
       {projects.map((proj, idx) => {
         const isExpanded = expandedIds.has(proj.name)
         const allTasks = [...(proj.tasks?.main || []), ...(proj.tasks?.sub || [])]
-        const completed = allTasks.filter((t: any) => t.completed).length
-        const total = allTasks.length || 1
-        const pct = Math.round((completed / total) * 100)
+        const commitCount = (proj.changelog?.length || 0) + (proj.recent_commits?.length || 0)
 
         return (
           <motion.div
@@ -79,24 +188,9 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
             {/* Header / Condensed View */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-6">
               <div className="flex items-center gap-4">
-                <div className="relative w-12 h-12 flex items-center justify-center shrink-0">
-                  <svg className="w-full h-full transform -rotate-90">
-                    <circle cx="24" cy="24" r="20" strokeWidth="4" className="text-white/10 stroke-current fill-none" />
-                    <circle
-                      cx="24" cy="24" r="20" strokeWidth="4"
-                      stroke="url(#pct-gradient)" strokeLinecap="round" className="fill-none drop-shadow-[0_0_2px_var(--primary)]"
-                      style={{ strokeDasharray: 125, strokeDashoffset: 125 - (pct / 100) * 125 }}
-                    />
-                    <defs>
-                      <linearGradient id="pct-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="hsl(var(--primary))" />
-                        <stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity="0.8" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <div className="absolute inset-0 flex items-center justify-center text-[10px] font-bold">
-                    {pct}%
-                  </div>
+                {/* Gem Progress Indicator */}
+                <div className="mb-1">
+                  <GemProgress count={commitCount} />
                 </div>
                 
                 <div>
