@@ -59,7 +59,7 @@ const MiniGem = ({ count, name, onClick }: { count: number; name: string; onClic
   )
 }
 
-export function DashboardOverview({ projects, tagIndex, workflows, setActiveTab }: any) {
+export function DashboardOverview({ projects, tagCounts, workflows, setActiveTab }: any) {
   return (
     <main className="container mx-auto px-4 lg:px-8 space-y-6">
       
@@ -104,7 +104,7 @@ export function DashboardOverview({ projects, tagIndex, workflows, setActiveTab 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="cursor-pointer group" onClick={() => setActiveTab("SKILLS")}>
            <div className="relative h-full transition-transform group-hover:scale-[1.01]">
-              <SkillsMatrix tagIndex={tagIndex} skills={[]} />
+              <SkillsMatrix tagCounts={tagCounts} />
            </div>
         </div>
         <div className="cursor-pointer group" onClick={() => setActiveTab("WORKFLOW")}>

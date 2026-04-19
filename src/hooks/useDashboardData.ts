@@ -51,26 +51,37 @@ export interface WorkflowData {
   content: string
 }
 
-// ─── Projects-only hook (loads immediately, very fast 18KB) ──────────────────
-export function useProjectsData() {
+// ─── 初始資料 Hook：只載入 projects (18KB) + tag_counts (484B) ──────────────
+// 不阻塞任何技能資料，瞬間完成
+export function useInitialData() {
   const [projects, setProjects] = useState<ProjectData[]>([])
+  const [tagCounts, setTagCounts] = useState<Record<string, number>>({})
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch("/data/projects.json")
-      .then(r => { if (!r.ok) throw new Error("Failed to load projects"); return r.json() })
-      .then(json => { setProjects(json.projects || []); setLoading(false) })
-      .catch(err => { setError(err.message); setLoading(false) })
+    Promise.all([
+      fetch("/data/projects.json").then(r => r.ok ? r.json() : Promise.reject("projects failed")),
+      fetch("/data/tag_counts.json").then(r => r.ok ? r.json() : Promise.resolve({})),
+    ])
+      .then(([proj, counts]) => {
+        setProjects(proj.projects || [])
+        setTagCounts(counts || {})
+        setLoading(false)
+      })
+      .catch(err => {
+        console.error("Failed to load initial data:", err)
+        setError(String(err))
+        setLoading(false)
+      })
   }, [])
 
-  return { projects, loading, error }
+  return { projects, tagCounts, loading, error }
 }
 
-// ─── Skills lazy hook (only fetches when enabled=true) ───────────────────────
+// ─── 技能懶載入 Hook：只有 enabled=true 時才 fetch skills_slim.json (577KB) ──
 export function useSkillsData(enabled: boolean) {
   const [skills, setSkills] = useState<SkillData[]>([])
-  const [tagIndex, setTagIndex] = useState<Record<string, string[]>>({})
   const [workflows, setWorkflows] = useState<WorkflowData[]>([])
   const [loading, setLoading] = useState(false)
   const [loaded, setLoaded] = useState(false)
@@ -79,21 +90,23 @@ export function useSkillsData(enabled: boolean) {
     if (!enabled || loaded) return
     setLoading(true)
     fetch("/data/skills_slim.json")
-      .then(r => { if (!r.ok) throw new Error("Failed to load skills"); return r.json() })
+      .then(r => r.ok ? r.json() : Promise.reject("skills failed"))
       .then(json => {
         setSkills(json.skills || [])
-        setTagIndex(json.tag_index || {})
         setWorkflows(json.workflows || [])
         setLoading(false)
         setLoaded(true)
       })
-      .catch(() => { setLoading(false); setLoaded(true) })
+      .catch(() => {
+        setLoading(false)
+        setLoaded(true)
+      })
   }, [enabled, loaded])
 
-  return { skills, tagIndex, workflows, loading }
+  return { skills, workflows, loading, loaded }
 }
 
-// ─── Combined hook (backward compat, used by DashboardOverview) ──────────────
+// ─── 舊版 combined hook（向下相容，供 DashboardOverview 等使用）──────────────
 export interface DashboardData {
   projects: ProjectData[]
   skills: SkillData[]
@@ -114,36 +127,30 @@ export function useDashboardData(): DashboardData {
   })
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const [projectsRes, skillsRes] = await Promise.all([
-          fetch("/data/projects.json"),
-          fetch("/data/skills_slim.json"),
-        ])
-
-        if (!projectsRes.ok || !skillsRes.ok) {
-          throw new Error("Failed to load JSON data")
-        }
-
-        const projectsJson = await projectsRes.json()
-        const skillsJson = await skillsRes.json()
-
+    Promise.all([
+      fetch("/data/projects.json").then(r => r.json()),
+      fetch("/data/skills_slim.json").then(r => r.json()),
+    ])
+      .then(([pj, sj]) => {
         setData({
-          projects: projectsJson.projects || [],
-          skills: skillsJson.skills || [],
-          workflows: skillsJson.workflows || [],
-          tagIndex: skillsJson.tag_index || {},
+          projects: pj.projects || [],
+          skills: sj.skills || [],
+          workflows: sj.workflows || [],
+          tagIndex: sj.tag_index || {},
           loading: false,
           error: null,
         })
-      } catch (err: any) {
-        console.warn("Failed to fetch dynamically:", err)
-        setData((prev) => ({ ...prev, loading: false, error: err.message }))
-      }
-    }
-
-    fetchData()
+      })
+      .catch(err => {
+        setData(prev => ({ ...prev, loading: false, error: String(err) }))
+      })
   }, [])
 
   return data
+}
+
+// ─── 舊版 alias（向下相容）────────────────────────────────────────────────────
+export function useProjectsData() {
+  const { projects, loading, error } = useInitialData()
+  return { projects, loading, error }
 }

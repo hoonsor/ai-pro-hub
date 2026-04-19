@@ -1,17 +1,16 @@
-import type { SkillData } from "../../hooks/useDashboardData"
 import { Cpu, Loader2 } from "lucide-react"
 
 interface SkillsMatrixProps {
-  skills: SkillData[]
-  tagIndex: Record<string, string[]>
+  tagCounts: Record<string, number>  // { "#AI工具": 152, "#前端設計": 129, ... }
 }
 
-export function SkillsMatrix({ tagIndex }: SkillsMatrixProps) {
-  const sortedTags = Object.entries(tagIndex)
-    .sort((a, b) => b[1].length - a[1].length)
-    .slice(0, 8)  // 顯示前 8 名
+export function SkillsMatrix({ tagCounts }: SkillsMatrixProps) {
+  // 取前 8 個最多的標籤
+  const sortedTags = Object.entries(tagCounts || {})
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 8)
 
-  const maxCount = sortedTags.length > 0 ? sortedTags[0][1].length : 1
+  const maxCount = sortedTags.length > 0 ? sortedTags[0][1] : 1
   const isLoading = sortedTags.length === 0
 
   return (
@@ -29,16 +28,13 @@ export function SkillsMatrix({ tagIndex }: SkillsMatrixProps) {
         <div className="flex flex-col gap-3 flex-1 justify-center">
           <div className="flex items-center gap-2 text-xs text-muted-foreground/50">
             <Loader2 className="size-3 animate-spin" />
-            技能資料載入中...
+            載入中...
           </div>
           {[80, 65, 55, 48, 40, 32].map((w, i) => (
             <div key={i} className="space-y-1">
               <div className="h-2.5 w-24 rounded bg-white/5 animate-pulse" />
               <div className="h-2 w-full bg-black/50 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-white/5 rounded-full animate-pulse"
-                  style={{ width: `${w}%`, animationDelay: `${i * 0.1}s` }}
-                />
+                <div className="h-full bg-white/5 rounded-full animate-pulse" style={{ width: `${w}%` }} />
               </div>
             </div>
           ))}
@@ -48,21 +44,21 @@ export function SkillsMatrix({ tagIndex }: SkillsMatrixProps) {
       {/* Actual bars */}
       {!isLoading && (
         <div className="flex flex-col gap-3 flex-1 justify-center">
-          {sortedTags.map(([tag, items]) => {
-            const pct = Math.min((items.length / maxCount) * 100, 100)
+          {sortedTags.map(([tag, count]) => {
+            const pct = Math.min((count / maxCount) * 100, 100)
             return (
               <div key={tag} className="group cursor-default">
                 <div className="flex justify-between items-end mb-1">
                   <span className="text-xs font-semibold uppercase text-foreground/80 group-hover:text-primary transition-colors">
                     {tag.replace("#", "")}
                   </span>
-                  <span className="text-[10px] text-muted-foreground group-hover:text-primary transition-colors">
-                    {items.length}
+                  <span className="text-[10px] text-muted-foreground font-mono group-hover:text-primary transition-colors">
+                    {count}
                   </span>
                 </div>
                 <div className="h-2 w-full bg-black/50 rounded-full border border-white/5 overflow-hidden">
                   <div
-                    className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-700"
+                    className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-500"
                     style={{ width: `${pct}%` }}
                   />
                 </div>
