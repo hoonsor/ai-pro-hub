@@ -93,7 +93,7 @@ function ItemRow({ item, depth, onUpdate, onDelete, onAddChild }: RowProps) {
 
   return (
     <div style={{ marginLeft: depth * 22 }}>
-      <div className={`flex items-center gap-2 px-2 py-1.5 rounded-lg border ${cfg.bg} ${cfg.border} group mb-1`}>
+      <div className={`flex items-start gap-2 px-2 py-1.5 rounded-lg border ${cfg.bg} ${cfg.border} group mb-1`}>
         {/* Expand toggle */}
         <button onClick={() => onUpdate(item.id, { collapsed: !item.collapsed })}
           className="w-5 h-5 flex items-center justify-center text-muted-foreground hover:text-foreground shrink-0">
@@ -111,10 +111,28 @@ function ItemRow({ item, depth, onUpdate, onDelete, onAddChild }: RowProps) {
         <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded uppercase ${cfg.color} bg-black/30 shrink-0`}>{cfg.label}</span>
 
         {/* Text */}
-        <input type="text" value={item.text}
-          onChange={e => onUpdate(item.id, { text: e.target.value })}
-          placeholder={`輸入${cfg.label}內容…`}
-          className={`flex-1 bg-transparent text-sm outline-none min-w-0 ${item.completed ? "line-through opacity-50" : ""}`} />
+        <textarea
+          value={item.text}
+          onChange={e => {
+            onUpdate(item.id, { text: e.target.value });
+            // Auto resize
+            e.target.style.height = "auto";
+            e.target.style.height = e.target.scrollHeight + "px";
+          }}
+          onKeyDown={e => {
+            if (e.key === "Enter" && !e.shiftKey) {
+              e.preventDefault(); // Enter = 儲存目前輸入（不換行），Shift+Enter 才換行
+            }
+          }}
+          onFocus={e => {
+            e.target.style.height = "auto";
+            e.target.style.height = e.target.scrollHeight + "px";
+          }}
+          rows={1}
+          placeholder={`輸入${cfg.label}內容… (Shift+Enter 換行)`}
+          className={`flex-1 bg-transparent text-sm outline-none min-w-0 resize-none overflow-hidden leading-relaxed ${item.completed ? "line-through opacity-50" : ""}`}
+          style={{ minHeight: "1.5rem" }}
+        />
 
         {/* Hover actions */}
         <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity shrink-0">
