@@ -33,7 +33,7 @@ async function syncPlan() {
         'Authorization': `Bearer ${SYNC_API_KEY}`
       },
       body: JSON.stringify({
-        project: 'ai-pro-hub',
+        project: process.env.SYNC_PROJECT_NAME || '08-監控AI各專案進度之網站',
         content,
       })
     });

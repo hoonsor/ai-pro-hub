@@ -11,9 +11,9 @@ async function pullPlan() {
     process.exit(1);
   }
 
-  // Use the exact same name logic as sync-plan.js
+  // Use the exact same project name as the web dashboard (projects.json → proj.name)
   const projectDir = process.cwd();
-  const defaultProjectName = 'ai-pro-hub';
+  const defaultProjectName = process.env.SYNC_PROJECT_NAME || '08-監控AI各專案進度之網站';
   
   // Read local PROJECT_STATUS.md to check if it exists, but we will overwrite it
   const filePath = path.join(projectDir, 'PROJECT_STATUS.md');
