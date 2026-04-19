@@ -251,7 +251,7 @@ export function CommandEditorModal({ projectName, onClose }: { projectName: stri
 
         {/* Footer */}
         <div className="px-5 py-2 border-t border-white/10 bg-primary/5 text-xs text-muted-foreground shrink-0">
-          共 {items.length} 個頂層項目 ｜ 儲存後可透過 <code className="bg-black/30 px-1.5 rounded text-primary">npm run pull-plan</code> 同步至本機
+          共 {items.length} 個頂層項目 ｜ 此編輯器管理 <code className="bg-black/30 px-1.5 rounded text-blue-400">ACTIVE_TASKS.md</code>，不影響 project-monitor 的 <code className="bg-black/30 px-1.5 rounded text-muted-foreground/70">PROJECT_STATUS.md</code> ｜ 執行 <code className="bg-black/30 px-1.5 rounded text-primary">npm run pull-plan</code> 同步至本機
         </div>
       </div>
     </div>

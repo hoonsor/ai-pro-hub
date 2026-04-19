@@ -11,19 +11,19 @@ async function syncPlan() {
     process.exit(1);
   }
 
-  // Look for project_status or implementation_plan
-  const planPath = path.join(process.cwd(), 'brain', 'e2b246f1-f12b-48f3-9020-7fe593649819', 'implementation_plan.md');
+  // 讀取 ACTIVE_TASKS.md（互動式任務計畫），不影響 project-monitor 管理的 PROJECT_STATUS.md
+  const primaryPath = path.join(process.cwd(), 'ACTIVE_TASKS.md');
   const fallbackPath = path.join(process.cwd(), 'PROJECT_STATUS.md');
   
-  const targetPath = fs.existsSync(planPath) ? planPath : fallbackPath;
+  const targetPath = fs.existsSync(primaryPath) ? primaryPath : fallbackPath;
 
   if (!fs.existsSync(targetPath)) {
-    console.error(`❌ 錯誤: 找不到需同步的 Markdown 檔案 (${targetPath})`);
+    console.error(`❌ 錯誤: 找不到 ACTIVE_TASKS.md 或 PROJECT_STATUS.md，請先建立任務計畫檔案`);
     process.exit(1);
   }
 
   const content = fs.readFileSync(targetPath, 'utf8');
-  console.log(`正在同步計畫至遠端 (${targetPath})...`);
+  console.log(`正在同步互動式任務計畫至遠端 (${targetPath})...`);
 
   try {
     const res = await fetch(`${API_URL}/api/sync`, {

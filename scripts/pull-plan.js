@@ -15,10 +15,10 @@ async function pullPlan() {
   const projectDir = process.cwd();
   const defaultProjectName = process.env.SYNC_PROJECT_NAME || '08-監控AI各專案進度之網站';
   
-  // Read local PROJECT_STATUS.md to check if it exists, but we will overwrite it
-  const filePath = path.join(projectDir, 'PROJECT_STATUS.md');
+  // 寫入 ACTIVE_TASKS.md，保護 project-monitor 管理的 PROJECT_STATUS.md 不被覆蓋
+  const filePath = path.join(projectDir, 'ACTIVE_TASKS.md');
 
-  console.log(`正在從遠端拉取計畫 (${defaultProjectName})...`);
+  console.log(`正在從遠端拉取互動式任務計畫 (${defaultProjectName})...`);
 
   try {
     const res = await fetch(`${SERVER_URL}/api/sync?project=${encodeURIComponent(defaultProjectName)}`, {
@@ -38,7 +38,7 @@ async function pullPlan() {
 
     if (data.success) {
       fs.writeFileSync(filePath, data.content, 'utf8');
-      console.log(`✅ 計畫拉取成功並覆蓋至 PROJECT_STATUS.md！目前拉取版本: ${data.version}`);
+      console.log(`✅ 任務計畫拉取成功並寫入 ACTIVE_TASKS.md！目前版本: ${data.version}`);
     } else {
       console.error('❌ 拉取失敗: 返回結果不正確', data);
     }
