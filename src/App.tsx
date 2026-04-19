@@ -13,8 +13,9 @@ export type TabType = "DASHBOARD" | "PROJECTS" | "SKILLS" | "WORKFLOW"
 
 function MainLayout() {
   const [activeTab, setActiveTab] = useState<TabType>("DASHBOARD")
-  // Skills 懶載入：只有用戶第一次切到 SKILLS tab 時才觸發 fetch
-  const [skillsEnabled, setSkillsEnabled] = useState(false)
+  // Skills 後台預載：立即開始下載但不阻塞 Dashboard 渲染
+  // tagIndex 在技能載入完成後自動更新，SkillsMatrix 即時填入
+  const [skillsEnabled] = useState(true)
 
   // ── 只等 projects（18KB），立即顯示 Dashboard ──
   const { projects, loading: projectsLoading, error } = useProjectsData()
@@ -23,7 +24,6 @@ function MainLayout() {
 
   const handleTabChange = (tab: TabType) => {
     setActiveTab(tab)
-    if (tab === "SKILLS" && !skillsEnabled) setSkillsEnabled(true)
   }
 
   // 只等 projects (18KB)，超快
@@ -58,8 +58,7 @@ function MainLayout() {
           ? (
             <div className="flex flex-col items-center justify-center py-24 gap-4 text-primary">
               <Cpu className="size-10 animate-pulse" />
-              <p className="text-sm tracking-widest uppercase">正在載入 1,398 個技能...</p>
-              <p className="text-xs text-muted-foreground">首次開啟需要幾秒鐘</p>
+              <p className="text-sm tracking-widest uppercase">正在載入技能庫...</p>
             </div>
           )
           : <SkillsView skills={skills} />
