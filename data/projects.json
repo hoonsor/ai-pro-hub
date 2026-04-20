@@ -1,0 +1,428 @@
+{
+  "generated_at": "2026-04-19T10:34:40.872411",
+  "base_dir": "D:\\01-Project",
+  "project_count": 8,
+  "projects": [
+    {
+      "id": "01-screen-automate",
+      "folder_name": "01-Screen Automate",
+      "name": "01-Screen Automate",
+      "version": "0.0.0",
+      "github_url": "https://github.com/hoonsor/Screen_Automate.git",
+      "has_git": true,
+      "tech_stack": [
+        "C# / .NET"
+      ],
+      "description": "AutoWizard Desktop 是一款專為 Windows 打造的次世代視覺化自動化工具。結合了複雜的「視覺化巢狀邏輯」與先進的「AI 視覺辨識（包含 OCR 文字辨識與 OpenCV 電腦視覺圖像比對）」，完美解決傳統自動化工具門檻過高、腳本難以維護，或是錄製後在不同螢幕解析度下失效的痛點。\n\n這個程式透過直觀的拖放式介面，讓使用者可以輕鬆建立條件判斷 (If-Else)、迴圈 (Loop)、防錯處理 (Try-Catch) 等複雜邏輯。更重要的是，它具備智慧預處理引擎，在畫面複雜或是 DPI 縮放變更的環境下，仍能穩定的辨識視窗畫面並精確執行模擬點擊、文字輸入等操作，最後能將所有流程與資源檔封裝至單一 `.aws` 檔案中，達成極致的攜帶與分享便利性。\n\n目標使用者涵蓋需要處理大量 Excel 和 ERP 系統表單的行政/財務人員、開發自動化流程的工程師，甚至是希望防偵測掛機的重度遊戲玩家。透過 AutoWizard，任何看似繁雜、重複性高且容易出錯的電腦操作，都可以交由系統穩定代勞。",
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-03-16",
+          "type": "feat",
+          "description": "去除漢字之間的空格以提高匹配精度"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-03-15",
+          "type": "chore",
+          "description": "文件：新增 3 月 15 日的會話記憶體並使用 RCA 初始化問題日誌。"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-03-15",
+          "type": "chore",
+          "description": "主要重構：以 Windows.Media.Ocr 和 UI 增強套件取代 Tesseract。修復了 UI 死鎖，添加了變數/歷史面板，並升級了專案目標框架。"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-03-14",
+          "type": "chore",
+          "description": "增強匯出：單檔案 EXE 支援、嵌入式 AWS 套件、固定影像路徑解析度、新增跑步者日誌匯出和固定放大鏡十字準線偏移"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-03-13",
+          "type": "feat",
+          "description": "實作具有布林表達式支援的多條件 IfAction"
+        }
+      ],
+      "tasks": {
+        "main": [
+          {
+            "title": "待定義主要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "sub": [
+          {
+            "title": "待定義次要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "deprecated": [
+          {
+            "title": "原先計畫的方向或任務描述",
+            "deprecated": true
+          }
+        ]
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "5e286be6e4b4de9200e4e00d6343b59e30a28572",
+          "date": "2026-04-14 21:53:10 +0800",
+          "message": "docs: update README with comprehensive template and initialize PROJECT_STATUS for v0.1.0"
+        },
+        {
+          "hash": "c3fdaffc373bac2ee0f0bd0c6be419121c380947",
+          "date": "2026-03-16 23:03:35 +0800",
+          "message": "feat(ocr): remove spaces between Chinese characters for better matching accuracy"
+        },
+        {
+          "hash": "fcd72d8f626b672380b6a469a7e2446cffcd3354",
+          "date": "2026-03-15 23:06:16 +0800",
+          "message": "Docs: Add session memory for March 15 and initialize Issues Log with RCA."
+        },
+        {
+          "hash": "d8188c47e8777294f5f9c321e003660989ccc136",
+          "date": "2026-03-15 23:04:13 +0800",
+          "message": "Major Refactor: Replace Tesseract with Windows.Media.Ocr & UI Enhancements suite. Fixed UI deadlock, added variable/history panels, and upgraded project target frameworks."
+        },
+        {
+          "hash": "e7db81f9647eb6e175a0a41b49894b155febf4fd",
+          "date": "2026-03-14 23:01:30 +0800",
+          "message": "Enhance Export: Single-file EXE support, embedded AWS package, fixed image path resolution, added Runner log export, and fixed magnifier crosshair offset"
+        },
+        {
+          "hash": "a34bcba6aec308f13a5f41fbf2dd61a5a9ee1dfa",
+          "date": "2026-03-13 21:58:02 +0800",
+          "message": "feat: implement multi-condition IfAction with boolean expression support"
+        },
+        {
+          "hash": "5f1f14005a71f22678069abf4d071f8f0830da4e",
+          "date": "2026-03-10 22:15:36 +0800",
+          "message": "chore: remove legacy Next.js/React and Tauri frontend files"
+        },
+        {
+          "hash": "a82329fbfb86d16bb67a9dcbe6fba068cb9f6133",
+          "date": "2026-01-31 21:56:55 +0800",
+          "message": "Initial commit from Create Next App"
+        }
+      ],
+      "last_commit": "2026-04-14T21:53:10+08:00",
+      "last_scanned": "2026-04-19T10:34:35.491026"
+    },
+    {
+      "id": "02-openclaw_manage_tools",
+      "folder_name": "02-openclaw_manage_tools",
+      "name": "02-openclaw_manage_tools",
+      "version": "1.0.0",
+      "github_url": "https://github.com/hoonsor/openclaw_manage_tools.git",
+      "has_git": true,
+      "tech_stack": [
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "React",
+        "Electron"
+      ],
+      "description": "這個模板提供了一個最小的設置，可以讓 React 在 Vite 中與 HMR 和一些 ESLint 規則一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/) （或 [oxc](https://oxc.rs) 在 [httpsdownvite）\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 進行快速刷新",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "5661344d4bc84cb7d1133776e039cf4e8a25de5d",
+          "date": "2026-02-28 09:09:06 +0800",
+          "message": "initial commit: OpenClaw Manage Tools"
+        }
+      ],
+      "last_commit": "2026-02-28T09:09:06+08:00",
+      "last_scanned": "2026-04-19T10:34:37.159030"
+    },
+    {
+      "id": "03-modules",
+      "folder_name": "03-modules",
+      "name": "03-modules",
+      "version": "0.0.0",
+      "github_url": null,
+      "has_git": false,
+      "tech_stack": [
+        "Python"
+      ],
+      "description": "尚無描述",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [],
+      "last_commit": null,
+      "last_scanned": "2026-04-19T10:34:37.160032"
+    },
+    {
+      "id": "04-webpage-test",
+      "folder_name": "04-webpage test",
+      "name": "04-webpage test",
+      "version": "0.1.0",
+      "github_url": null,
+      "has_git": true,
+      "tech_stack": [
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "React"
+      ],
+      "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "79225772366600b3b2b53c8b3246c0003ee61506",
+          "date": "2026-03-28 20:08:30 +0800",
+          "message": "feat: initial commit"
+        }
+      ],
+      "last_commit": "2026-03-28T20:08:30+08:00",
+      "last_scanned": "2026-04-19T10:34:38.133692"
+    },
+    {
+      "id": "05-global-skills",
+      "folder_name": "05-global skills",
+      "name": "05-global skills",
+      "version": "0.0.0",
+      "github_url": null,
+      "has_git": false,
+      "tech_stack": [],
+      "description": "尚無描述",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [],
+      "last_commit": null,
+      "last_scanned": "2026-04-19T10:34:38.134690"
+    },
+    {
+      "id": "06-全能生活網頁",
+      "folder_name": "06-全能生活網頁",
+      "name": "06-全能生活網頁",
+      "version": "0.1.1",
+      "github_url": "https://github.com/hoonsor/life-style",
+      "has_git": true,
+      "tech_stack": [
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "React"
+      ],
+      "description": "Omni Nexus (全能生活網頁) 是一個為了解決現代人面臨「資訊過載與破碎化」痛點而誕生的聚合型入口網站。有別於傳統條列式平庸的內容農場，它採用了**動態空間網格 (Dynamic Spatial Bento Grid)** 架構，將搶票倒數、展覽文化、旅遊規劃、特價折扣等龐雜的資訊維度進行高度視覺收斂。\n\n本專案的核心價值在於提供極致的「資訊層次感」與「流暢的操作手感」。設計上採用暗黑破壞主義（Brutalism）搭配高對比度的酸性螢光綠色，創造強烈的視覺焦點；技術層面則強制導入 React Server Components (RSC) 搭配 Edge Functions，輔以 GSAP、Lenis 與 Framer Motion，確保即使在高併發流量或展示巨量即時資料的情境下，依然能享有低延遲、無卡頓的頂尖網頁體驗。",
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-03-28",
+          "type": "feat",
+          "description": "初始提交"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-03-28",
+          "type": "chore",
+          "description": "創建下一個應用程式的初始提交"
+        },
+        {
+          "version": "0.1.1",
+          "date": "2026-04-14",
+          "type": "feat",
+          "description": "實作動態便當盒網格 (Bento Grid) 結構、空間化介面與 GSAP 進場動畫"
+        }
+      ],
+      "tasks": {
+        "main": [
+          {
+            "title": "待定義主要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "sub": [
+          {
+            "title": "待定義次要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "deprecated": [
+          {
+            "title": "原先計畫的方向或任務描述",
+            "deprecated": true
+          }
+        ]
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "77a0e366b592ab551b62fcd413ff18c5eac3e44c",
+          "date": "2026-04-14 20:58:18 +0800",
+          "message": "feat: implement dynamic bento grid and spatial UI (v0.1.1)"
+        },
+        {
+          "hash": "d6f73ca0564e9db0e971d37aae904ab91f5b0fbe",
+          "date": "2026-03-28 22:39:13 +0800",
+          "message": "feat: initial commit"
+        },
+        {
+          "hash": "0e5106d3f64b60b770bd25212288757dd68d897b",
+          "date": "2026-03-28 22:36:32 +0800",
+          "message": "Initial commit from Create Next App"
+        }
+      ],
+      "last_commit": "2026-04-14T20:58:18+08:00",
+      "last_scanned": "2026-04-19T10:34:40.487516"
+    },
+    {
+      "id": "07-全能生活網頁-活動行事曆",
+      "folder_name": "07-全能生活網頁-活動行事曆",
+      "name": "07-全能生活網頁-活動行事曆",
+      "version": "0.0.0",
+      "github_url": "https://github.com/hoonsor/life-style-calendar",
+      "has_git": true,
+      "tech_stack": [
+        "Python"
+      ],
+      "description": "「全能生活網頁 - 活動行事曆」致力於解決使用者在多個活動場館、展覽與電影檔期間難以統一管理與查看時間衝突的痛點。透過自動化的 Python 網路爬蟲，系統能每日定時從各大場館與票務網站獲取最新的活動資訊。\n\n在前端介面，專案採用了先進的 React 19 與 Tailwind CSS 架構，並設計了防止重疊的甘特圖 (Gantt Chart) 演算法。這讓繁雜的活動時間表能以極致直觀、響應式的時間軸呈現。無論是動漫展、美食節、還是電影時刻，都可以一目了然地確認活動的開始與結束時間，為使用者的生活排程提供強大的決策輔助。",
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-04-14",
+          "type": "feat",
+          "description": "初始版本建立"
+        }
+      ],
+      "tasks": {
+        "main": [
+          {
+            "title": "待定義主要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "sub": [
+          {
+            "title": "待定義次要任務",
+            "completed": false,
+            "in_progress": false
+          }
+        ],
+        "deprecated": [
+          {
+            "title": "原先計畫的方向或任務描述",
+            "deprecated": true
+          }
+        ]
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "fad5f91b5cbe24800a86d8e714496be9cd90530f",
+          "date": "2026-04-14 21:00:54 +0800",
+          "message": "docs: update README with comprehensive template for v0.1.0"
+        }
+      ],
+      "last_commit": "2026-04-14T21:00:54+08:00",
+      "last_scanned": "2026-04-19T10:34:40.719566"
+    },
+    {
+      "id": "08-監控ai各專案進度之網站",
+      "folder_name": "08-監控AI各專案進度之網站",
+      "name": "08-監控AI各專案進度之網站",
+      "version": "0.4.0",
+      "github_url": "https://github.com/hoonsor/ai-pro-hub.git",
+      "has_git": true,
+      "tech_stack": [
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "React"
+      ],
+      "description": "AI PRO HUB 是一個專為 AI 開發團隊量身打造的專案進度監控與任務計畫管理平台。本系統解決了開發者在終端機、本機編輯器與網頁端之間頻繁切換時，任務計畫難以即時同步的核心痛點。\n\n系統採用雙軌獨立架構：`project-monitor` 技能負責掃描本機資料夾並維護 `PROJECT_STATUS.md`（包含版本號、描述、changelog），而 Web UI 編輯器與 CLI 工具則透過 Prisma 資料庫管理 `ACTIVE_TASKS.md`（互動式任務計畫），兩者完全獨立不互相干擾。\n\n前端採用 Next.js 15 App Router 搭配玻璃擬態 (Glassmorphism) 設計語言，每張專案卡片均配備演化式鑽石進度指示器（共 6 段：原石 → 粗坯 → 初切 → 拋光 → 精緻 → 完美），以推送次數作為專案成熟度的量化依據。互動式任務編輯器支援主任務、子任務、注意事項三種類型，並提供樹狀展開/收合與自動換行的優雅體驗。",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "e43892d6f07d03a8e5cbf1e80c1374896bc8e2df",
+          "date": "2026-04-19 10:25:26 +0800",
+          "message": "feat: replace all percentage rings with evolving gem/diamond indicators (task 2 complete)"
+        },
+        {
+          "hash": "edd565b48388dde4e379c4278136540254c03d01",
+          "date": "2026-04-19 10:19:58 +0800",
+          "message": "docs: update README with gem indicator, dual-file architecture, and v0.4.x features"
+        },
+        {
+          "hash": "eea4c5a5b9a2223a123df7c320ca93afa87cad28",
+          "date": "2026-04-19 10:18:49 +0800",
+          "message": "fix: separate ACTIVE_TASKS.md from PROJECT_STATUS.md to prevent project-monitor conflict"
+        },
+        {
+          "hash": "ecda594e82b04c27a27884b7f96224771e9e88d0",
+          "date": "2026-04-19 10:10:33 +0800",
+          "message": "feat: replace progress ring with evolving gem/diamond indicator based on commit count"
+        },
+        {
+          "hash": "01c702080cdde17b00f2ebd47da82346d14bba80",
+          "date": "2026-04-19 10:06:49 +0800",
+          "message": "fix: unify project name across sync-plan and pull-plan scripts"
+        },
+        {
+          "hash": "a48781522e08b7706ec55acb4c3f80f165aac095",
+          "date": "2026-04-19 10:00:20 +0800",
+          "message": "fix: auto-resize textarea for multi-line text in task editor"
+        },
+        {
+          "hash": "fb3f7973b1409e0a38cfefcc881d1ead7c371cf6",
+          "date": "2026-04-19 09:33:56 +0800",
+          "message": "feat: replace markdown editor with graphical task tree editor"
+        },
+        {
+          "hash": "bbde92e37ccdfcc80c9dcdd3127549410959c458",
+          "date": "2026-04-16 21:41:03 +0800",
+          "message": "fix: relocate middleware.ts to src directory"
+        },
+        {
+          "hash": "efaa1488d14b175f9e0301c724154209a43832e5",
+          "date": "2026-04-16 21:25:03 +0800",
+          "message": "docs: update README with comprehensive template for v0.4.0"
+        },
+        {
+          "hash": "c60e6cbfa0e4f5a5d3fc22b00c995f798ab9d3ae",
+          "date": "2026-04-16 21:23:25 +0800",
+          "message": "feat: implement Web UI Markdown editor and pull-plan CLI sync mechanism"
+        }
+      ],
+      "last_commit": "2026-04-19T10:25:26+08:00",
+      "last_scanned": "2026-04-19T10:34:40.872411"
+    }
+  ]
+}

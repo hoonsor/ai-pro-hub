@@ -192,7 +192,7 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
                 <div className="mb-1">
                   <GemProgress count={commitCount} />
                 </div>
-                
+
                 <div>
                   <h3 className="text-xl font-bold text-foreground">
                     {proj.name}
@@ -246,7 +246,7 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
                   className="overflow-hidden border-t border-white/10"
                 >
                   <div className="p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    
+
                     {/* Left Column: Desc & Tasks & Callouts */}
                     <div className="flex flex-col gap-6">
                       {/* Description */}
@@ -339,7 +339,7 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
                             ) : proj.recent_commits && proj.recent_commits.length > 0 ? (
                               proj.recent_commits.slice(0, 10).map((commit, i) => (
                                 <tr key={i} className="hover:bg-white/5 transition-colors">
-                                  <td className="px-4 py-3 font-mono text-primary/80 text-xs">{commit.hash.substring(0,7)}</td>
+                                  <td className="px-4 py-3 font-mono text-primary/80 text-xs">{commit.hash.substring(0, 7)}</td>
                                   <td className="px-4 py-3 text-muted-foreground text-xs">{commit.date.split(" ")[0]}</td>
                                   <td className="px-4 py-3 text-foreground whitespace-normal min-w-[200px]">
                                     {commit.message}
@@ -357,7 +357,7 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
                         </table>
                       </div>
                     </div>
-                    
+
                   </div>
                 </motion.div>
               )}
@@ -367,9 +367,9 @@ export function ProjectsView({ projects }: ProjectsViewProps) {
       })}
 
       {editingProject && (
-        <CommandEditorModal 
-          projectName={editingProject} 
-          onClose={() => setEditingProject(null)} 
+        <CommandEditorModal
+          projectName={editingProject}
+          onClose={() => setEditingProject(null)}
         />
       )}
     </main>

@@ -38,8 +38,10 @@ export function ThemeProvider({
   ...props
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
-    const savedTheme = localStorage.getItem("ui-theme") as Theme
-    if (savedTheme && VALID_THEMES.includes(savedTheme)) return savedTheme
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("ui-theme") as Theme
+      if (savedTheme && VALID_THEMES.includes(savedTheme)) return savedTheme
+    }
     return defaultTheme
   })
 
