@@ -234,7 +234,7 @@ export function SkillsView({ skills }: SkillsViewProps) {
               </div>
             </div>
 
-            <p className="text-xs text-foreground/60 mb-3 flex-1 line-clamp-3">
+            <p className="text-xs text-foreground/60 mb-3 flex-1 whitespace-pre-wrap">
               {skill.description || "無提供說明。"}
             </p>
 
