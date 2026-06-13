@@ -1,4 +1,4 @@
-import { Terminal, Settings, Wrench, Code2, Cpu, Zap, FolderSync, Github, Database } from "lucide-react"
+import { Terminal, Settings, Wrench, Code2, Cpu, Zap, FolderSync, GitBranch, Database } from "lucide-react"
 
 const SLASH_COMMANDS = [
   { cmd: "/goal", desc: "徹底達成任務。適用於需要長時間、多步驟、不達目的不罷休的複雜任務。" },
@@ -17,7 +17,7 @@ const KEYWORDS = [
 ]
 
 const MCP_TOOLS = [
-  { name: "github-mcp-server", icon: <Github className="size-5" />, status: "已連線", detail: "已登入帳號：hoonsor", desc: "提供讀寫倉庫、建立 Issue、Pull Request、讀取程式碼等強大功能。" },
+  { name: "github-mcp-server", icon: <GitBranch className="size-5" />, status: "已連線", detail: "已登入帳號：hoonsor", desc: "提供讀寫倉庫、建立 Issue、Pull Request、讀取程式碼等強大功能。" },
   { name: "gdrive", icon: <Database className="size-5" />, status: "已設定", detail: "Google Drive OAuth", desc: "允許 AI 在授權的 Google Drive 資料夾中搜尋與讀取文件。" },
 ]
 
