@@ -6,10 +6,11 @@ import { ProjectsView } from "./components/views/ProjectsView"
 import { SkillsView } from "./components/views/SkillsView"
 import { WorkflowsView } from "./components/views/WorkflowsView"
 import { DashboardOverview } from "./components/views/DashboardOverview"
+import { SystemView } from "./components/views/SystemView"
 import { useInitialData, useSkillsData } from "./hooks/useDashboardData"
 import { Loader2, Cpu } from "lucide-react"
 
-export type TabType = "DASHBOARD" | "PROJECTS" | "SKILLS" | "WORKFLOW"
+export type TabType = "DASHBOARD" | "PROJECTS" | "SKILLS" | "WORKFLOW" | "SYSTEM"
 
 function MainLayout() {
   const [activeTab, setActiveTab] = useState<TabType>("DASHBOARD")
@@ -71,6 +72,7 @@ function MainLayout() {
           : <SkillsView skills={skills} />
       )}
       {activeTab === "WORKFLOW" && <WorkflowsView workflows={workflows} />}
+      {activeTab === "SYSTEM" && <SystemView />}
     </div>
   )
 }

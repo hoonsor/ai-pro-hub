@@ -13,6 +13,7 @@
 - **自動化專案掃描**：透過 Python 腳本自動爬取本地目錄，解析 `PROJECT_STATUS.md` 生成結構化資料供網站渲染。
 - **技能中樞管理**：集中展示全域 AI 技能庫，具備標籤篩選與快速複製功能。
 - **任務雙向同步**：支援在網頁端編輯任務計畫，並透過 API 與 CLI 工具 (`pull-plan`) 即時同步至本地 `ACTIVE_TASKS.md`，實現「雲端規劃、本地實作」的工作流。
+- **系統與 MCP 狀態檢視**：新增「系統設定」頁籤，展示 Antigravity 2.0 的操作教學（Slash Commands 與 Alias）、MCP 伺服器連線狀態及本地全域技能清單。
 - **美觀的卡片式 UI**：採用深色玻璃擬態 (Glassmorphism) 設計風格，結合 Framer Motion 微動畫，提供頂級的使用者體驗。
 
 ## 🛠 技術棧 (Tech Stack)
@@ -53,6 +54,7 @@ data/               # JSON 資料儲存區
 
 ## 🔄 最新更新 (Recent Updates)
 
+- **v0.5.0** (2026-06-13)：新增系統設定與了解頁籤，展示 Antigravity 2.0 說明與 MCP 及技能狀態。
 - **v0.4.1** (2026-04-21)：修正 Server Action 的 PrismaClient 導致 Vercel 報錯，並移除技能說明的文字截斷以避免內容被裁切。
 - **v0.4.0** (2026-04-20)：新增遠端同步計畫拉取 API 與互動式介面。
 
