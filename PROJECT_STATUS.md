@@ -1,6 +1,6 @@
 # 監控AI各專案進度之網站
 
-> **版本號：** `v0.5.0`
+> **版本號：** `v0.5.1`
 > **最後更新：** 2026-06-13
 > **GitHub：** [https://github.com/hoonsor/ai-pro-hub](https://github.com/hoonsor/ai-pro-hub)
 
@@ -16,9 +16,9 @@
 
 | 版本 | 日期 | 類型 | 變更說明 |
 |------|------|------|----------|
-| v0.4.0 | 2026-04-20 | feat | 新增遠端同步計畫拉取 API 與互動式介面 |
 | v0.4.1 | 2026-04-21 | fix | 修正 Server Action 的 PrismaClient 導致 Vercel 報錯，並移除技能說明的文字截斷以避免內容被裁切 |
 | v0.5.0 | 2026-06-13 | feat | 新增系統設定與了解頁籤，展示 Antigravity 2.0 說明與 MCP 及技能狀態 |
+| v0.5.1 | 2026-06-13 | feat | 將「#學習」觸發關鍵字與 hoonsor-error-learning 技能新增至系統設定頁籤 |
 
 ---
 
