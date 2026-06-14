@@ -21,7 +21,7 @@ function MainLayout() {
   const { projects, tagCounts, loading, error } = useInitialData()
 
   // ── 技能懶載入：只有切到 SKILLS tab 才開始 ──
-  const { skills, workflows, loading: skillsLoading } = useSkillsData(skillsEnabled)
+  const { skills, frozenSkills, workflows, loading: skillsLoading } = useSkillsData(skillsEnabled)
 
   const handleTabChange = (tab: TabType) => {
     setActiveTab(tab)
@@ -69,7 +69,7 @@ function MainLayout() {
               <p className="text-xs text-muted-foreground">首次點擊需要幾秒</p>
             </div>
           )
-          : <SkillsView skills={skills} />
+          : <SkillsView skills={skills} frozenSkills={frozenSkills} />
       )}
       {activeTab === "WORKFLOW" && <WorkflowsView workflows={workflows} />}
       {activeTab === "SYSTEM" && <SystemView />}

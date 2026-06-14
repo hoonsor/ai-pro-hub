@@ -4,6 +4,7 @@ import { Cpu, Copy, CheckCircle2, X, ChevronLeft, ChevronRight, Search, Filter }
 
 interface SkillsViewProps {
   skills: SkillData[]
+  frozenSkills: SkillData[]
 }
 
 const PAGE_SIZE = 24
@@ -85,20 +86,26 @@ const Pagination = ({ page, totalPages, onChange }: {
 }
 
 // ─── Main View ───────────────────────────────────────────────────────────────
-export function SkillsView({ skills }: SkillsViewProps) {
+export function SkillsView({ skills, frozenSkills }: SkillsViewProps) {
+  const [activeType, setActiveType] = useState<"ACTIVE" | "FROZEN">("ACTIVE")
   const [search, setSearch] = useState("")
   const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [logicMode, setLogicMode] = useState<"AND" | "OR">("OR")
   const [page, setPage] = useState(1)
 
+  // 根據分頁選擇資料來源
+  const skillsSource = useMemo(() => {
+    return activeType === "ACTIVE" ? skills : frozenSkills
+  }, [activeType, skills, frozenSkills])
+
   // All unique tags with count — computed once
   const allTagsWithCount = useMemo(() => {
     const counts: Record<string, number> = {}
-    for (const s of skills) {
+    for (const s of skillsSource) {
       for (const t of s.tags || []) counts[t] = (counts[t] || 0) + 1
     }
     return Object.entries(counts).sort((a, b) => b[1] - a[1])
-  }, [skills])
+  }, [skillsSource])
 
   const toggleTag = useCallback((tag: string) => {
     setSelectedTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag])
@@ -109,7 +116,7 @@ export function SkillsView({ skills }: SkillsViewProps) {
 
   const filteredSkills = useMemo(() => {
     const q = search.toLowerCase()
-    return skills.filter(skill => {
+    return skillsSource.filter(skill => {
       if (q && !(
         skill.name.toLowerCase().includes(q) ||
         skill.display_name?.toLowerCase().includes(q) ||
@@ -121,7 +128,7 @@ export function SkillsView({ skills }: SkillsViewProps) {
         ? selectedTags.some(t => skill.tags?.includes(t))
         : selectedTags.every(t => skill.tags?.includes(t))
     })
-  }, [skills, search, selectedTags, logicMode])
+  }, [skillsSource, search, selectedTags, logicMode])
 
   const totalPages = Math.ceil(filteredSkills.length / PAGE_SIZE)
   const pagedSkills = filteredSkills.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
@@ -143,7 +150,7 @@ export function SkillsView({ skills }: SkillsViewProps) {
             全域技能目錄
           </h2>
           <p className="text-xs text-muted-foreground mt-1">
-            顯示 <span className="text-primary font-bold">{filteredSkills.length}</span> / {skills.length} 個技能
+            顯示 <span className="text-primary font-bold">{filteredSkills.length}</span> / {skillsSource.length} 個技能
             {selectedTags.length > 0 && (
               <span className="ml-2 opacity-60">· {selectedTags.length} 個標籤 ({logicMode})</span>
             )}
@@ -168,6 +175,30 @@ export function SkillsView({ skills }: SkillsViewProps) {
             </button>
           )}
         </div>
+      </div>
+
+      {/* Category Tabs */}
+      <div className="flex gap-2 border-b border-white/5 pb-2">
+        <button
+          onClick={() => { setActiveType("ACTIVE"); setPage(1); setSelectedTags([]); setSearch(""); }}
+          className={`px-4 py-2 text-sm font-bold transition-all relative ${
+            activeType === "ACTIVE"
+              ? "text-primary border-b-2 border-primary"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          啟用技能 ({skills.length})
+        </button>
+        <button
+          onClick={() => { setActiveType("FROZEN"); setPage(1); setSelectedTags([]); setSearch(""); }}
+          className={`px-4 py-2 text-sm font-bold transition-all relative ${
+            activeType === "FROZEN"
+              ? "text-primary border-b-2 border-primary"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          冷凍 / 備用技能 ({frozenSkills.length})
+        </button>
       </div>
 
       {/* Selected tag chips */}
@@ -226,10 +257,15 @@ export function SkillsView({ skills }: SkillsViewProps) {
             className="glass-panel p-4 rounded-2xl flex flex-col hover:border-primary/30 transition-colors"
           >
             <div className="flex items-start justify-between mb-2">
-              <div className="flex items-center gap-1 min-w-0">
+              <div className="flex items-center gap-2 min-w-0 flex-wrap">
                 <h3 className="text-sm font-bold text-foreground truncate">
                   {skill.display_name || skill.name}
                 </h3>
+                {skill.is_frozen && (
+                  <span className="text-[10px] bg-white/5 text-muted-foreground/80 px-2 py-0.5 rounded-lg border border-white/10 shrink-0">
+                    {skill.vault_category?.replace(/^\d+-/, "").replace(/_/g, " ") || "冷凍備用"}
+                  </span>
+                )}
                 <CopyButton text={skill.name} />
               </div>
             </div>

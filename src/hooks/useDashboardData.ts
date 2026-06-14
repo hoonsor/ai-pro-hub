@@ -43,6 +43,8 @@ export interface SkillData {
   description: string
   summary: string
   tags: string[]
+  is_frozen?: boolean
+  vault_category?: string
 }
 
 export interface WorkflowData {
@@ -82,6 +84,7 @@ export function useInitialData() {
 // ─── 技能懶載入 Hook：只有 enabled=true 時才 fetch skills_slim.json (577KB) ──
 export function useSkillsData(enabled: boolean) {
   const [skills, setSkills] = useState<SkillData[]>([])
+  const [frozenSkills, setFrozenSkills] = useState<SkillData[]>([])
   const [workflows, setWorkflows] = useState<WorkflowData[]>([])
   const [loading, setLoading] = useState(false)
   const [loaded, setLoaded] = useState(false)
@@ -93,6 +96,7 @@ export function useSkillsData(enabled: boolean) {
       .then(r => r.ok ? r.json() : Promise.reject("skills failed"))
       .then(json => {
         setSkills(json.skills || [])
+        setFrozenSkills(json.frozen_skills || [])
         setWorkflows(json.workflows || [])
         setLoading(false)
         setLoaded(true)
@@ -103,7 +107,7 @@ export function useSkillsData(enabled: boolean) {
       })
   }, [enabled, loaded])
 
-  return { skills, workflows, loading, loaded }
+  return { skills, frozenSkills, workflows, loading, loaded }
 }
 
 // ─── 舊版 combined hook（向下相容，供 DashboardOverview 等使用）──────────────
