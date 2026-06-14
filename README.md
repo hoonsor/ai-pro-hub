@@ -54,9 +54,9 @@ data/               # JSON 資料儲存區
 
 ## 🔄 最新更新 (Recent Updates)
 
+- **v0.5.3** (2026-06-14)：初始化 `ANTIGRAVITY.md` 引導指引文件，定義專案技術棧、核心資料流與開發規約。
 - **v0.5.2** (2026-06-14)：修正資料同步路徑至 `public/data` 目錄，整合 `retag` 與 `tag_counts` 自動生成，並修復 Windows 終端重複 wrapper stdout 引起的 I/O 錯誤。
 - **v0.5.1** (2026-06-13)：將「#學習」觸發關鍵字與 `hoonsor-error-learning` 技能新增至系統設定頁籤。
-- **v0.5.0** (2026-06-13)：新增系統設定與了解頁籤，展示 Antigravity 2.0 說明與 MCP 及技能狀態。
 
 ---
 *Generated and maintained by Google Antigravity Architect*
