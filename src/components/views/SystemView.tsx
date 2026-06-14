@@ -163,7 +163,7 @@ export function SystemView() {
             </p>
             <div className="space-y-3">
               {KEYWORDS.map((kw) => (
-                <div key={kw.skill} className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center bg-secondary/40 p-3 rounded-xl border border-border/50">
+                <div key={kw.trigger} className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center bg-secondary/40 p-3 rounded-xl border border-border/50">
                   <div className="whitespace-nowrap px-2 py-1 bg-amber-500/10 text-amber-500 rounded text-xs font-bold font-mono">
                     {kw.trigger}
                   </div>
