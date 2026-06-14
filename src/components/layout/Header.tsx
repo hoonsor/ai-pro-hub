@@ -12,7 +12,6 @@ const TABS: { id: TabType; label: string }[] = [
   { id: "DASHBOARD", label: "儀表板" },
   { id: "PROJECTS", label: "專案庫" },
   { id: "SKILLS", label: "全域技能" },
-  { id: "WORKFLOW", label: "工作流" },
   { id: "SYSTEM", label: "系統設定" }
 ]
 

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { SkillsMatrix } from "../dashboard/SkillsMatrix"
-import { WorkflowViewer } from "../dashboard/WorkflowViewer"
+
 
 // Mini Gem Progress for Dashboard Overview
 const MiniGem = ({ count, name, onClick }: { count: number; name: string; onClick: () => void }) => {
@@ -100,18 +100,11 @@ export function DashboardOverview({ projects, tagCounts, workflows, setActiveTab
         </div>
       </div>
 
-      {/* 下方：技能與工作流 */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="cursor-pointer group" onClick={() => setActiveTab("SKILLS")}>
-           <div className="relative h-full transition-transform group-hover:scale-[1.01]">
-              <SkillsMatrix tagCounts={tagCounts} />
-           </div>
-        </div>
-        <div className="cursor-pointer group" onClick={() => setActiveTab("WORKFLOW")}>
-           <div className="relative h-full transition-transform group-hover:scale-[1.01] pointer-events-none">
-              <WorkflowViewer workflows={workflows} />
-           </div>
-        </div>
+      {/* 下方：技能 */}
+      <div className="cursor-pointer group" onClick={() => setActiveTab("SKILLS")}>
+         <div className="relative h-full transition-transform group-hover:scale-[1.01]">
+            <SkillsMatrix tagCounts={tagCounts} />
+         </div>
       </div>
     </main>
   )

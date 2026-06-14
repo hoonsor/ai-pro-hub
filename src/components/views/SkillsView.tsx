@@ -149,6 +149,9 @@ export function SkillsView({ skills, frozenSkills }: SkillsViewProps) {
             <Cpu className="text-primary size-6" />
             全域技能目錄
           </h2>
+          <p className="text-xs text-muted-foreground mt-1.5">
+            當前電腦已安裝並啟用的核心技能選錄。存放於 <code className="bg-primary/10 px-1 py-0.5 rounded text-primary font-mono font-bold">~/.gemini/config/skills</code>。
+          </p>
           <p className="text-xs text-muted-foreground mt-1">
             顯示 <span className="text-primary font-bold">{filteredSkills.length}</span> / {skillsSource.length} 個技能
             {selectedTags.length > 0 && (
