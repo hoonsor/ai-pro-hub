@@ -47,7 +47,7 @@
     │   └── layout.tsx  # 全域版面與字型載入
     ├── components/     # UI 元件與視圖 (Views)
     │   ├── layout/     # Header, ThemeProvider 等
-    │   └── views/      # DASHBOARD, PROJECTS, SKILLS, WORKFLOW, SYSTEM 頁籤面板
+    │   └── views/      # DASHBOARD, PROJECTS, SKILLS, SYSTEM 頁籤面板
     ├── hooks/          # 自訂 React Hooks (主要是 useDashboardData.ts)
     └── lib/            # 工具函式與 PrismaClient 單例實例
 ```
