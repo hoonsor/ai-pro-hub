@@ -1,10 +1,10 @@
 {
-  "sync_time": "2026-04-14T21:59:22.060987",
+  "sync_time": "2026-06-14T12:03:22.611592",
   "sync_mode": "full",
   "projects": {
-    "total": 8,
+    "total": 13,
     "with_git": 6,
-    "with_status_md": 4,
+    "with_status_md": 7,
     "summary": [
       {
         "name": "01-Screen Automate",
@@ -19,11 +19,11 @@
         "version": "1.0.0",
         "has_git": true,
         "tech_stack": [
-          "Vite",
+          "Tailwind CSS",
           "TypeScript",
           "Electron",
           "React",
-          "Tailwind CSS"
+          "Vite"
         ]
       },
       {
@@ -39,27 +39,29 @@
         "version": "0.1.0",
         "has_git": true,
         "tech_stack": [
-          "TypeScript",
-          "Next.js",
           "React",
-          "Tailwind CSS"
+          "TypeScript",
+          "Tailwind CSS",
+          "Next.js"
         ]
       },
       {
-        "name": "05-custom skills",
+        "name": "05-global skills",
         "version": "0.0.0",
         "has_git": false,
-        "tech_stack": []
+        "tech_stack": [
+          "Python"
+        ]
       },
       {
         "name": "06-全能生活網頁",
         "version": "0.1.1",
         "has_git": true,
         "tech_stack": [
-          "TypeScript",
-          "Next.js",
           "React",
-          "Tailwind CSS"
+          "TypeScript",
+          "Tailwind CSS",
+          "Next.js"
         ]
       },
       {
@@ -72,31 +74,77 @@
       },
       {
         "name": "08-監控AI各專案進度之網站",
-        "version": "0.2.1",
+        "version": "0.5.1",
         "has_git": true,
         "tech_stack": [
-          "TypeScript",
-          "Vite",
           "React",
-          "Tailwind CSS"
+          "TypeScript",
+          "Tailwind CSS",
+          "Next.js"
         ]
+      },
+      {
+        "name": "09-實作練習gemini cli",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": [
+          "Python"
+        ]
+      },
+      {
+        "name": "10-openclaw skills",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": []
+      },
+      {
+        "name": "11-openclaw自身狀態網站",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": []
+      },
+      {
+        "name": "12-自動學習新知",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": [
+          "Python"
+        ]
+      },
+      {
+        "name": "13-非同步評價網站",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": []
       }
     ]
   },
   "skills": {
-    "total": 22,
-    "total_tags": 10,
+    "total": 57,
+    "total_tags": 22,
     "tags": [
+      "#AI代理人",
       "#AI工具",
       "#前端設計",
+      "#安全稽核",
+      "#專案管理",
+      "#後端開發",
       "#心智圖",
       "#技能開發",
       "#文件處理",
       "#測試除錯",
-      "#溝通協作",
+      "#程式碼品質",
+      "#程式語言",
+      "#系統工具",
       "#系統整合",
+      "#系統架構",
+      "#自動化",
+      "#行動應用",
+      "#行銷分析",
       "#視覺設計",
-      "#資料處理"
+      "#資料庫",
+      "#通用工具",
+      "#雲端服務"
     ]
   },
   "workflows": {
