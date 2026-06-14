@@ -1,5 +1,5 @@
 {
-  "sync_time": "2026-06-14T20:40:22.700722",
+  "sync_time": "2026-06-14T21:14:33.609061",
   "sync_mode": "full",
   "projects": {
     "total": 13,
@@ -19,11 +19,11 @@
         "version": "1.0.0",
         "has_git": true,
         "tech_stack": [
-          "Tailwind CSS",
-          "React",
           "Electron",
+          "Tailwind CSS",
+          "Vite",
           "TypeScript",
-          "Vite"
+          "React"
         ]
       },
       {
@@ -39,10 +39,10 @@
         "version": "0.1.0",
         "has_git": true,
         "tech_stack": [
-          "React",
-          "Tailwind CSS",
           "TypeScript",
-          "Next.js"
+          "Next.js",
+          "Tailwind CSS",
+          "React"
         ]
       },
       {
@@ -58,10 +58,10 @@
         "version": "0.1.1",
         "has_git": true,
         "tech_stack": [
-          "React",
-          "Tailwind CSS",
           "TypeScript",
-          "Next.js"
+          "Next.js",
+          "Tailwind CSS",
+          "React"
         ]
       },
       {
@@ -77,10 +77,10 @@
         "version": "0.5.4",
         "has_git": true,
         "tech_stack": [
-          "React",
-          "Tailwind CSS",
           "TypeScript",
-          "Next.js"
+          "Next.js",
+          "Tailwind CSS",
+          "React"
         ]
       },
       {
@@ -121,10 +121,11 @@
   },
   "skills": {
     "total": 57,
-    "total_tags": 23,
+    "total_tags": 25,
     "tags": [
       "#AI代理人",
       "#AI工具",
+      "#DevOps",
       "#前端設計",
       "#安全稽核",
       "#專案管理",
@@ -144,6 +145,7 @@
       "#行銷分析",
       "#視覺設計",
       "#資料庫",
+      "#資料處理",
       "#通用工具",
       "#雲端服務"
     ]
