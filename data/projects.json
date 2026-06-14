@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T22:59:06.622692",
+  "generated_at": "2026-06-14T11:45:58.035641",
   "base_dir": "D:\\01-Project",
   "project_count": 13,
   "projects": [
@@ -112,7 +112,7 @@
         }
       ],
       "last_commit": "2026-04-14T21:53:10+08:00",
-      "last_scanned": "2026-06-08T22:59:02.681482"
+      "last_scanned": "2026-06-14T11:45:53.099026"
     },
     {
       "id": "02-openclaw_manage_tools",
@@ -122,11 +122,11 @@
       "github_url": "https://github.com/hoonsor/openclaw_manage_tools.git",
       "has_git": true,
       "tech_stack": [
-        "Electron",
-        "Tailwind CSS",
-        "TypeScript",
         "Vite",
-        "React"
+        "React",
+        "Tailwind CSS",
+        "Electron",
+        "TypeScript"
       ],
       "description": "這個模板提供了一個最小的設置，可以讓 React 在 Vite 中與 HMR 和一些 ESLint 規則一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/) （或 [oxc](https://oxc.rs) 在 [httpsdownvite）\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 進行快速刷新",
       "changelog": [],
@@ -144,7 +144,7 @@
         }
       ],
       "last_commit": "2026-02-28T09:09:06+08:00",
-      "last_scanned": "2026-06-08T22:59:03.673563"
+      "last_scanned": "2026-06-14T11:45:54.281101"
     },
     {
       "id": "03-modules",
@@ -166,7 +166,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-08T22:59:03.674592"
+      "last_scanned": "2026-06-14T11:45:54.282914"
     },
     {
       "id": "04-webpage-test",
@@ -177,9 +177,9 @@
       "has_git": true,
       "tech_stack": [
         "React",
-        "Tailwind CSS",
+        "Next.js",
         "TypeScript",
-        "Next.js"
+        "Tailwind CSS"
       ],
       "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
       "changelog": [],
@@ -197,7 +197,7 @@
         }
       ],
       "last_commit": "2026-03-28T20:08:30+08:00",
-      "last_scanned": "2026-06-08T22:59:05.159982"
+      "last_scanned": "2026-06-14T11:45:55.651885"
     },
     {
       "id": "05-global-skills",
@@ -249,7 +249,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-08T22:59:05.182564"
+      "last_scanned": "2026-06-14T11:45:55.653989"
     },
     {
       "id": "06-全能生活網頁",
@@ -260,9 +260,9 @@
       "has_git": true,
       "tech_stack": [
         "React",
-        "Tailwind CSS",
+        "Next.js",
         "TypeScript",
-        "Next.js"
+        "Tailwind CSS"
       ],
       "description": "Omni Nexus (全能生活網頁) 是一個為了解決現代人面臨「資訊過載與破碎化」痛點而誕生的聚合型入口網站。有別於傳統條列式平庸的內容農場，它採用了**動態空間網格 (Dynamic Spatial Bento Grid)** 架構，將搶票倒數、展覽文化、旅遊規劃、特價折扣等龐雜的資訊維度進行高度視覺收斂。\n\n本專案的核心價值在於提供極致的「資訊層次感」與「流暢的操作手感」。設計上採用暗黑破壞主義（Brutalism）搭配高對比度的酸性螢光綠色，創造強烈的視覺焦點；技術層面則強制導入 React Server Components (RSC) 搭配 Edge Functions，輔以 GSAP、Lenis 與 Framer Motion，確保即使在高併發流量或展示巨量即時資料的情境下，依然能享有低延遲、無卡頓的頂尖網頁體驗。",
       "changelog": [
@@ -326,7 +326,7 @@
         }
       ],
       "last_commit": "2026-04-14T20:58:18+08:00",
-      "last_scanned": "2026-06-08T22:59:06.191254"
+      "last_scanned": "2026-06-14T11:45:57.642863"
     },
     {
       "id": "07-全能生活網頁-活動行事曆",
@@ -378,34 +378,40 @@
         }
       ],
       "last_commit": "2026-04-14T21:00:54+08:00",
-      "last_scanned": "2026-06-08T22:59:06.377421"
+      "last_scanned": "2026-06-14T11:45:57.789156"
     },
     {
       "id": "08-監控ai各專案進度之網站",
       "folder_name": "08-監控AI各專案進度之網站",
       "name": "08-監控AI各專案進度之網站",
-      "version": "0.4.1",
+      "version": "0.5.1",
       "github_url": "https://github.com/hoonsor/ai-pro-hub.git",
       "has_git": true,
       "tech_stack": [
         "React",
-        "Tailwind CSS",
+        "Next.js",
         "TypeScript",
-        "Next.js"
+        "Tailwind CSS"
       ],
       "description": "這是一個用來集中監控並管理各個 AI 開發專案進度與技能使用情況的儀表板網站。主要功能包含自動解析各專案資料夾下的 PROJECT_STATUS.md 與各技能說明文件，並呈現直覺的卡片式總覽與詳細資料頁面。\n\n本系統為解決多專案管理的分散痛點而生，讓開發者或專案經理能夠一目了然地掌握所有任務的完成度與技術細節。透過 Vercel 部署、Clerk 身份驗證以及動態的 Server Actions，系統能即時與雲端及本地端同步，確保任務計畫 `ACTIVE_TASKS.md` 的變更雙向暢通，大幅提升開發效率與專案透明度。",
       "changelog": [
-        {
-          "version": "0.4.0",
-          "date": "2026-04-20",
-          "type": "feat",
-          "description": "新增遠端同步計畫拉取 API 與互動式介面"
-        },
         {
           "version": "0.4.1",
           "date": "2026-04-21",
           "type": "fix",
           "description": "修正 Server Action 的 PrismaClient 導致 Vercel 報錯，並移除技能說明的文字截斷以避免內容被裁切"
+        },
+        {
+          "version": "0.5.0",
+          "date": "2026-06-13",
+          "type": "feat",
+          "description": "新增系統設定與了解頁籤，展示 Antigravity 2.0 說明與 MCP 及技能狀態"
+        },
+        {
+          "version": "0.5.1",
+          "date": "2026-06-13",
+          "type": "feat",
+          "description": "將「#學習」觸發關鍵字與 hoonsor-error-learning 技能新增至系統設定頁籤"
         }
       ],
       "tasks": {
@@ -437,6 +443,21 @@
       },
       "revision_history": [],
       "recent_commits": [
+        {
+          "hash": "4bf7c4c7dbe548f9208de620ff462b05f96b835e",
+          "date": "2026-06-13 23:08:53 +0800",
+          "message": "feat: add #學習 keyword to system settings view"
+        },
+        {
+          "hash": "e48d3bf1a5d39b80ad7ce35c25cd7701c789a7b5",
+          "date": "2026-06-13 22:24:30 +0800",
+          "message": "fix: resolve lucide-react Github export error"
+        },
+        {
+          "hash": "64aa90ec875b37a35b753a6eb27ff4d10dc85600",
+          "date": "2026-06-13 22:15:49 +0800",
+          "message": "feat: add system settings tab with antigravity 2.0 instructions"
+        },
         {
           "hash": "cacc191a15bb4cf0d6754a027afb3aee406679b7",
           "date": "2026-04-21 22:08:06 +0800",
@@ -471,25 +492,10 @@
           "hash": "7019f66a56a3a88050aff0291d9a6ec5d92df746",
           "date": "2026-04-19 22:35:24 +0800",
           "message": "feat: switch Prisma datasource from SQLite to PostgreSQL (Neon)"
-        },
-        {
-          "hash": "169079e7107fec1e9677e62845c9c04cc6ff370a",
-          "date": "2026-04-19 20:59:55 +0800",
-          "message": "fix: move ssr:false dynamic import to ClientOnly.tsx (Next.js 16 App Router requirement)"
-        },
-        {
-          "hash": "1d14e88f24efc8fed205f23b1f947b0944e66279",
-          "date": "2026-04-19 20:54:38 +0800",
-          "message": "fix: disable SSR with dynamic import to resolve localStorage prerender error on Vercel"
-        },
-        {
-          "hash": "633c63db40f65050b288d31b81bf07c42a672950",
-          "date": "2026-04-19 20:51:17 +0800",
-          "message": "fix: rename middleware.ts to proxy.ts for Next.js 16 compatibility"
         }
       ],
-      "last_commit": "2026-04-21T22:08:06+08:00",
-      "last_scanned": "2026-06-08T22:59:06.592798"
+      "last_commit": "2026-06-13T23:08:53+08:00",
+      "last_scanned": "2026-06-14T11:45:57.943560"
     },
     {
       "id": "09-實作練習gemini-cli",
@@ -511,7 +517,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-08T22:59:06.593795"
+      "last_scanned": "2026-06-14T11:45:57.944601"
     },
     {
       "id": "10-openclaw-skills",
@@ -538,7 +544,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-08T22:59:06.613433"
+      "last_scanned": "2026-06-14T11:45:57.987279"
     },
     {
       "id": "11-openclaw自身狀態網站",
@@ -558,7 +564,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-08T22:59:06.613433"
+      "last_scanned": "2026-06-14T11:45:57.988309"
     },
     {
       "id": "12-自動學習新知",
@@ -580,7 +586,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-08T22:59:06.621691"
+      "last_scanned": "2026-06-14T11:45:58.034671"
     },
     {
       "id": "13-非同步評價網站",
@@ -600,7 +606,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-08T22:59:06.622692"
+      "last_scanned": "2026-06-14T11:45:58.035641"
     }
   ]
 }

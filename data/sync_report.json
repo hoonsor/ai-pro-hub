@@ -1,5 +1,5 @@
 {
-  "sync_time": "2026-06-08T22:59:07.320340",
+  "sync_time": "2026-06-14T11:45:58.147147",
   "sync_mode": "full",
   "projects": {
     "total": 13,
@@ -19,11 +19,11 @@
         "version": "1.0.0",
         "has_git": true,
         "tech_stack": [
-          "Electron",
-          "Tailwind CSS",
-          "TypeScript",
           "Vite",
-          "React"
+          "React",
+          "Tailwind CSS",
+          "Electron",
+          "TypeScript"
         ]
       },
       {
@@ -40,9 +40,9 @@
         "has_git": true,
         "tech_stack": [
           "React",
-          "Tailwind CSS",
+          "Next.js",
           "TypeScript",
-          "Next.js"
+          "Tailwind CSS"
         ]
       },
       {
@@ -59,9 +59,9 @@
         "has_git": true,
         "tech_stack": [
           "React",
-          "Tailwind CSS",
+          "Next.js",
           "TypeScript",
-          "Next.js"
+          "Tailwind CSS"
         ]
       },
       {
@@ -74,13 +74,13 @@
       },
       {
         "name": "08-監控AI各專案進度之網站",
-        "version": "0.4.1",
+        "version": "0.5.1",
         "has_git": true,
         "tech_stack": [
           "React",
-          "Tailwind CSS",
+          "Next.js",
           "TypeScript",
-          "Next.js"
+          "Tailwind CSS"
         ]
       },
       {
@@ -120,21 +120,15 @@
     ]
   },
   "skills": {
-    "total": 1330,
-    "total_tags": 12,
+    "total": 57,
+    "total_tags": 6,
     "tags": [
       "#AI工具",
       "#前端設計",
       "#專案管理",
       "#後端開發",
       "#心智圖",
-      "#技能開發",
-      "#文件處理",
-      "#測試除錯",
-      "#溝通協作",
-      "#系統整合",
-      "#視覺設計",
-      "#資料處理"
+      "#測試除錯"
     ]
   },
   "workflows": {
