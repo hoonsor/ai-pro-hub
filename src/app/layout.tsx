@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="zh-Hant" className="dark" suppressHydrationWarning>
-        <body className="antialiased min-h-screen">
+        <body className="antialiased min-h-screen" suppressHydrationWarning>
           {children}
         </body>
       </html>

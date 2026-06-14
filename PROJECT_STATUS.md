@@ -1,6 +1,6 @@
 # 監控AI各專案進度之網站
 
-> **版本號：** `v0.5.7`
+> **版本號：** `v0.5.8`
 > **最後更新：** 2026-06-14
 > **GitHub：** [https://github.com/hoonsor/ai-pro-hub](https://github.com/hoonsor/ai-pro-hub)
 
@@ -25,6 +25,7 @@
 | v0.5.5 | 2026-06-14 | feat | 新增 #分支 核心指令至系統設定頁籤，並重新執行專案掃描同步最新的分支狀態 |
 | v0.5.6 | 2026-06-14 | feat | 移除全域技能庫並新增全域規則展示，優化全域技能目錄之存放路徑，並完全移除工作流功能與工作流檢視器。 |
 | v0.5.7 | 2026-06-14 | fix | 修正 KEYWORDS 迴圈渲染時的重複 key 錯誤，並加入 suppressHydrationWarning 解決瀏覽器外掛導致的 Hydration 警告。 |
+| v0.5.8 | 2026-06-14 | fix | 將 suppressHydrationWarning 同步加入 body 標籤，以解決 React 只檢查單層屬性 mismatch 的問題。 |
 
 ---
 
