@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T12:03:22.584592",
+  "generated_at": "2026-06-14T20:40:22.679746",
   "skills_dir": "C:\\Users\\hoonsor\\.gemini\\config\\skills",
   "workflows_dir": "C:\\Users\\hoonsor\\.gemini\\antigravity\\global_workflows",
   "stats": {
@@ -219,7 +219,7 @@
       "name": "antigravity-workflow",
       "display_name": "Antigravity Workflow",
       "description": "AntiGravity 開工/收工/新專案初始化流程。說「開工」「收工」「初始化專案」時載入。",
-      "summary": "1. 讀取 `ANTIGRAVITY.md` 2. 讀取專案筆記重點 3. `git status` + 最近 commit 4. 回報狀態與建議下一步 5. 不自動 pull/commit/push",
+      "summary": "1. 檢查當前資料夾： - 若資料夾為空或無專案檔案，主動要求使用者提供 GitHub 專案倉庫網址。 - 若使用者同時提供了網址（例如：「#開工 https://github.com/hoonsor/...」），則自動將該倉庫 clone/pull 到當前資料夾路徑。 - 若為新建立的空白專案（無 `ANTIGRAVITY.md`），自動套用「通用 ANTIGRAVITY.md 模板」建立初步架構。 2. 讀取 `ANTIGRAVITY.md`。若專案已成型但缺乏該檔案，應提示使用者使用 `#架構` 指令自動生成。 3. 讀取專案筆記重點（例如 `PROJECT_STATUS.md` ...",
       "tags": [
         "#通用工具"
       ],
@@ -233,11 +233,11 @@
         "has_examples": false,
         "has_evals": false,
         "total_files": 1,
-        "total_size_kb": 0.9
+        "total_size_kb": 4.2
       },
       "frontmatter": {},
-      "skill_md_lines": 28,
-      "last_modified": "2026-06-13T20:08:47.333113"
+      "skill_md_lines": 87,
+      "last_modified": "2026-06-14T20:23:33.782668"
     },
     {
       "name": "antigravity-obsidian",
@@ -702,11 +702,11 @@
         "has_examples": false,
         "has_evals": false,
         "total_files": 9,
-        "total_size_kb": 81.5
+        "total_size_kb": 83.4
       },
       "frontmatter": {},
-      "skill_md_lines": 136,
-      "last_modified": "2026-04-19T22:52:30.474164"
+      "skill_md_lines": 154,
+      "last_modified": "2026-06-14T20:38:13.734638"
     },
     {
       "name": "hoonsor-pull-plan",
@@ -1749,5 +1749,5 @@
       "react-native-architecture"
     ]
   },
-  "retagged_at": "2026-06-14T12:03:22.606619"
+  "retagged_at": "2026-06-14T20:40:22.695752"
 }

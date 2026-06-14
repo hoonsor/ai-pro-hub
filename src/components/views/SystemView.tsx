@@ -9,9 +9,10 @@ const SLASH_COMMANDS = [
 ]
 
 const KEYWORDS = [
-  { trigger: "「開工」或「收工」", skill: "antigravity-workflow", desc: "自動為您執行對應的專案起步或收尾檢查清單。" },
+  { trigger: "「#開工」或「#收工」", skill: "antigravity-workflow", desc: "自動為您執行對應的專案起步或收尾檢查清單。" },
+  { trigger: "「#架構」", skill: "hoonsor-project-monitor", desc: "自動掃描專案結構、分析技術棧並建立或更新 ANTIGRAVITY.md 架構指引文件。" },
+  { trigger: "「#狀態」", skill: "hoonsor-project-monitor", desc: "自動掃描所有專案目錄下的 PROJECT_STATUS.md 並同步狀態至儀表板網站。" },
   { trigger: "「#同步」", skill: "hoonsor-sync-global-skills", desc: "自動備份與同步全域技能至遠端 GitHub 倉庫。" },
-  { trigger: "「專案掃描」或「PROJECT_STATUS」", skill: "hoonsor-project-monitor", desc: "自動掃描所有專案目錄下的 PROJECT_STATUS.md 並同步狀態。" },
   { trigger: "「拉取任務計畫」或「pull plan」", skill: "hoonsor-pull-plan", desc: "從 Vercel 遠端拉取最新的任務計畫到本地 ACTIVE_TASKS.md 並準備實作。" },
   { trigger: "「畫心智圖」", skill: "hoonsor-xmind", desc: "自動生成原生 .xmind 格式的心智圖檔案。" },
   { trigger: "「#學習」", skill: "hoonsor-error-learning", desc: "自動萃取對話錯誤教訓並更新持久化知識庫，避免重複犯錯與浪費 Tokens。" },
