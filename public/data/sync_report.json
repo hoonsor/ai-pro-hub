@@ -1,8 +1,8 @@
 {
-  "sync_time": "2026-06-14T21:14:33.609061",
+  "sync_time": "2026-06-14T22:47:34.526400",
   "sync_mode": "full",
   "projects": {
-    "total": 13,
+    "total": 14,
     "with_git": 6,
     "with_status_md": 7,
     "summary": [
@@ -19,11 +19,11 @@
         "version": "1.0.0",
         "has_git": true,
         "tech_stack": [
-          "Electron",
+          "React",
           "Tailwind CSS",
-          "Vite",
           "TypeScript",
-          "React"
+          "Vite",
+          "Electron"
         ]
       },
       {
@@ -39,10 +39,10 @@
         "version": "0.1.0",
         "has_git": true,
         "tech_stack": [
-          "TypeScript",
           "Next.js",
-          "Tailwind CSS",
-          "React"
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
         ]
       },
       {
@@ -58,10 +58,10 @@
         "version": "0.1.1",
         "has_git": true,
         "tech_stack": [
-          "TypeScript",
           "Next.js",
-          "Tailwind CSS",
-          "React"
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
         ]
       },
       {
@@ -74,14 +74,20 @@
       },
       {
         "name": "08-監控AI各專案進度之網站",
-        "version": "0.5.4",
+        "version": "0.5.5",
         "has_git": true,
         "tech_stack": [
-          "TypeScript",
           "Next.js",
-          "Tailwind CSS",
-          "React"
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
         ]
+      },
+      {
+        "name": "08-監控AI各專案進度之網站_分支1",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": []
       },
       {
         "name": "09-實作練習gemini cli",
@@ -121,12 +127,13 @@
   },
   "skills": {
     "total": 57,
-    "total_tags": 25,
+    "total_tags": 26,
     "tags": [
       "#AI代理人",
       "#AI工具",
       "#DevOps",
       "#前端設計",
+      "#商業分析",
       "#安全稽核",
       "#專案管理",
       "#後端開發",

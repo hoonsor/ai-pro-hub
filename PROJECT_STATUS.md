@@ -1,6 +1,6 @@
 # 監控AI各專案進度之網站
 
-> **版本號：** `v0.5.4`
+> **版本號：** `v0.5.5`
 > **最後更新：** 2026-06-14
 > **GitHub：** [https://github.com/hoonsor/ai-pro-hub](https://github.com/hoonsor/ai-pro-hub)
 
@@ -22,6 +22,7 @@
 | v0.5.2 | 2026-06-14 | fix | 修正資料同步路徑至 public/data 目錄，整合 retag 與 tag_counts 自動生成，修復 Windows 終端重複 wrapper sys.stdout 引起的 I/O 錯誤 |
 | v0.5.3 | 2026-06-14 | docs | 初始化 ANTIGRAVITY.md 指引文件以引導代理人開發與架構理解 |
 | v0.5.4 | 2026-06-14 | feat | 新增 #架構 #開工 #收工 #狀態 核心指令說明至系統設定頁籤，並執行專案掃描同步 |
+| v0.5.5 | 2026-06-14 | feat | 新增 #分支 核心指令至系統設定頁籤，並重新執行專案掃描同步最新的分支狀態 |
 
 ---
 

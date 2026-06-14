@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T21:14:33.295077",
+  "generated_at": "2026-06-14T22:47:34.227287",
   "skills_dir": "C:\\Users\\hoonsor\\.gemini\\config\\skills",
   "workflows_dir": "C:\\Users\\hoonsor\\.gemini\\antigravity\\global_workflows",
   "stats": {
@@ -221,8 +221,8 @@
     {
       "name": "antigravity-workflow",
       "display_name": "Antigravity Workflow",
-      "description": "AntiGravity 開工/收工/新專案初始化流程。說「開工」「收工」「初始化專案」時載入。",
-      "summary": "1. 檢查當前資料夾： - 若資料夾為空或無專案檔案，主動要求使用者提供 GitHub 專案倉庫網址。 - 若使用者同時提供了網址（例如：「#開工 https://github.com/hoonsor/...」），則自動將該倉庫 clone/pull 到當前資料夾路徑。 - 若為新建立的空白專案（無 `ANTIGRAVITY.md`），自動套用「通用 ANTIGRAVITY.md 模板」建立初步架構。 2. 讀取 `ANTIGRAVITY.md`。若專案已成型但缺乏該檔案，應提示使用者使用 `#架構` 指令自動生成。 3. 讀取專案筆記重點（例如 `PROJECT_STATUS.md` ...",
+      "description": "AntiGravity 開工/收工/新專案初始化/分支管理流程。說「開工」「收工」「初始化專案」「#分支」時載入。",
+      "summary": "1. 檢查當前資料夾： - 若資料夾為空或無專案檔案，主動要求使用者提供 GitHub 專案倉庫網址。 - 若使用者同時提供了網址（例如：「#開工 https://github.com/hoonsor/...」）： - **檢查遠端分支**：在進行 `git clone` 之前，先利用 `git ls-remote --heads <URL>` 查詢該遠端倉庫的所有分支。 - **分支確認與防呆 (重要)**： - 如果查詢結果顯示遠端除了預設主分支外，**還存在其他分支**，**請先暫停執行 clone**，並主動列出所有分支名稱向使用者確認：「*偵測到該遠端倉庫除了 main 之外，...",
       "tags": [
         "#通用工具"
       ],
@@ -236,11 +236,11 @@
         "has_examples": false,
         "has_evals": false,
         "total_files": 1,
-        "total_size_kb": 4.2
+        "total_size_kb": 7.5
       },
       "frontmatter": {},
-      "skill_md_lines": 87,
-      "last_modified": "2026-06-14T20:23:33.782668"
+      "skill_md_lines": 121,
+      "last_modified": "2026-06-14T22:42:23.723642"
     },
     {
       "name": "antigravity-obsidian",
@@ -42132,5 +42132,5 @@
       "react-native-architecture"
     ]
   },
-  "retagged_at": "2026-06-14T21:14:33.530072"
+  "retagged_at": "2026-06-14T22:47:34.449155"
 }

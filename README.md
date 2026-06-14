@@ -54,9 +54,9 @@ data/               # JSON 資料儲存區
 
 ## 🔄 最新更新 (Recent Updates)
 
+- **v0.5.5** (2026-06-14)：新增 `#分支` 核心指令至系統設定頁籤，並重新同步最新的 Git 分支狀態。
 - **v0.5.4** (2026-06-14)：新增 `#架構`、`#開工`、`#收工`、`#狀態` 核心指令說明至系統設定頁面。
 - **v0.5.3** (2026-06-14)：初始化 `ANTIGRAVITY.md` 引導指引文件，定義專案技術棧、核心資料流與開發規約。
-- **v0.5.2** (2026-06-14)：修正資料同步路徑至 `public/data` 目錄，整合 `retag` 與 `tag_counts` 自動生成，並修復 Windows 終端重複 wrapper stdout 引起的 I/O 錯誤。
 
 ---
 *Generated and maintained by Google Antigravity Architect*
