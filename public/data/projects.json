@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-14T23:39:12.151021",
+  "generated_at": "2026-06-15T20:35:06.409960",
   "base_dir": "D:\\01-Project",
-  "project_count": 13,
+  "project_count": 14,
   "projects": [
     {
       "id": "01-screen-automate",
@@ -112,7 +112,7 @@
         }
       ],
       "last_commit": "2026-04-14T21:53:10+08:00",
-      "last_scanned": "2026-06-14T23:39:09.931713"
+      "last_scanned": "2026-06-15T20:35:01.802626"
     },
     {
       "id": "02-openclaw_manage_tools",
@@ -122,11 +122,11 @@
       "github_url": "https://github.com/hoonsor/openclaw_manage_tools.git",
       "has_git": true,
       "tech_stack": [
+        "React",
         "Electron",
-        "TypeScript",
         "Tailwind CSS",
-        "Vite",
-        "React"
+        "TypeScript",
+        "Vite"
       ],
       "description": "這個模板提供了一個最小的設置，可以讓 React 在 Vite 中與 HMR 和一些 ESLint 規則一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/) （或 [oxc](https://oxc.rs) 在 [httpsdownvite）\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 進行快速刷新",
       "changelog": [],
@@ -144,7 +144,7 @@
         }
       ],
       "last_commit": "2026-02-28T09:09:06+08:00",
-      "last_scanned": "2026-06-14T23:39:10.456713"
+      "last_scanned": "2026-06-15T20:35:03.128998"
     },
     {
       "id": "03-modules",
@@ -166,7 +166,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-14T23:39:10.457710"
+      "last_scanned": "2026-06-15T20:35:03.129995"
     },
     {
       "id": "04-webpage-test",
@@ -176,8 +176,8 @@
       "github_url": null,
       "has_git": true,
       "tech_stack": [
-        "Next.js",
         "React",
+        "Next.js",
         "TypeScript",
         "Tailwind CSS"
       ],
@@ -197,7 +197,7 @@
         }
       ],
       "last_commit": "2026-03-28T20:08:30+08:00",
-      "last_scanned": "2026-06-14T23:39:10.972236"
+      "last_scanned": "2026-06-15T20:35:04.554798"
     },
     {
       "id": "05-global-skills",
@@ -249,7 +249,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-14T23:39:10.973238"
+      "last_scanned": "2026-06-15T20:35:04.586246"
     },
     {
       "id": "06-全能生活網頁",
@@ -259,8 +259,8 @@
       "github_url": "https://github.com/hoonsor/life-style",
       "has_git": true,
       "tech_stack": [
-        "Next.js",
         "React",
+        "Next.js",
         "TypeScript",
         "Tailwind CSS"
       ],
@@ -326,7 +326,7 @@
         }
       ],
       "last_commit": "2026-04-14T20:58:18+08:00",
-      "last_scanned": "2026-06-14T23:39:11.855124"
+      "last_scanned": "2026-06-15T20:35:05.876931"
     },
     {
       "id": "07-全能生活網頁-活動行事曆",
@@ -378,18 +378,18 @@
         }
       ],
       "last_commit": "2026-04-14T21:00:54+08:00",
-      "last_scanned": "2026-06-14T23:39:11.994895"
+      "last_scanned": "2026-06-15T20:35:06.080111"
     },
     {
       "id": "08-監控ai各專案進度之網站",
       "folder_name": "08-監控AI各專案進度之網站",
       "name": "08-監控AI各專案進度之網站",
-      "version": "0.5.9",
+      "version": "0.5.10",
       "github_url": "https://github.com/hoonsor/ai-pro-hub.git",
       "has_git": true,
       "tech_stack": [
-        "Next.js",
         "React",
+        "Next.js",
         "TypeScript",
         "Tailwind CSS"
       ],
@@ -460,6 +460,12 @@
           "date": "2026-06-14",
           "type": "feat",
           "description": "新增 #合併 核心指令至系統設定頁籤，並重新執行專案掃描同步最新的資料狀態"
+        },
+        {
+          "version": "0.5.10",
+          "date": "2026-06-15",
+          "type": "feat",
+          "description": "新增 #初始化 指令與更新 #收工 內涵說明至系統設定頁籤，並重新執行專案狀態同步"
         }
       ],
       "tasks": {
@@ -491,6 +497,11 @@
       },
       "revision_history": [],
       "recent_commits": [
+        {
+          "hash": "a4d3e9586f4ce73fb1f0cfcdb3abf41230351d03",
+          "date": "2026-06-14 23:39:21 +0800",
+          "message": "feat: add #合併 trigger to SystemView and sync status"
+        },
         {
           "hash": "cd115982f8e782252cf5c6f2071934de4f48bf33",
           "date": "2026-06-14 23:33:37 +0800",
@@ -535,15 +546,10 @@
           "hash": "35e7b2d487f84b94a1bc492cde0a2f9d2eb475cf",
           "date": "2026-06-14 21:15:03 +0800",
           "message": "feat(status): sync skills and add 1280 frozen skills data via #狀態"
-        },
-        {
-          "hash": "eafefd69db1aa8c6564d266d2366b7d57f708875",
-          "date": "2026-06-14 20:40:45 +0800",
-          "message": "feat: add #架構 #開工 #收工 #狀態 commands and sync status"
         }
       ],
-      "last_commit": "2026-06-14T23:33:37+08:00",
-      "last_scanned": "2026-06-14T23:39:12.145021"
+      "last_commit": "2026-06-14T23:39:21+08:00",
+      "last_scanned": "2026-06-15T20:35:06.350491"
     },
     {
       "id": "09-實作練習gemini-cli",
@@ -565,7 +571,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-14T23:39:12.146021"
+      "last_scanned": "2026-06-15T20:35:06.351493"
     },
     {
       "id": "10-openclaw-skills",
@@ -592,7 +598,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-14T23:39:12.147020"
+      "last_scanned": "2026-06-15T20:35:06.382682"
     },
     {
       "id": "11-openclaw自身狀態網站",
@@ -612,7 +618,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-14T23:39:12.148020"
+      "last_scanned": "2026-06-15T20:35:06.383687"
     },
     {
       "id": "12-自動學習新知",
@@ -634,7 +640,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-14T23:39:12.150020"
+      "last_scanned": "2026-06-15T20:35:06.407960"
     },
     {
       "id": "13-非同步評價網站",
@@ -654,7 +660,27 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-14T23:39:12.151021"
+      "last_scanned": "2026-06-15T20:35:06.408949"
+    },
+    {
+      "id": "14-test",
+      "folder_name": "14-test",
+      "name": "14-test",
+      "version": "0.0.0",
+      "github_url": null,
+      "has_git": false,
+      "tech_stack": [],
+      "description": "尚無描述",
+      "changelog": [],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [],
+      "last_commit": null,
+      "last_scanned": "2026-06-15T20:35:06.409960"
     }
   ]
 }

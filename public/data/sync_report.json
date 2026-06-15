@@ -1,8 +1,8 @@
 {
-  "sync_time": "2026-06-14T23:39:13.060015",
+  "sync_time": "2026-06-15T20:35:21.758309",
   "sync_mode": "full",
   "projects": {
-    "total": 13,
+    "total": 14,
     "with_git": 6,
     "with_status_md": 7,
     "summary": [
@@ -19,11 +19,11 @@
         "version": "1.0.0",
         "has_git": true,
         "tech_stack": [
+          "React",
           "Electron",
-          "TypeScript",
           "Tailwind CSS",
-          "Vite",
-          "React"
+          "TypeScript",
+          "Vite"
         ]
       },
       {
@@ -39,8 +39,8 @@
         "version": "0.1.0",
         "has_git": true,
         "tech_stack": [
-          "Next.js",
           "React",
+          "Next.js",
           "TypeScript",
           "Tailwind CSS"
         ]
@@ -58,8 +58,8 @@
         "version": "0.1.1",
         "has_git": true,
         "tech_stack": [
-          "Next.js",
           "React",
+          "Next.js",
           "TypeScript",
           "Tailwind CSS"
         ]
@@ -74,11 +74,11 @@
       },
       {
         "name": "08-監控AI各專案進度之網站",
-        "version": "0.5.9",
+        "version": "0.5.10",
         "has_git": true,
         "tech_stack": [
-          "Next.js",
           "React",
+          "Next.js",
           "TypeScript",
           "Tailwind CSS"
         ]
@@ -113,6 +113,12 @@
       },
       {
         "name": "13-非同步評價網站",
+        "version": "0.0.0",
+        "has_git": false,
+        "tech_stack": []
+      },
+      {
+        "name": "14-test",
         "version": "0.0.0",
         "has_git": false,
         "tech_stack": []

@@ -1,7 +1,7 @@
 # 監控AI各專案進度之網站
 
-> **版本號：** `v0.5.9`
-> **最後更新：** 2026-06-14
+> **版本號：** `v0.5.10`
+> **最後更新：** 2026-06-15
 > **GitHub：** [https://github.com/hoonsor/ai-pro-hub](https://github.com/hoonsor/ai-pro-hub)
 
 ---
@@ -27,6 +27,7 @@
 | v0.5.7 | 2026-06-14 | fix | 修正 KEYWORDS 迴圈渲染時的重複 key 錯誤，並加入 suppressHydrationWarning 解決瀏覽器外掛導致的 Hydration 警告。 |
 | v0.5.8 | 2026-06-14 | fix | 將 suppressHydrationWarning 同步加入 body 標籤，以解決 React 只檢查單層屬性 mismatch 的問題。 |
 | v0.5.9 | 2026-06-14 | feat | 新增 #合併 核心指令至系統設定頁籤，並重新執行專案掃描同步最新的資料狀態 |
+| v0.5.10 | 2026-06-15 | feat | 新增 #初始化 指令與更新 #收工 內涵說明至系統設定頁籤，並重新執行專案狀態同步 |
 
 ---
 

@@ -10,7 +10,7 @@ const SLASH_COMMANDS = [
 ]
 
 const KEYWORDS = [
-  { trigger: "「#開工」、「#收工」、「#分支」或「#合併」", skill: "antigravity-workflow", desc: "自動執行對應的專案起步檢查、收尾清理、分支管理或 Git 分支合併工作流。" },
+  { trigger: "「#開工」、「#收工」、「#分支」、「#合併」或「#初始化」", skill: "antigravity-workflow", desc: "自動執行對應的專案起步檢查、收尾清理（支援 main 分支 Vercel 自動部署）、分支管理、合併或全新 Git 倉庫初始化工作流。" },
   { trigger: "「#架構」", skill: "hoonsor-project-monitor", desc: "自動掃描專案結構、分析技術棧並建立或更新 ANTIGRAVITY.md 架構指引文件。" },
   { trigger: "「#狀態」", skill: "hoonsor-project-monitor", desc: "自動掃描所有專案目錄下的 PROJECT_STATUS.md 並同步狀態至儀表板網站。" },
   { trigger: "「#同步」", skill: "hoonsor-sync-global-skills", desc: "自動備份與同步全域技能至遠端 GitHub 倉庫。" },
