@@ -1,5 +1,5 @@
 {
-  "sync_time": "2026-06-16T20:35:19.318402",
+  "sync_time": "2026-06-16T20:36:56.723898",
   "sync_mode": "full",
   "projects": {
     "total": 15,
@@ -19,10 +19,10 @@
         "version": "1.0.0",
         "has_git": true,
         "tech_stack": [
-          "TypeScript",
+          "Tailwind CSS",
           "Electron",
           "Vite",
-          "Tailwind CSS",
+          "TypeScript",
           "React"
         ]
       },
@@ -40,9 +40,9 @@
         "has_git": true,
         "tech_stack": [
           "TypeScript",
-          "Tailwind CSS",
           "React",
-          "Next.js"
+          "Next.js",
+          "Tailwind CSS"
         ]
       },
       {
@@ -59,9 +59,9 @@
         "has_git": true,
         "tech_stack": [
           "TypeScript",
-          "Tailwind CSS",
           "React",
-          "Next.js"
+          "Next.js",
+          "Tailwind CSS"
         ]
       },
       {
@@ -78,9 +78,9 @@
         "has_git": true,
         "tech_stack": [
           "TypeScript",
-          "Tailwind CSS",
           "React",
-          "Next.js"
+          "Next.js",
+          "Tailwind CSS"
         ]
       },
       {
@@ -123,9 +123,9 @@
         "has_git": true,
         "tech_stack": [
           "TypeScript",
-          "Tailwind CSS",
           "React",
-          "Next.js"
+          "Next.js",
+          "Tailwind CSS"
         ]
       },
       {
@@ -134,9 +134,9 @@
         "has_git": false,
         "tech_stack": [
           "TypeScript",
-          "Vite",
+          "React",
           "Tailwind CSS",
-          "React"
+          "Vite"
         ]
       }
     ]
