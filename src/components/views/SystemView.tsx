@@ -14,6 +14,7 @@ const KEYWORDS = [
   { trigger: "「#架構」", skill: "hoonsor-project-monitor", desc: "自動掃描專案結構、分析技術棧並建立或更新 ANTIGRAVITY.md 架構指引文件。" },
   { trigger: "「#狀態」", skill: "hoonsor-project-monitor", desc: "自動掃描所有專案目錄下的 PROJECT_STATUS.md 並同步狀態至儀表板網站。" },
   { trigger: "「#同步」", skill: "hoonsor-sync-global-skills", desc: "自動備份與同步全域技能至遠端 GitHub 倉庫。" },
+  { trigger: "「#喜好」", skill: "hoonsor-preferences", desc: "自動回溯與分析當前對話紀錄，擷取使用者的個人偏好、技術規範與功能需求，並自動記錄至 PREFERENCES.md 與 GitHub 遠端同步。" },
   { trigger: "「拉取任務計畫」或「pull plan」", skill: "hoonsor-pull-plan", desc: "從 Vercel 遠端拉取最新的任務計畫到本地 ACTIVE_TASKS.md 並準備實作。" },
   { trigger: "「畫心智圖」", skill: "hoonsor-xmind", desc: "自動生成原生 .xmind 格式的心智圖檔案。" },
   { trigger: "「#學習」", skill: "hoonsor-error-learning", desc: "自動萃取對話錯誤教訓並更新持久化知識庫，避免重複犯錯與浪費 Tokens。" },
