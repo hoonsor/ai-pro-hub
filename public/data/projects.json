@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-15T20:35:06.409960",
+  "generated_at": "2026-06-16T20:28:09.377778",
   "base_dir": "D:\\01-Project",
-  "project_count": 14,
+  "project_count": 15,
   "projects": [
     {
       "id": "01-screen-automate",
@@ -112,7 +112,7 @@
         }
       ],
       "last_commit": "2026-04-14T21:53:10+08:00",
-      "last_scanned": "2026-06-15T20:35:01.802626"
+      "last_scanned": "2026-06-16T20:28:05.537158"
     },
     {
       "id": "02-openclaw_manage_tools",
@@ -122,11 +122,11 @@
       "github_url": "https://github.com/hoonsor/openclaw_manage_tools.git",
       "has_git": true,
       "tech_stack": [
-        "React",
-        "Electron",
         "Tailwind CSS",
         "TypeScript",
-        "Vite"
+        "React",
+        "Vite",
+        "Electron"
       ],
       "description": "這個模板提供了一個最小的設置，可以讓 React 在 Vite 中與 HMR 和一些 ESLint 規則一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/) （或 [oxc](https://oxc.rs) 在 [httpsdownvite）\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 進行快速刷新",
       "changelog": [],
@@ -144,7 +144,7 @@
         }
       ],
       "last_commit": "2026-02-28T09:09:06+08:00",
-      "last_scanned": "2026-06-15T20:35:03.128998"
+      "last_scanned": "2026-06-16T20:28:06.084269"
     },
     {
       "id": "03-modules",
@@ -166,7 +166,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-15T20:35:03.129995"
+      "last_scanned": "2026-06-16T20:28:06.085264"
     },
     {
       "id": "04-webpage-test",
@@ -176,10 +176,10 @@
       "github_url": null,
       "has_git": true,
       "tech_stack": [
-        "React",
-        "Next.js",
         "TypeScript",
-        "Tailwind CSS"
+        "React",
+        "Tailwind CSS",
+        "Next.js"
       ],
       "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
       "changelog": [],
@@ -197,7 +197,7 @@
         }
       ],
       "last_commit": "2026-03-28T20:08:30+08:00",
-      "last_scanned": "2026-06-15T20:35:04.554798"
+      "last_scanned": "2026-06-16T20:28:06.634808"
     },
     {
       "id": "05-global-skills",
@@ -249,7 +249,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-15T20:35:04.586246"
+      "last_scanned": "2026-06-16T20:28:06.636776"
     },
     {
       "id": "06-全能生活網頁",
@@ -259,10 +259,10 @@
       "github_url": "https://github.com/hoonsor/life-style",
       "has_git": true,
       "tech_stack": [
-        "React",
-        "Next.js",
         "TypeScript",
-        "Tailwind CSS"
+        "React",
+        "Tailwind CSS",
+        "Next.js"
       ],
       "description": "Omni Nexus (全能生活網頁) 是一個為了解決現代人面臨「資訊過載與破碎化」痛點而誕生的聚合型入口網站。有別於傳統條列式平庸的內容農場，它採用了**動態空間網格 (Dynamic Spatial Bento Grid)** 架構，將搶票倒數、展覽文化、旅遊規劃、特價折扣等龐雜的資訊維度進行高度視覺收斂。\n\n本專案的核心價值在於提供極致的「資訊層次感」與「流暢的操作手感」。設計上採用暗黑破壞主義（Brutalism）搭配高對比度的酸性螢光綠色，創造強烈的視覺焦點；技術層面則強制導入 React Server Components (RSC) 搭配 Edge Functions，輔以 GSAP、Lenis 與 Framer Motion，確保即使在高併發流量或展示巨量即時資料的情境下，依然能享有低延遲、無卡頓的頂尖網頁體驗。",
       "changelog": [
@@ -326,7 +326,7 @@
         }
       ],
       "last_commit": "2026-04-14T20:58:18+08:00",
-      "last_scanned": "2026-06-15T20:35:05.876931"
+      "last_scanned": "2026-06-16T20:28:08.212573"
     },
     {
       "id": "07-全能生活網頁-活動行事曆",
@@ -378,7 +378,7 @@
         }
       ],
       "last_commit": "2026-04-14T21:00:54+08:00",
-      "last_scanned": "2026-06-15T20:35:06.080111"
+      "last_scanned": "2026-06-16T20:28:08.348314"
     },
     {
       "id": "08-監控ai各專案進度之網站",
@@ -388,10 +388,10 @@
       "github_url": "https://github.com/hoonsor/ai-pro-hub.git",
       "has_git": true,
       "tech_stack": [
-        "React",
-        "Next.js",
         "TypeScript",
-        "Tailwind CSS"
+        "React",
+        "Tailwind CSS",
+        "Next.js"
       ],
       "description": "這是一個用來集中監控並管理各個 AI 開發專案進度與技能使用情況的儀表板網站。主要功能包含自動解析各專案資料夾下的 PROJECT_STATUS.md 與各技能說明文件，並呈現直覺的卡片式總覽與詳細資料頁面。\n\n本系統為解決多專案管理的分散痛點而生，讓開發者或專案經理能夠一目了然地掌握所有任務的完成度與技術細節。透過 Vercel 部署、Clerk 身份驗證以及動態的 Server Actions，系統能即時與雲端及本地端同步，確保任務計畫 `ACTIVE_TASKS.md` 的變更雙向暢通，大幅提升開發效率與專案透明度。",
       "changelog": [
@@ -498,6 +498,11 @@
       "revision_history": [],
       "recent_commits": [
         {
+          "hash": "db32deab439d065f56f0838b5b5a39a02ac23c0b",
+          "date": "2026-06-15 20:35:38 +0800",
+          "message": "feat: update SystemView keywords with #初始化 and new #收工 description"
+        },
+        {
           "hash": "a4d3e9586f4ce73fb1f0cfcdb3abf41230351d03",
           "date": "2026-06-14 23:39:21 +0800",
           "message": "feat: add #合併 trigger to SystemView and sync status"
@@ -541,15 +546,10 @@
           "hash": "aa485fa4809064990c5fc5a78df81bcf7a18464c",
           "date": "2026-06-14 21:20:06 +0800",
           "message": "feat(ui): implement active and frozen skill tabs in SkillsView"
-        },
-        {
-          "hash": "35e7b2d487f84b94a1bc492cde0a2f9d2eb475cf",
-          "date": "2026-06-14 21:15:03 +0800",
-          "message": "feat(status): sync skills and add 1280 frozen skills data via #狀態"
         }
       ],
-      "last_commit": "2026-06-14T23:39:21+08:00",
-      "last_scanned": "2026-06-15T20:35:06.350491"
+      "last_commit": "2026-06-15T20:35:38+08:00",
+      "last_scanned": "2026-06-16T20:28:08.492550"
     },
     {
       "id": "09-實作練習gemini-cli",
@@ -571,7 +571,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-15T20:35:06.351493"
+      "last_scanned": "2026-06-16T20:28:08.493580"
     },
     {
       "id": "10-openclaw-skills",
@@ -598,7 +598,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-15T20:35:06.382682"
+      "last_scanned": "2026-06-16T20:28:08.494550"
     },
     {
       "id": "11-openclaw自身狀態網站",
@@ -618,7 +618,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-15T20:35:06.383687"
+      "last_scanned": "2026-06-16T20:28:08.495580"
     },
     {
       "id": "12-自動學習新知",
@@ -640,7 +640,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-15T20:35:06.407960"
+      "last_scanned": "2026-06-16T20:28:08.497550"
     },
     {
       "id": "13-非同步評價網站",
@@ -660,18 +660,92 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-15T20:35:06.408949"
+      "last_scanned": "2026-06-16T20:28:08.498548"
     },
     {
-      "id": "14-test",
-      "folder_name": "14-test",
-      "name": "14-test",
-      "version": "0.0.0",
+      "id": "14-工科技藝競賽公告網頁",
+      "folder_name": "14-工科技藝競賽公告網頁",
+      "name": "14-工科技藝競賽公告網頁",
+      "version": "0.1.0",
+      "github_url": null,
+      "has_git": true,
+      "tech_stack": [
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "Next.js"
+      ],
+      "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
+      "changelog": [
+        {
+          "version": "1.0.0",
+          "date": "2026-06-15",
+          "type": "feat",
+          "description": "專案初始化與基礎架構建置"
+        }
+      ],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "bdaf02902963a55b55dd4089870701234da045e8",
+          "date": "2026-06-15 22:33:47 +0800",
+          "message": "Initial commit from Create Next App"
+        }
+      ],
+      "last_commit": "2026-06-15T22:33:47+08:00",
+      "last_scanned": "2026-06-16T20:28:08.998366"
+    },
+    {
+      "id": "15-學校網頁復刻",
+      "folder_name": "15-學校網頁復刻",
+      "name": "15-學校網頁復刻",
+      "version": "1.3.0",
       "github_url": null,
       "has_git": false,
-      "tech_stack": [],
-      "description": "尚無描述",
-      "changelog": [],
+      "tech_stack": [
+        "TypeScript",
+        "React",
+        "Vite",
+        "Tailwind CSS"
+      ],
+      "description": "這個模板提供了一個最小的設置，可以讓 React 在 Vite 中與 HMR 和一些 ESLint 規則一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Oxc](https://oxc.rs)\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/)",
+      "changelog": [
+        {
+          "version": "1.0.0",
+          "date": "2026-06-15",
+          "type": "feat",
+          "description": "���憪������砍遣蝡�"
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-06-15",
+          "type": "feat",
+          "description": "完成首頁前端復刻，包含 Header、HeroCarousel、NewsSection、QuickLinks、Footer，並支援 RWD 與現代化動畫設計。"
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-06-15",
+          "type": "feat",
+          "description": "根據使用者需求，新增左側 Sidebar 導覽列，實作 Header 頂部下拉子選單 (hover 展示)，並調整整體佈局與充實 Mock 資料。"
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-06-15",
+          "type": "feat",
+          "description": "實作多處室帳號登入功能、React Router 前端路由、Zustand 狀態管理，以及 Tiptap 富文本編輯器後台。擴充公告資料至 25 筆並實作前端分頁功能。"
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-06-15",
+          "type": "feat",
+          "description": "升級富文本編輯器，增加對齊、連結、圖片、顏色、底線等標準功能。實作公告置頂機制與到期日設定，並於前端介面特殊標示。"
+        }
+      ],
       "tasks": {
         "main": [],
         "sub": [],
@@ -680,7 +754,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-15T20:35:06.409960"
+      "last_scanned": "2026-06-16T20:28:09.377778"
     }
   ]
 }
