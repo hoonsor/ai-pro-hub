@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T20:28:23.137335",
+  "generated_at": "2026-06-16T20:35:19.011405",
   "skills_dir": "C:\\Users\\hoonsor\\.gemini\\config\\skills",
   "workflows_dir": "C:\\Users\\hoonsor\\.gemini\\antigravity\\global_workflows",
   "stats": {
@@ -688,7 +688,7 @@
       "name": "hoonsor-preferences",
       "display_name": "Hoonsor Preferences",
       "description": "使用者喜好與風格指南庫。當使用者提及「偏好」、「喜好」、「風格模式」、「我的模式」時載入此技能，或在進行大型開發與創作任務前自動呼叫，以根據其偏好與風格產出作品。",
-      "summary": "- 當使用者在 Prompt 中提及「我的喜好」、「偏好」、「喜歡的模式」、「個人風格」時。 - 在開始任何新功能的開發、UI 設計、文章撰寫、或程式碼架構重構任務時，主動載入並讀取本技能。 - 當需要確保產出的作品、程式碼組織與視覺美感高度符合使用者的高標準時。",
+      "summary": "- 當使用者在 Prompt 中提及「我的喜好」、「偏好」、「喜歡的模式」、「個人風格」時。 - 當使用者輸入關鍵指令「**#喜好**」、「**分析喜好**」、「**記錄喜好**」時。 - 在開始任何新功能的開發、UI 設計、文章撰寫、或程式碼架構重構任務時，主動載入並讀取本技能。 - 當需要確保產出的作品、程式碼組織與視覺美感高度符合使用者的高標準時。",
       "tags": [
         "#通用工具"
       ],
@@ -702,7 +702,7 @@
         "has_examples": false,
         "has_evals": false,
         "total_files": 2,
-        "total_size_kb": 5.5
+        "total_size_kb": 7.4
       },
       "frontmatter": {
         "id": "hoonsor-preferences",
@@ -711,8 +711,8 @@
         "source": "personal",
         "date_added": "2026-06-16"
       },
-      "skill_md_lines": 31,
-      "last_modified": "2026-06-16T20:24:15.214701"
+      "skill_md_lines": 52,
+      "last_modified": "2026-06-16T20:33:29.764837"
     },
     {
       "name": "hoonsor-project-monitor",
@@ -42163,5 +42163,5 @@
       "react-native-architecture"
     ]
   },
-  "retagged_at": "2026-06-16T20:28:23.363913"
+  "retagged_at": "2026-06-16T20:35:19.236141"
 }

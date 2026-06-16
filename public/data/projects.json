@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T20:28:09.377778",
+  "generated_at": "2026-06-16T20:35:18.405136",
   "base_dir": "D:\\01-Project",
   "project_count": 15,
   "projects": [
@@ -112,7 +112,7 @@
         }
       ],
       "last_commit": "2026-04-14T21:53:10+08:00",
-      "last_scanned": "2026-06-16T20:28:05.537158"
+      "last_scanned": "2026-06-16T20:35:13.262359"
     },
     {
       "id": "02-openclaw_manage_tools",
@@ -122,11 +122,11 @@
       "github_url": "https://github.com/hoonsor/openclaw_manage_tools.git",
       "has_git": true,
       "tech_stack": [
-        "Tailwind CSS",
         "TypeScript",
-        "React",
+        "Electron",
         "Vite",
-        "Electron"
+        "Tailwind CSS",
+        "React"
       ],
       "description": "這個模板提供了一個最小的設置，可以讓 React 在 Vite 中與 HMR 和一些 ESLint 規則一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/) （或 [oxc](https://oxc.rs) 在 [httpsdownvite）\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 進行快速刷新",
       "changelog": [],
@@ -144,7 +144,7 @@
         }
       ],
       "last_commit": "2026-02-28T09:09:06+08:00",
-      "last_scanned": "2026-06-16T20:28:06.084269"
+      "last_scanned": "2026-06-16T20:35:13.796523"
     },
     {
       "id": "03-modules",
@@ -166,7 +166,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:28:06.085264"
+      "last_scanned": "2026-06-16T20:35:13.797523"
     },
     {
       "id": "04-webpage-test",
@@ -177,8 +177,8 @@
       "has_git": true,
       "tech_stack": [
         "TypeScript",
-        "React",
         "Tailwind CSS",
+        "React",
         "Next.js"
       ],
       "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
@@ -197,7 +197,7 @@
         }
       ],
       "last_commit": "2026-03-28T20:08:30+08:00",
-      "last_scanned": "2026-06-16T20:28:06.634808"
+      "last_scanned": "2026-06-16T20:35:14.347088"
     },
     {
       "id": "05-global-skills",
@@ -249,7 +249,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:28:06.636776"
+      "last_scanned": "2026-06-16T20:35:14.349104"
     },
     {
       "id": "06-全能生活網頁",
@@ -260,8 +260,8 @@
       "has_git": true,
       "tech_stack": [
         "TypeScript",
-        "React",
         "Tailwind CSS",
+        "React",
         "Next.js"
       ],
       "description": "Omni Nexus (全能生活網頁) 是一個為了解決現代人面臨「資訊過載與破碎化」痛點而誕生的聚合型入口網站。有別於傳統條列式平庸的內容農場，它採用了**動態空間網格 (Dynamic Spatial Bento Grid)** 架構，將搶票倒數、展覽文化、旅遊規劃、特價折扣等龐雜的資訊維度進行高度視覺收斂。\n\n本專案的核心價值在於提供極致的「資訊層次感」與「流暢的操作手感」。設計上採用暗黑破壞主義（Brutalism）搭配高對比度的酸性螢光綠色，創造強烈的視覺焦點；技術層面則強制導入 React Server Components (RSC) 搭配 Edge Functions，輔以 GSAP、Lenis 與 Framer Motion，確保即使在高併發流量或展示巨量即時資料的情境下，依然能享有低延遲、無卡頓的頂尖網頁體驗。",
@@ -326,7 +326,7 @@
         }
       ],
       "last_commit": "2026-04-14T20:58:18+08:00",
-      "last_scanned": "2026-06-16T20:28:08.212573"
+      "last_scanned": "2026-06-16T20:35:16.418725"
     },
     {
       "id": "07-全能生活網頁-活動行事曆",
@@ -378,7 +378,7 @@
         }
       ],
       "last_commit": "2026-04-14T21:00:54+08:00",
-      "last_scanned": "2026-06-16T20:28:08.348314"
+      "last_scanned": "2026-06-16T20:35:16.563878"
     },
     {
       "id": "08-監控ai各專案進度之網站",
@@ -389,8 +389,8 @@
       "has_git": true,
       "tech_stack": [
         "TypeScript",
-        "React",
         "Tailwind CSS",
+        "React",
         "Next.js"
       ],
       "description": "這是一個用來集中監控並管理各個 AI 開發專案進度與技能使用情況的儀表板網站。主要功能包含自動解析各專案資料夾下的 PROJECT_STATUS.md 與各技能說明文件，並呈現直覺的卡片式總覽與詳細資料頁面。\n\n本系統為解決多專案管理的分散痛點而生，讓開發者或專案經理能夠一目了然地掌握所有任務的完成度與技術細節。透過 Vercel 部署、Clerk 身份驗證以及動態的 Server Actions，系統能即時與雲端及本地端同步，確保任務計畫 `ACTIVE_TASKS.md` 的變更雙向暢通，大幅提升開發效率與專案透明度。",
@@ -498,6 +498,11 @@
       "revision_history": [],
       "recent_commits": [
         {
+          "hash": "77875c36b26a92d3503c23b7d8f5765fbdd53701",
+          "date": "2026-06-16 20:28:35 +0800",
+          "message": "feat(status): sync projects and skills status via #更新"
+        },
+        {
           "hash": "db32deab439d065f56f0838b5b5a39a02ac23c0b",
           "date": "2026-06-15 20:35:38 +0800",
           "message": "feat: update SystemView keywords with #初始化 and new #收工 description"
@@ -541,15 +546,10 @@
           "hash": "29562a710dc6e6cba436255dd11e415c19a0b3fd",
           "date": "2026-06-14 22:47:40 +0800",
           "message": "feat: add #分支 trigger to SystemView and sync status"
-        },
-        {
-          "hash": "aa485fa4809064990c5fc5a78df81bcf7a18464c",
-          "date": "2026-06-14 21:20:06 +0800",
-          "message": "feat(ui): implement active and frozen skill tabs in SkillsView"
         }
       ],
-      "last_commit": "2026-06-15T20:35:38+08:00",
-      "last_scanned": "2026-06-16T20:28:08.492550"
+      "last_commit": "2026-06-16T20:28:35+08:00",
+      "last_scanned": "2026-06-16T20:35:16.719386"
     },
     {
       "id": "09-實作練習gemini-cli",
@@ -571,7 +571,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:28:08.493580"
+      "last_scanned": "2026-06-16T20:35:16.720386"
     },
     {
       "id": "10-openclaw-skills",
@@ -598,7 +598,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:28:08.494550"
+      "last_scanned": "2026-06-16T20:35:16.723087"
     },
     {
       "id": "11-openclaw自身狀態網站",
@@ -618,7 +618,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:28:08.495580"
+      "last_scanned": "2026-06-16T20:35:16.723707"
     },
     {
       "id": "12-自動學習新知",
@@ -640,7 +640,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:28:08.497550"
+      "last_scanned": "2026-06-16T20:35:16.726136"
     },
     {
       "id": "13-非同步評價網站",
@@ -660,7 +660,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:28:08.498548"
+      "last_scanned": "2026-06-16T20:35:16.726739"
     },
     {
       "id": "14-工科技藝競賽公告網頁",
@@ -671,8 +671,8 @@
       "has_git": true,
       "tech_stack": [
         "TypeScript",
-        "React",
         "Tailwind CSS",
+        "React",
         "Next.js"
       ],
       "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
@@ -698,7 +698,7 @@
         }
       ],
       "last_commit": "2026-06-15T22:33:47+08:00",
-      "last_scanned": "2026-06-16T20:28:08.998366"
+      "last_scanned": "2026-06-16T20:35:18.033651"
     },
     {
       "id": "15-學校網頁復刻",
@@ -709,9 +709,9 @@
       "has_git": false,
       "tech_stack": [
         "TypeScript",
-        "React",
         "Vite",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "React"
       ],
       "description": "這個模板提供了一個最小的設置，可以讓 React 在 Vite 中與 HMR 和一些 ESLint 規則一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Oxc](https://oxc.rs)\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/)",
       "changelog": [
@@ -754,7 +754,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:28:09.377778"
+      "last_scanned": "2026-06-16T20:35:18.405136"
     }
   ]
 }
