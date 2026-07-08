@@ -20,8 +20,8 @@ import {
   CheckCircle2,
   HelpCircle,
   Play,
-  ArrowRight
 } from "lucide-react"
+import { LifecycleFlowchartModal } from "../LifecycleFlowchartModal"
 
 const SLASH_COMMANDS = [
   { cmd: "/goal", desc: "徹底達成任務。適用於需要長時間、多步驟、不達目的不罷休的複雜任務。" },
@@ -515,6 +515,7 @@ export function SystemView() {
   const [isRulesExpanded, setIsRulesExpanded] = useState(false)
   const [copied, setCopied] = useState(false)
   const [activeCategory, setActiveCategory] = useState<"all" | "core" | "architecture" | "system">("all")
+  const [flowchartModalOpen, setFlowchartModalOpen] = useState(false)
   const [expandedDocIds, setExpandedDocIds] = useState<Record<string, boolean>>({
     kaigong: true,
     shougong: true,
@@ -845,9 +846,38 @@ export function SystemView() {
               </div>
               <div className="mt-3 pt-3 border-t border-border/50 flex flex-wrap gap-1.5">
                 <span className="px-2 py-0.5 rounded bg-rose-500/15 text-rose-400 text-xs font-mono font-bold">#狀態</span>
-                <span className="px-2 py-0.5 rounded bg-rose-500/15 text-rose-400 text-xs font-mono font-bold">#全更新</span>
               </div>
             </div>
+          </div>
+
+          {/* 互動檢視全生命週期開發流程圖按鈕 (支援放大/縮小/任意拖曳) */}
+          <div className="pt-2">
+            <button
+              onClick={() => setFlowchartModalOpen(true)}
+              className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-primary/15 via-primary/10 to-transparent hover:from-primary/25 hover:to-primary/10 border border-primary/30 hover:border-primary/50 text-foreground transition-all group shadow-sm hover:shadow-md"
+            >
+              <div className="flex items-center gap-3">
+                <span className="p-2.5 rounded-xl bg-primary text-primary-foreground shadow-md">
+                  <Sparkles className="size-5 animate-pulse" />
+                </span>
+                <div className="text-left">
+                  <div className="flex items-center flex-wrap gap-2">
+                    <span className="text-sm font-bold text-foreground group-hover:text-primary transition-colors">
+                      點擊開啟「全生命週期開發架構互動流程圖」 (Interactive Architecture Diagram)
+                    </span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-primary/20 text-primary border border-primary/30">
+                      Zoom & Pan Enabled
+                    </span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    參考 obsidian-md-notes-viewer 檢視器架構，支援滑鼠滾輪放大/縮小與左鍵任意拖曳全景導覽
+                  </p>
+                </div>
+              </div>
+              <span className="text-xs font-semibold px-3.5 py-2 rounded-xl bg-primary/20 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all flex items-center gap-1 shrink-0">
+                展開檢視流程圖 →
+              </span>
+            </button>
           </div>
         </div>
 
@@ -1009,6 +1039,11 @@ export function SystemView() {
           })}
         </div>
       </div>
+
+      <LifecycleFlowchartModal
+        isOpen={flowchartModalOpen}
+        onClose={() => setFlowchartModalOpen(false)}
+      />
     </main>
   )
 }
