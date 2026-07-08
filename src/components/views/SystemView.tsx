@@ -19,7 +19,8 @@ import {
   Sparkles,
   CheckCircle2,
   HelpCircle,
-  Play
+  Play,
+  ArrowRight
 } from "lucide-react"
 
 const SLASH_COMMANDS = [
@@ -281,9 +282,9 @@ const WORKFLOW_KEYWORDS: WorkflowKeywordDoc[] = [
     skill: "hoonsor-project-monitor",
     category: "architecture",
     categoryLabel: "架構與進度狀態",
-    summary: "自動掃描並維護 PROJECT_STATUS.md 狀態，將各專案進度彙總 JSON 寫入儀表板網站同步。",
+    summary: "專用於掃描所有 AI 專案與技能進度，並把資料同步部署至「監控儀表板網站 (ai-pro-hub)」。",
     whenToUse:
-      "欲更新當前專案的版本號、勾選完成任務 Checkbox，或需要將最新專案進度推送到「監控AI各專案進度之網站」儀表板時使用。",
+      "當您希望將各專案的 PROJECT_STATUS.md 進度勾選與全域技能清單，重新掃描並上傳至儀表板監控網站 https://aiprohub.vercel.app/ 時使用。⚠️【區別提醒】：若您是修改「當前開發中專案」的程式碼或網頁功能，並打算 commit/push 部署，請使用「#更新」或「#收工」；「#狀態」是專門用來將資料更新部署至監控儀表板的專用指令。",
     pipeline: [
       {
         title: "校正 PROJECT_STATUS.md 文件資訊",
@@ -291,11 +292,17 @@ const WORKFLOW_KEYWORDS: WorkflowKeywordDoc[] = [
       },
       {
         title: "跨專案掃描與儀表板資料庫同步",
-        desc: "執行自動化掃描腳本，將資料寫入 public/data/projects.json 與儀表板系統，完成面板卡片同步。"
+        desc: "執行自動化掃描腳本，將全域技能與各專案資料寫入 public/data/*.json，完成儀表板資料庫更新。"
+      },
+      {
+        title: "儀表板站點 GitHub Push 與 Vercel 部署",
+        desc: "將監控儀表板網站專案 (ai-pro-hub) Commit 並 Push 至 GitHub 主分支，觸發 Vercel 面板自動部署更新線上監控頁面。",
+        badge: "監控站點專屬部署"
       }
     ],
     examples: [
-      "#狀態   👉 維護當前專案 PROJECT_STATUS.md 並同步至監控儀表板網站"
+      "#狀態   👉 重新掃描所有專案與技能，並推送到儀表板網站 Vercel 上線更新",
+      "因新增了指令，#狀態   👉 將最新的全域技能與工作流規範同步展示在儀表板系統設定頁"
     ]
   },
   {
@@ -727,6 +734,120 @@ export function SystemView() {
             >
               全部收合
             </button>
+          </div>
+        </div>
+
+        {/* 專案開發全生命週期流程與關鍵字導引 (Lifecycle Roadmap) */}
+        <div className="bg-gradient-to-br from-secondary/50 via-background to-secondary/30 p-6 rounded-2xl border border-primary/20 relative z-10 space-y-6">
+          <div className="flex items-center justify-between flex-wrap gap-2">
+            <div className="flex items-center gap-2.5">
+              <span className="p-2 rounded-xl bg-primary/10 text-primary">
+                <Layers className="size-5" />
+              </span>
+              <div>
+                <h4 className="text-lg font-bold text-foreground">
+                  專案開發全生命週期流程與關鍵字導航 (Lifecycle Roadmap)
+                </h4>
+                <p className="text-xs text-muted-foreground">
+                  一目了然開發過程中各階段對應觸發的核心關鍵字與自動化管線
+                </p>
+              </div>
+            </div>
+            <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/30">
+              5 Stages Full-Cycle
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+            {/* Stage 1 */}
+            <div className="bg-background/80 p-4 rounded-xl border border-border/70 flex flex-col justify-between hover:border-primary/40 transition-colors">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">STAGE 01</span>
+                  <span className="text-xs font-mono font-bold text-amber-500">起步 / 規範</span>
+                </div>
+                <h5 className="font-bold text-sm text-foreground mb-1.5">1. 專案建置與規範初始化</h5>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  新開專案或舊專案建置標準規範，掃描目錄並產生 ANTIGRAVITY.md 與 PROJECT_STATUS.md。
+                </p>
+              </div>
+              <div className="mt-3 pt-3 border-t border-border/50 flex flex-wrap gap-1.5">
+                <span className="px-2 py-0.5 rounded bg-primary/15 text-primary text-xs font-mono font-bold">#初始化</span>
+                <span className="px-2 py-0.5 rounded bg-amber-500/15 text-amber-500 text-xs font-mono font-bold">#架構</span>
+              </div>
+            </div>
+
+            {/* Stage 2 */}
+            <div className="bg-background/80 p-4 rounded-xl border border-border/70 flex flex-col justify-between hover:border-primary/40 transition-colors">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">STAGE 02</span>
+                  <span className="text-xs font-mono font-bold text-blue-400">每日 / 準備</span>
+                </div>
+                <h5 className="font-bold text-sm text-foreground mb-1.5">2. 每日開工與拉取計畫</h5>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  每日開工同步遠端最新代碼 (pull --rebase)，或自 Vercel 雲端拉取任務計畫到 ACTIVE_TASKS.md。
+                </p>
+              </div>
+              <div className="mt-3 pt-3 border-t border-border/50 flex flex-wrap gap-1.5">
+                <span className="px-2 py-0.5 rounded bg-blue-500/15 text-blue-400 text-xs font-mono font-bold">#開工</span>
+                <span className="px-2 py-0.5 rounded bg-blue-500/15 text-blue-400 text-xs font-mono font-bold">pull plan</span>
+              </div>
+            </div>
+
+            {/* Stage 3 */}
+            <div className="bg-background/80 p-4 rounded-xl border border-border/70 flex flex-col justify-between hover:border-primary/40 transition-colors">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">STAGE 03</span>
+                  <span className="text-xs font-mono font-bold text-emerald-400">實作 / 循環</span>
+                </div>
+                <h5 className="font-bold text-sm text-foreground mb-1.5">3. 階段存檔與分支實作</h5>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  開發中做到段落隨時安全存檔 (#更新)；複雜新功能開立獨立分支或 Worktree (#分支) 隔離開發。
+                </p>
+              </div>
+              <div className="mt-3 pt-3 border-t border-border/50 flex flex-wrap gap-1.5">
+                <span className="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 text-xs font-mono font-bold">#更新</span>
+                <span className="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 text-xs font-mono font-bold">#分支</span>
+              </div>
+            </div>
+
+            {/* Stage 4 */}
+            <div className="bg-background/80 p-4 rounded-xl border border-border/70 flex flex-col justify-between hover:border-primary/40 transition-colors">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">STAGE 04</span>
+                  <span className="text-xs font-mono font-bold text-purple-400">併回 / 完結</span>
+                </div>
+                <h5 className="font-bold text-sm text-foreground mb-1.5">4. 合併主線與收工發佈</h5>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  分支功能完工安全整併回主線 (#合併)，或今日告一段落安全檢查金鑰並 Push / 發佈站點 (#收工)。
+                </p>
+              </div>
+              <div className="mt-3 pt-3 border-t border-border/50 flex flex-wrap gap-1.5">
+                <span className="px-2 py-0.5 rounded bg-purple-500/15 text-purple-400 text-xs font-mono font-bold">#合併</span>
+                <span className="px-2 py-0.5 rounded bg-purple-500/15 text-purple-400 text-xs font-mono font-bold">#收工</span>
+              </div>
+            </div>
+
+            {/* Stage 5 */}
+            <div className="bg-background/80 p-4 rounded-xl border border-border/70 flex flex-col justify-between hover:border-primary/40 transition-colors">
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">STAGE 05</span>
+                  <span className="text-xs font-mono font-bold text-rose-400">儀表板 / 監控</span>
+                </div>
+                <h5 className="font-bold text-sm text-foreground mb-1.5">5. 儀表板資料庫同步</h5>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  掃描全電腦 AI 專案與技能進度，將資料 JSON 提交推送至監控網站 (ai-pro-hub) 面板上線展示。
+                </p>
+              </div>
+              <div className="mt-3 pt-3 border-t border-border/50 flex flex-wrap gap-1.5">
+                <span className="px-2 py-0.5 rounded bg-rose-500/15 text-rose-400 text-xs font-mono font-bold">#狀態</span>
+                <span className="px-2 py-0.5 rounded bg-rose-500/15 text-rose-400 text-xs font-mono font-bold">#全更新</span>
+              </div>
+            </div>
           </div>
         </div>
 
