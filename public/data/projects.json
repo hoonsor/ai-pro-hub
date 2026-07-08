@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-16T20:36:55.722395",
+  "generated_at": "2026-07-08T20:42:39.714872",
   "base_dir": "D:\\01-Project",
-  "project_count": 15,
+  "project_count": 16,
   "projects": [
     {
       "id": "01-screen-automate",
@@ -112,7 +112,7 @@
         }
       ],
       "last_commit": "2026-04-14T21:53:10+08:00",
-      "last_scanned": "2026-06-16T20:36:51.013128"
+      "last_scanned": "2026-07-08T20:42:29.450530"
     },
     {
       "id": "02-openclaw_manage_tools",
@@ -123,10 +123,10 @@
       "has_git": true,
       "tech_stack": [
         "Tailwind CSS",
+        "React",
         "Electron",
-        "Vite",
         "TypeScript",
-        "React"
+        "Vite"
       ],
       "description": "這個模板提供了一個最小的設置，可以讓 React 在 Vite 中與 HMR 和一些 ESLint 規則一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Babel](https://babeljs.io/) （或 [oxc](https://oxc.rs) 在 [httpsdownvite）\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/) 進行快速刷新",
       "changelog": [],
@@ -144,7 +144,7 @@
         }
       ],
       "last_commit": "2026-02-28T09:09:06+08:00",
-      "last_scanned": "2026-06-16T20:36:51.561448"
+      "last_scanned": "2026-07-08T20:42:31.199948"
     },
     {
       "id": "03-modules",
@@ -166,7 +166,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:36:51.562448"
+      "last_scanned": "2026-07-08T20:42:31.201458"
     },
     {
       "id": "04-webpage-test",
@@ -176,10 +176,10 @@
       "github_url": null,
       "has_git": true,
       "tech_stack": [
+        "Tailwind CSS",
         "TypeScript",
-        "React",
         "Next.js",
-        "Tailwind CSS"
+        "React"
       ],
       "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
       "changelog": [],
@@ -197,7 +197,7 @@
         }
       ],
       "last_commit": "2026-03-28T20:08:30+08:00",
-      "last_scanned": "2026-06-16T20:36:52.055432"
+      "last_scanned": "2026-07-08T20:42:34.129468"
     },
     {
       "id": "05-global-skills",
@@ -249,7 +249,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:36:52.057431"
+      "last_scanned": "2026-07-08T20:42:34.157634"
     },
     {
       "id": "06-全能生活網頁",
@@ -259,10 +259,10 @@
       "github_url": "https://github.com/hoonsor/life-style",
       "has_git": true,
       "tech_stack": [
+        "Tailwind CSS",
         "TypeScript",
-        "React",
         "Next.js",
-        "Tailwind CSS"
+        "React"
       ],
       "description": "Omni Nexus (全能生活網頁) 是一個為了解決現代人面臨「資訊過載與破碎化」痛點而誕生的聚合型入口網站。有別於傳統條列式平庸的內容農場，它採用了**動態空間網格 (Dynamic Spatial Bento Grid)** 架構，將搶票倒數、展覽文化、旅遊規劃、特價折扣等龐雜的資訊維度進行高度視覺收斂。\n\n本專案的核心價值在於提供極致的「資訊層次感」與「流暢的操作手感」。設計上採用暗黑破壞主義（Brutalism）搭配高對比度的酸性螢光綠色，創造強烈的視覺焦點；技術層面則強制導入 React Server Components (RSC) 搭配 Edge Functions，輔以 GSAP、Lenis 與 Framer Motion，確保即使在高併發流量或展示巨量即時資料的情境下，依然能享有低延遲、無卡頓的頂尖網頁體驗。",
       "changelog": [
@@ -326,7 +326,7 @@
         }
       ],
       "last_commit": "2026-04-14T20:58:18+08:00",
-      "last_scanned": "2026-06-16T20:36:53.587648"
+      "last_scanned": "2026-07-08T20:42:36.009623"
     },
     {
       "id": "07-全能生活網頁-活動行事曆",
@@ -378,20 +378,20 @@
         }
       ],
       "last_commit": "2026-04-14T21:00:54+08:00",
-      "last_scanned": "2026-06-16T20:36:53.728620"
+      "last_scanned": "2026-07-08T20:42:36.244937"
     },
     {
       "id": "08-監控ai各專案進度之網站",
       "folder_name": "08-監控AI各專案進度之網站",
       "name": "08-監控AI各專案進度之網站",
-      "version": "0.5.10",
+      "version": "0.5.12",
       "github_url": "https://github.com/hoonsor/ai-pro-hub.git",
       "has_git": true,
       "tech_stack": [
+        "Tailwind CSS",
         "TypeScript",
-        "React",
         "Next.js",
-        "Tailwind CSS"
+        "React"
       ],
       "description": "這是一個用來集中監控並管理各個 AI 開發專案進度與技能使用情況的儀表板網站。主要功能包含自動解析各專案資料夾下的 PROJECT_STATUS.md 與各技能說明文件，並呈現直覺的卡片式總覽與詳細資料頁面。\n\n本系統為解決多專案管理的分散痛點而生，讓開發者或專案經理能夠一目了然地掌握所有任務的完成度與技術細節。透過 Vercel 部署、Clerk 身份驗證以及動態的 Server Actions，系統能即時與雲端及本地端同步，確保任務計畫 `ACTIVE_TASKS.md` 的變更雙向暢通，大幅提升開發效率與專案透明度。",
       "changelog": [
@@ -466,6 +466,18 @@
           "date": "2026-06-15",
           "type": "feat",
           "description": "新增 #初始化 指令與更新 #收工 內涵說明至系統設定頁籤，並重新執行專案狀態同步"
+        },
+        {
+          "version": "0.5.11",
+          "date": "2026-06-16",
+          "type": "feat",
+          "description": "新增 #喜好 核心指令至系統設定頁籤，以對齊全域技能最新配置，並重新執行專案狀態同步"
+        },
+        {
+          "version": "0.5.12",
+          "date": "2026-07-08",
+          "type": "docs",
+          "description": "參考軟體規格技術文件手冊格式，全面重構「系統設定」分頁中的技能觸發關鍵字與自動化工作流指南，詳列指令語法、適用時機、防呆流程與對話輸入範例"
         }
       ],
       "tasks": {
@@ -498,6 +510,26 @@
       "revision_history": [],
       "recent_commits": [
         {
+          "hash": "fa2157e9391ac0b0429328875c0fe92da77d4893",
+          "date": "2026-07-08 20:30:50 +0800",
+          "message": "docs: update README.md with v0.5.12 release notes"
+        },
+        {
+          "hash": "c6274cd968ba32a4c55be8c883c9c9ce13042dd2",
+          "date": "2026-07-08 20:30:32 +0800",
+          "message": "docs(ui): reference software specification manual format to comprehensively detail workflow and skill trigger keywords in SystemView"
+        },
+        {
+          "hash": "be118394ba2602bf61565995890eb0fb8974b74a",
+          "date": "2026-06-16 20:40:48 +0800",
+          "message": "feat(ui): add #喜好 trigger keyword to SystemView and bump to v0.5.11"
+        },
+        {
+          "hash": "0caebae829106507561a140caf7b67b367fcd00b",
+          "date": "2026-06-16 20:37:05 +0800",
+          "message": "feat(status): sync 設定了「#喜好」指令 via #狀態"
+        },
+        {
           "hash": "38f0f26b7f8e551c660769d8bb9ace0ed279b989",
           "date": "2026-06-16 20:35:28 +0800",
           "message": "feat(status): sync projects and skills status via #狀態"
@@ -526,30 +558,10 @@
           "hash": "38bf5cc98a815f857d646d48517d596b446e59da",
           "date": "2026-06-14 23:22:40 +0800",
           "message": "docs: update ANTIGRAVITY.md directory structure to reflect workflow removal"
-        },
-        {
-          "hash": "bb589c2f43f760f6179afdd596a7a71d5d167678",
-          "date": "2026-06-14 23:15:59 +0800",
-          "message": "fix: apply suppressHydrationWarning to body tag as well"
-        },
-        {
-          "hash": "15ae47ab5704845179a183c95d8035e3326eceb5",
-          "date": "2026-06-14 23:13:13 +0800",
-          "message": "fix: resolve duplicate key error and eliminate hydration warning"
-        },
-        {
-          "hash": "567e3912798e6d7271850b76cc512a7fab483bb6",
-          "date": "2026-06-14 23:07:16 +0800",
-          "message": "docs: update README with comprehensive template for v0.5.6"
-        },
-        {
-          "hash": "ea21a0125c20a2838c560912862a9851097f5e6d",
-          "date": "2026-06-14 23:07:00 +0800",
-          "message": "feat: show global rules with copy/collapse, add skills path, and remove workflows"
         }
       ],
-      "last_commit": "2026-06-16T20:35:28+08:00",
-      "last_scanned": "2026-06-16T20:36:53.876392"
+      "last_commit": "2026-07-08T20:30:50+08:00",
+      "last_scanned": "2026-07-08T20:42:36.516052"
     },
     {
       "id": "09-實作練習gemini-cli",
@@ -571,7 +583,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:36:53.877432"
+      "last_scanned": "2026-07-08T20:42:36.517233"
     },
     {
       "id": "10-openclaw-skills",
@@ -598,7 +610,7 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:36:53.879405"
+      "last_scanned": "2026-07-08T20:42:36.545772"
     },
     {
       "id": "11-openclaw自身狀態網站",
@@ -618,19 +630,19 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:36:53.880424"
+      "last_scanned": "2026-07-08T20:42:36.546921"
     },
     {
       "id": "12-自動學習新知",
       "folder_name": "12-自動學習新知",
       "name": "12-自動學習新知",
       "version": "0.0.0",
-      "github_url": null,
-      "has_git": false,
+      "github_url": "https://github.com/hoonsor/omni-source-ai-knowledge-pipeline.git",
+      "has_git": true,
       "tech_stack": [
         "Python"
       ],
-      "description": "尚無描述",
+      "description": "本專案是一個全自動化的 AI 領域知識獲取與學習管線（Knowledge Pipeline）。為了解決「AI 時代資訊碎片化與過載」的痛點，系統能夠定時監控多個不同的社交與技術平台，並利用 LLM 提取精華，最終產出適合在 Obsidian 內閱讀、帶有 Mermaid.js 架構心智圖與雙向連結（Backlinks）的 Markdown 知識卡片。\n\n為了克服 API 呼叫頻率限制並優化運算成本，本專案採用了**雙 LLM 混合處理技術**：\n1. **Google Gemini (多模態音訊理解)**：針對 YouTube 影片，直接將下載後的音訊音軌傳送至 Gemini API。利用其強大的大上下文多模態語意理解能力，直接進行語音轉譯與重點摘要，免去了本地安裝 ffmpeg 進行複雜切片與 Whisper 轉錄的步驟。\n2. **MiniMax abab6.5s / M2.7 / M3 (文字推理與生成)**：針對 Threads 貼文（支援 Playwright 渲染 + BeautifulSoup 外部連結深讀）、GitHub Trending 熱門項目及 Stack Overflow 問答。由於這些來源為純文字，因此透過 MiniMax 的高性價比模型進行高效率的技術總結，大幅降低了對 Gemini 的 API 頻率消耗。\n\n---",
       "changelog": [],
       "tasks": {
         "main": [],
@@ -638,9 +650,45 @@
         "deprecated": []
       },
       "revision_history": [],
-      "recent_commits": [],
-      "last_commit": null,
-      "last_scanned": "2026-06-16T20:36:53.882423"
+      "recent_commits": [
+        {
+          "hash": "7af4b37dcdfb0558f47addfb3047724b3dc55aa1",
+          "date": "2026-07-03 23:28:01 +0800",
+          "message": "docs: add newly generated batch YouTube notes and update index"
+        },
+        {
+          "hash": "bc6e6a45e7537d59eb9029d3ab9625a7b363e693",
+          "date": "2026-07-03 22:53:15 +0800",
+          "message": "fix: restore PanSci School ID, add Shorts filtering to YouTube batch, create ANTIGRAVITY.md, and bump version to v0.5.1"
+        },
+        {
+          "hash": "7b2fea2e2b06e0e991792a271c550936a6473851",
+          "date": "2026-07-03 22:48:18 +0800",
+          "message": "fix: filter out Shorts from YouTube RSS feed to only process regular videos"
+        },
+        {
+          "hash": "c27d85c0aea35298c795f97bfd5ea004649bec4a",
+          "date": "2026-07-03 22:34:24 +0800",
+          "message": "fix: resolve YouTube monitor missing updates issue by correcting PanSci School ID and removing 12h limit"
+        },
+        {
+          "hash": "7324e741ceb75040aa07eabbfe14cf5f86e746f6",
+          "date": "2026-07-03 22:18:40 +0800",
+          "message": "docs: restore .env.example file"
+        },
+        {
+          "hash": "014a9c19167ed4d192f4d8f6a28a8ce586a002f5",
+          "date": "2026-07-03 22:18:30 +0800",
+          "message": "feat: implement YYYYMMDD- date prefix for notes and rename existing notes with backlinks corrected"
+        },
+        {
+          "hash": "96734fdf0ce21e35404dafa824df9d010f684ca8",
+          "date": "2026-07-02 20:35:08 +0800",
+          "message": "chore: initial secure commit for omni-source-ai-knowledge-pipeline"
+        }
+      ],
+      "last_commit": "2026-07-03T23:28:01+08:00",
+      "last_scanned": "2026-07-08T20:42:36.901990"
     },
     {
       "id": "13-非同步評價網站",
@@ -660,28 +708,52 @@
       "revision_history": [],
       "recent_commits": [],
       "last_commit": null,
-      "last_scanned": "2026-06-16T20:36:53.883424"
+      "last_scanned": "2026-07-08T20:42:36.902987"
     },
     {
       "id": "14-工科技藝競賽公告網頁",
       "folder_name": "14-工科技藝競賽公告網頁",
       "name": "14-工科技藝競賽公告網頁",
-      "version": "0.1.0",
-      "github_url": null,
+      "version": "0.1.5",
+      "github_url": "https://github.com/hoonsor/announcement-board.git",
       "has_git": true,
       "tech_stack": [
+        "Tailwind CSS",
         "TypeScript",
-        "React",
         "Next.js",
-        "Tailwind CSS"
+        "React"
       ],
       "description": "紗線開發\n# 或\nPNPM開發\n# 或\n包子開發者\n````\n\n用瀏覽器開啟[http://localhost:3000](http://localhost:3000)查看結果。\n\n您可以透過修改“app/page.tsx”開始編輯頁面。當您編輯文件時，頁面會自動更新。\n\n本專案使用 [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) 自動最佳化並載入 Vercel 的新字體系列 [Geist](https://vercel.com/font)。",
       "changelog": [
         {
-          "version": "1.0.0",
-          "date": "2026-06-15",
+          "version": "0.1.5",
+          "date": "2026-06-16",
           "type": "feat",
-          "description": "專案初始化與基礎架構建置"
+          "description": "實作 Phase 5 視覺優化與自動化測試，引入 Vitest 並編寫 Server Actions 權限單元測試，優化全域 transition 與 Scrollbar 樣式"
+        },
+        {
+          "version": "0.1.4",
+          "date": "2026-06-16",
+          "type": "feat",
+          "description": "實作 Phase 4 進階標籤篩選與選取器重構，新增實時標籤搜尋勾選 UI，優化過濾微動畫與一鍵 Reset 重置按鈕"
+        },
+        {
+          "version": "0.1.3",
+          "date": "2026-06-16",
+          "type": "feat",
+          "description": "實作 Phase 3 富文本編輯器與附件上傳，健全編輯模式下刪除現有附件功能，並修復公告詳情頁刪除漏洞"
+        },
+        {
+          "version": "0.1.2",
+          "date": "2026-06-16",
+          "type": "feat",
+          "description": "實作 Phase 2 權限與身分驗證，頁面重導向保護與防呆跳轉，修復刪除按鈕權限漏洞"
+        },
+        {
+          "version": "0.1.1",
+          "date": "2026-06-16",
+          "type": "feat",
+          "description": "啟動 PostgreSQL 容器，完成 Prisma 連線測試與 Seed 資料匯入，完成 Phase 1 基礎建設"
         }
       ],
       "tasks": {
@@ -692,25 +764,70 @@
       "revision_history": [],
       "recent_commits": [
         {
+          "hash": "1a007886d28154087ec291c5e5d83958c30f7e55",
+          "date": "2026-06-18 23:45:41 +0800",
+          "message": "chore: add directUrl to Prisma schema for Supabase compatibility"
+        },
+        {
+          "hash": "07b50afe46cfbacea84de0694168f90f95b1cd93",
+          "date": "2026-06-18 23:41:45 +0800",
+          "message": "fix: add postinstall script for vercel deployment"
+        },
+        {
+          "hash": "a3e7429abbde6e422b4040883bf2b97d4b20e6da",
+          "date": "2026-06-16 22:31:28 +0800",
+          "message": "feat: complete Phase 5 testing and visual polishing"
+        },
+        {
+          "hash": "484e32eb7ae410aae62e2a69ff639633756fe4a6",
+          "date": "2026-06-16 22:23:41 +0800",
+          "message": "feat: complete Phase 4 tag filter improvements and interactive form selection"
+        },
+        {
+          "hash": "3f655a557046b14fc35e783c853104fa1029cd86",
+          "date": "2026-06-16 21:32:46 +0800",
+          "message": "feat: complete Phase 3 rich text editor and attachment deletion features"
+        },
+        {
+          "hash": "8fd172468eba4f0d44f0dbf3dc45c1c73a84ae98",
+          "date": "2026-06-16 21:28:25 +0800",
+          "message": "feat: implement Phase 2 authorization protection and redirect logic"
+        },
+        {
+          "hash": "977431dcd7aae3a69bb87d849ffe54167e52bbf9",
+          "date": "2026-06-16 21:25:43 +0800",
+          "message": "feat: complete Phase 1 database setup and seed mock data"
+        },
+        {
+          "hash": "e6d64a8728ba91b477e7d333de2702611b645954",
+          "date": "2026-06-16 21:10:01 +0800",
+          "message": "docs: update PROJECT_STATUS.md with Vercel deploy URL"
+        },
+        {
+          "hash": "8a64dbabdae5cf46ab66a9e935b47097cdcdab62",
+          "date": "2026-06-16 21:07:44 +0800",
+          "message": "chore: initial commit via #初始化"
+        },
+        {
           "hash": "bdaf02902963a55b55dd4089870701234da045e8",
           "date": "2026-06-15 22:33:47 +0800",
           "message": "Initial commit from Create Next App"
         }
       ],
-      "last_commit": "2026-06-15T22:33:47+08:00",
-      "last_scanned": "2026-06-16T20:36:55.175910"
+      "last_commit": "2026-06-18T23:45:41+08:00",
+      "last_scanned": "2026-07-08T20:42:37.770576"
     },
     {
       "id": "15-學校網頁復刻",
       "folder_name": "15-學校網頁復刻",
       "name": "15-學校網頁復刻",
       "version": "1.3.0",
-      "github_url": null,
-      "has_git": false,
+      "github_url": "https://github.com/hoonsor/school-website-replication.git",
+      "has_git": true,
       "tech_stack": [
+        "Tailwind CSS",
         "TypeScript",
         "React",
-        "Tailwind CSS",
         "Vite"
       ],
       "description": "這個模板提供了一個最小的設置，可以讓 React 在 Vite 中與 HMR 和一些 ESLint 規則一起工作。\n\n目前官方提供了兩個外掛：\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 使用 [Oxc](https://oxc.rs)\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) 使用 [SWC](https://swc.rs/)",
@@ -752,9 +869,63 @@
         "deprecated": []
       },
       "revision_history": [],
-      "recent_commits": [],
-      "last_commit": null,
-      "last_scanned": "2026-06-16T20:36:55.722395"
+      "recent_commits": [
+        {
+          "hash": "60ab870594a5be44979b08fa73369c58a9d7d432",
+          "date": "2026-06-16 21:02:31 +0800",
+          "message": "chore: initial commit via #初始化"
+        }
+      ],
+      "last_commit": "2026-06-16T21:02:31+08:00",
+      "last_scanned": "2026-07-08T20:42:39.496606"
+    },
+    {
+      "id": "16-產圖風格選擇網站",
+      "folder_name": "16-產圖風格選擇網站",
+      "name": "16-產圖風格選擇網站",
+      "version": "0.0.0",
+      "github_url": "https://github.com/hoonsor/ai-prompt-forge.git",
+      "has_git": true,
+      "tech_stack": [
+        "Tailwind CSS",
+        "TypeScript",
+        "React",
+        "Vite"
+      ],
+      "description": "AI Prompt Forge 是一款專為 AI 繪圖玩家與創作者設計的專業提示詞輔助工具。我們解決了使用者在撰寫 Midjourney 或 Stable Diffusion 提示詞時，常常不知道該如何精準描述「風格」、「視角」、「光影」或「品質」的痛點。透過將複雜的提示詞公式拆解為多個視覺化選項，使用者可以直觀地選擇自己想要的畫面氛圍。\n\n本工具不僅提供了超過 30 種專業的攝影與藝術風格選項，每個選項更配有對應的示意圖。使用者只要輸入核心內容，並動動滑鼠勾選想要的屬性，系統就會即時在下方組合出最佳的咒語 (Prompt)，幫助您毫不費力地生成理想的圖片。",
+      "changelog": [
+        {
+          "version": "1.0.0",
+          "date": "2026-06-16",
+          "type": "feat",
+          "description": "初始專案建立"
+        }
+      ],
+      "tasks": {
+        "main": [],
+        "sub": [],
+        "deprecated": []
+      },
+      "revision_history": [],
+      "recent_commits": [
+        {
+          "hash": "f939a392eb88c2ab6328a3ad2da11451d0e0dcc2",
+          "date": "2026-06-18 07:16:26 +0800",
+          "message": "feat: complete all AI generated images"
+        },
+        {
+          "hash": "19b5f510e24330e3cae8cb32d7042a0367957acc",
+          "date": "2026-06-17 22:24:22 +0800",
+          "message": "feat: replace 17 placeholders with AI generated images"
+        },
+        {
+          "hash": "8777aa74b4fba872cc3378f570a43b5b7fa416cc",
+          "date": "2026-06-16 21:30:49 +0800",
+          "message": "feat: initial commit with UI and logic"
+        }
+      ],
+      "last_commit": "2026-06-18T07:16:26+08:00",
+      "last_scanned": "2026-07-08T20:42:39.714872"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "sync_time": "2026-06-16T20:36:56.723898",
+  "sync_time": "2026-07-08T20:42:55.736181",
   "sync_mode": "full",
   "projects": {
-    "total": 15,
-    "with_git": 7,
-    "with_status_md": 9,
+    "total": 16,
+    "with_git": 10,
+    "with_status_md": 10,
     "summary": [
       {
         "name": "01-Screen Automate",
@@ -20,10 +20,10 @@
         "has_git": true,
         "tech_stack": [
           "Tailwind CSS",
+          "React",
           "Electron",
-          "Vite",
           "TypeScript",
-          "React"
+          "Vite"
         ]
       },
       {
@@ -39,10 +39,10 @@
         "version": "0.1.0",
         "has_git": true,
         "tech_stack": [
+          "Tailwind CSS",
           "TypeScript",
-          "React",
           "Next.js",
-          "Tailwind CSS"
+          "React"
         ]
       },
       {
@@ -58,10 +58,10 @@
         "version": "0.1.1",
         "has_git": true,
         "tech_stack": [
+          "Tailwind CSS",
           "TypeScript",
-          "React",
           "Next.js",
-          "Tailwind CSS"
+          "React"
         ]
       },
       {
@@ -74,13 +74,13 @@
       },
       {
         "name": "08-監控AI各專案進度之網站",
-        "version": "0.5.10",
+        "version": "0.5.12",
         "has_git": true,
         "tech_stack": [
+          "Tailwind CSS",
           "TypeScript",
-          "React",
           "Next.js",
-          "Tailwind CSS"
+          "React"
         ]
       },
       {
@@ -106,7 +106,7 @@
       {
         "name": "12-自動學習新知",
         "version": "0.0.0",
-        "has_git": false,
+        "has_git": true,
         "tech_stack": [
           "Python"
         ]
@@ -119,30 +119,41 @@
       },
       {
         "name": "14-工科技藝競賽公告網頁",
-        "version": "0.1.0",
+        "version": "0.1.5",
         "has_git": true,
         "tech_stack": [
+          "Tailwind CSS",
           "TypeScript",
-          "React",
           "Next.js",
-          "Tailwind CSS"
+          "React"
         ]
       },
       {
         "name": "15-學校網頁復刻",
         "version": "1.3.0",
-        "has_git": false,
+        "has_git": true,
         "tech_stack": [
+          "Tailwind CSS",
           "TypeScript",
           "React",
+          "Vite"
+        ]
+      },
+      {
+        "name": "16-產圖風格選擇網站",
+        "version": "0.0.0",
+        "has_git": true,
+        "tech_stack": [
           "Tailwind CSS",
+          "TypeScript",
+          "React",
           "Vite"
         ]
       }
     ]
   },
   "skills": {
-    "total": 58,
+    "total": 60,
     "total_tags": 26,
     "tags": [
       "#AI代理人",

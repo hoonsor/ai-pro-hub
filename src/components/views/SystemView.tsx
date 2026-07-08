@@ -85,14 +85,14 @@ const WORKFLOW_KEYWORDS: WorkflowKeywordDoc[] = [
   },
   {
     id: "shougong",
-    trigger: "#收工",
-    syntax: "#收工",
+    trigger: "#收工 / #更新",
+    syntax: "#收工  或  #更新",
     skill: "antigravity-workflow",
     category: "core",
     categoryLabel: "核心開發工作流",
-    summary: "執行敏感金鑰安全稽核、狀態文件同步、精準 Commit & Push，並支援網站主分支 Vercel 自動部署。",
+    summary: "執行敏感金鑰安全稽核、進度同步、精準 Commit & Push，與主分支 Vercel 自動部署（#更新 適用階段性隨時存檔）。",
     whenToUse:
-      "當日開發工作告一個段落、完成一項特定功能或修復 Bug，準備將代碼安全上傳至 GitHub 並同步更新專案進度狀態與線上網站時調用。",
+      "當日開發工作告一個段落（「#收工」），或在開發過程中做到一個段落想隨時將階段性成果安全上傳至 GitHub 並同步更新專案進度與線上網站時（「#更新」）。二者底層執行步驟與安全防呆管線完全一致，提供開發者不同工作節奏下更直覺自然的觸發語句。",
     pipeline: [
       {
         title: "敏感資料與金鑰安全稽核",
@@ -114,7 +114,8 @@ const WORKFLOW_KEYWORDS: WorkflowKeywordDoc[] = [
       }
     ],
     examples: [
-      "#收工   👉 安全檢查金鑰、同步 PROJECT_STATUS.md、提交變更並在 main 分支自動觸發 Vercel 生產部署"
+      "#更新   👉 階段性隨時安全存檔、更新進度文件並推送至 GitHub (若為 main 分支則自動發佈 Vercel)",
+      "#收工   👉 今日或階段任務完結時調用，執行相同的安全檢查、進度同步與線上發佈"
     ]
   },
   {

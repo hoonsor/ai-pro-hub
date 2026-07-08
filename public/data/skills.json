@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-16T20:36:56.274783",
+  "generated_at": "2026-07-08T20:42:55.403418",
   "skills_dir": "C:\\Users\\hoonsor\\.gemini\\config\\skills",
   "workflows_dir": "C:\\Users\\hoonsor\\.gemini\\antigravity\\global_workflows",
   "stats": {
-    "total_skills": 58,
+    "total_skills": 60,
     "total_frozen_skills": 1280,
     "total_workflows": 1,
     "total_tags": 26,
@@ -221,7 +221,7 @@
     {
       "name": "antigravity-workflow",
       "display_name": "Antigravity Workflow",
-      "description": "AntiGravity 開工/收工/新專案初始化/分支管理/合併/初始化流程。說「開工」「收工」「初始化專案」「#分支」「#合併」「#初始化」時載入。",
+      "description": "AntiGravity 開工/收工/更新/新專案初始化/分支管理/合併/初始化/全更新流程。說「開工」「收工」「#更新」「更新」「初始化專案」「#分支」「#合併」「#初始化」「#全更新」時載入。",
       "summary": "1. 檢查當前資料夾： - 若資料夾為空或無專案檔案，主動要求使用者提供 GitHub 專案倉庫網址。 - 若使用者同時提供了網址（例如：「#開工 https://github.com/hoonsor/...」）： - **檢查遠端分支**：在進行 `git clone` 之前，先利用 `git ls-remote --heads <URL>` 查詢該遠端倉庫的所有分支。 - **分支確認與防呆 (重要)**： - 如果查詢結果顯示遠端除了預設主分支外，**還存在其他分支**，**請先暫停執行 clone**，並主動列出所有分支名稱向使用者確認：「*偵測到該遠端倉庫除了 main 之外，...",
       "tags": [
         "#通用工具"
@@ -236,11 +236,11 @@
         "has_examples": false,
         "has_evals": false,
         "total_files": 1,
-        "total_size_kb": 13.1
+        "total_size_kb": 15.1
       },
       "frontmatter": {},
-      "skill_md_lines": 189,
-      "last_modified": "2026-06-15T20:31:25.740774"
+      "skill_md_lines": 210,
+      "last_modified": "2026-07-08T20:41:43.550813"
     },
     {
       "name": "antigravity-obsidian",
@@ -558,6 +558,38 @@
       "last_modified": "2026-04-15T21:09:04.014278"
     },
     {
+      "name": "harness-engineering",
+      "display_name": "Harness Engineering",
+      "description": "馬鞍工程與駕馭工程 (Harness Engineering) 專家。提供測試駕馭 (Test Harness)、AI 代理控制架構 (Agent Scaffold/Harness)、評估駕馭 (Evaluation Harness) 與安全防護欄 (Guardrails) 的整合實作指引。",
+      "summary": "「馬鞍工程」（Harness Engineering，亦譯作「駕馭工程」）是現代軟體工程與 AI 代理人（AI Agent）架構中的核心設計方法。其宗旨是為強大但具備不確定性的系統（例如：AI 模型、複雜的異步系統）建立一套**約束與支撐的「馬具/馬鞍 (Scaffolding)」**，以確保系統能夠穩定、可靠、且安全地在生產環境中運行。",
+      "tags": [
+        "#AI代理人",
+        "#AI工具",
+        "#後端開發",
+        "#程式碼品質"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\config\\skills\\harness-engineering",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 1,
+        "total_size_kb": 4.5
+      },
+      "frontmatter": {
+        "category": "engineering",
+        "risk": "safe",
+        "source": "personal",
+        "date_added": "2026-06-18"
+      },
+      "skill_md_lines": 73,
+      "last_modified": "2026-07-03T22:35:45.744717"
+    },
+    {
       "name": "hoonsor-error-learning",
       "display_name": "Hoonsor Error Learning",
       "description": "從對話記錄中自動提取錯誤教訓、識別無效嘗試模式、建立持久化知識庫，避免重複犯錯與浪費 tokens。使用者呼叫時自動分析當前對話並歸檔學習成果。",
@@ -783,11 +815,35 @@
         "has_examples": false,
         "has_evals": false,
         "total_files": 2,
-        "total_size_kb": 9.1
+        "total_size_kb": 9.3
       },
       "frontmatter": {},
       "skill_md_lines": 37,
-      "last_modified": "2026-06-14T11:44:29.528711"
+      "last_modified": "2026-07-03T22:35:45.745717"
+    },
+    {
+      "name": "hoonsor-update-all-projects",
+      "display_name": "Hoonsor Update All Projects",
+      "description": "當使用者說「#全更新」或要求檢查/更新所有電腦登記的專案時載入此技能。會自動遍歷登記的專案，若設定有遠端 Git 倉庫則比對一致性，若不一致自動執行 pull --rebase 智慧合併，最後彙總狀態報告。",
+      "summary": "此技能用於一鍵檢查並同步目前電腦在 AntiGravity (`~/.gemini/config/projects/*.json`) 中登記的所有專案。",
+      "tags": [
+        "#通用工具"
+      ],
+      "path": "C:\\Users\\hoonsor\\.gemini\\config\\skills\\hoonsor-update-all-projects",
+      "structure": {
+        "has_scripts": false,
+        "has_references": false,
+        "has_templates": false,
+        "has_resources": false,
+        "has_assets": false,
+        "has_examples": false,
+        "has_evals": false,
+        "total_files": 2,
+        "total_size_kb": 6.6
+      },
+      "frontmatter": {},
+      "skill_md_lines": 31,
+      "last_modified": "2026-07-08T20:19:52.747904"
     },
     {
       "name": "hoonsor-xmind",
@@ -42061,8 +42117,20 @@
       "hoonsor-mcp-manager",
       "hoonsor-preferences",
       "hoonsor-sync-global-skills",
+      "hoonsor-update-all-projects",
       "python-packaging",
       "python-patterns"
+    ],
+    "#後端開發": [
+      "fastapi-pro",
+      "fastapi-router-py",
+      "fastapi-templates",
+      "harness-engineering",
+      "nodejs-backend-patterns",
+      "nodejs-best-practices",
+      "python-development-python-scaffold",
+      "python-fastapi-development",
+      "python-pro"
     ],
     "#資料庫": [
       "fastapi-pro",
@@ -42075,21 +42143,17 @@
       "python-performance-optimization",
       "react-component-performance"
     ],
-    "#後端開發": [
-      "fastapi-pro",
-      "fastapi-router-py",
-      "fastapi-templates",
-      "nodejs-backend-patterns",
-      "nodejs-best-practices",
-      "python-development-python-scaffold",
-      "python-fastapi-development",
-      "python-pro"
-    ],
     "#系統工具": [
       "antigravity-github",
       "agent-manager-skill",
       "hoonsor-gemini-subagent",
       "hoonsor-git-push-assistant"
+    ],
+    "#AI代理人": [
+      "agent-manager-skill",
+      "antigravity-skill-orchestrator",
+      "harness-engineering",
+      "hoonsor-gemini-subagent"
     ],
     "#測試除錯": [
       "antigravity-workflows",
@@ -42102,9 +42166,9 @@
       "10-andruia-skill-smith",
       "20-andruia-niche-intelligence"
     ],
-    "#AI代理人": [
-      "agent-manager-skill",
-      "antigravity-skill-orchestrator",
+    "#AI工具": [
+      "antigravity-notebooklm",
+      "harness-engineering",
       "hoonsor-gemini-subagent"
     ],
     "#自動化": [
@@ -42116,13 +42180,13 @@
       "007",
       "security-auditor"
     ],
-    "#AI工具": [
-      "antigravity-notebooklm",
-      "hoonsor-gemini-subagent"
-    ],
     "#行銷分析": [
       "agent-manager-skill",
       "hoonsor-project-monitor"
+    ],
+    "#程式碼品質": [
+      "harness-engineering",
+      "python-development-python-scaffold"
     ],
     "#行動應用": [
       "hoonsor-omni-prd-architect",
@@ -42147,9 +42211,6 @@
     "#心智圖": [
       "hoonsor-xmind"
     ],
-    "#程式碼品質": [
-      "python-development-python-scaffold"
-    ],
     "#文件處理": [
       "python-pptx-generator"
     ],
@@ -42163,5 +42224,5 @@
       "react-native-architecture"
     ]
   },
-  "retagged_at": "2026-06-16T20:36:56.642711"
+  "retagged_at": "2026-07-08T20:42:55.652220"
 }
